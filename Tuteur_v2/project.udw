@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tProjectObj>
+    <name>Tuteur_v2</name>
+    <pages>
+        <pageName>login</pageName>
+        <pageTitle>Login Page</pageTitle>
+    </pages>
+    <pages>
+        <pageName>main</pageName>
+        <pageTitle>Home Page</pageTitle>
+    </pages>
+    <pages>
+        <pageName>nav</pageName>
+        <pageTitle>Navigator</pageTitle>
+    </pages>
+    <pages>
+        <pageName>tagtable</pageName>
+        <pageTitle>tagtable</pageTitle>
+    </pages>
+    <resolution>
+        <height>1024</height>
+        <width>1280</width>
+    </resolution>
+    <version>V1.2.0</version>
+    <type>Siemens</type>
+</tProjectObj>

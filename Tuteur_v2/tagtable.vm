@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tVariableTable>
+    <variables>
+        <id>4460aaa3-5ef4-4929-b56b-d1ea13e90bc7</id>
+        <name>Tk1_Carga%</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="10">VRW</blockType>
+        <blockNum realvalue="0">0</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>39091180-aaba-4ed0-8e5c-27dd525c0b28</id>
+        <name>Tk2_Carga%</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="10">VRW</blockType>
+        <blockNum realvalue="240">30</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>2b883231-4e40-47e0-bdee-edfe9b3d33b9</id>
+        <name>Tk1_Filtro</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="10">VRW</blockType>
+        <blockNum realvalue="160">20</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>0423c298-ba8f-40b6-b5a6-23627620b99c</id>
+        <name>Tk1_Reenvio</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="10">VRW</blockType>
+        <blockNum realvalue="80">10</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>67827609-d76a-4be8-a9f9-35a518523950</id>
+        <name>Tk2_Filtro</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="10">VRW</blockType>
+        <blockNum realvalue="400">50</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>f706925f-12db-43d6-a3de-29359cac6ad9</id>
+        <name>Tk2_Reenvio</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="10">VRW</blockType>
+        <blockNum realvalue="320">40</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>ede4bd44-4cda-4777-9cfd-d35711018f2b</id>
+        <name>Tk1_Ai</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="18">AI</blockType>
+        <blockNum realvalue="0">AI1</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>6bf93ebc-7739-419f-8911-88be486a6d6e</id>
+        <name>Tk2_Ai</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="18">AI</blockType>
+        <blockNum realvalue="16">AI2</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>1c637a15-10c7-47bb-872e-ad7c51f55895</id>
+        <name>Tk1_@</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="131">M</blockType>
+        <blockNum realvalue="1">M2</blockNum>
+        <type realvalue="1">Bit</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>46b2859d-4049-42c6-91b7-631996daee86</id>
+        <name>Tk2_@</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="131">M</blockType>
+        <blockNum realvalue="4">M5</blockNum>
+        <type realvalue="1">Bit</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>40ec982b-a149-4b18-b206-9ec20bade01e</id>
+        <name>Tk1_Sim</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="10">VRW</blockType>
+        <blockNum realvalue="480">60</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>2dfd4767-f7b6-4e0e-8a18-4b11b775440a</id>
+        <name>Tk2_Sim</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="10">VRW</blockType>
+        <blockNum realvalue="560">70</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>f8a185f6-9b33-425b-8fea-ebe5c8166d58</id>
+        <name>Tk1_cvFiltro</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="20">AM</blockType>
+        <blockNum realvalue="0">AM1</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>c5f36024-8b3f-41e8-a0e0-7a91180ca535</id>
+        <name>Tk2_cvFiltro</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="20">AM</blockType>
+        <blockNum realvalue="32">AM3</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>09a28bb3-c3d0-45c8-a63c-59dd7c80e88e</id>
+        <name>Tk1_cvReenvio</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="20">AM</blockType>
+        <blockNum realvalue="16">AM2</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>7edf21cf-1e22-4bee-84f7-597f709515a2</id>
+        <name>Tk2_cvReenvio</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="20">AM</blockType>
+        <blockNum realvalue="48">AM4</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>3cd70d5f-c0b6-440d-bb1f-17539c02c344</id>
+        <name>UserAM</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="20">AM</blockType>
+        <blockNum realvalue="64">AM5</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>533fbfb2-2975-461f-afd6-cae83fa058c1</id>
+        <name>UserOk</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="131">M</blockType>
+        <blockNum realvalue="5">M6</blockNum>
+        <type realvalue="1">Bit</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>7284b247-24b4-418a-acbd-7079ad7ed0e9</id>
+        <name>Logoff</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="131">M</blockType>
+        <blockNum realvalue="8">M9</blockNum>
+        <type realvalue="1">Bit</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>5cffcebd-5991-4544-96cc-39f1bf1d0883</id>
+        <name>Tk1_Mail_enviado</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="131">M</blockType>
+        <blockNum realvalue="0">M1</blockNum>
+        <type realvalue="1">Bit</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>ddba25a1-91f1-4ff8-8428-7643374be07f</id>
+        <name>Tk2_Mail_enviado</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="131">M</blockType>
+        <blockNum realvalue="3">M4</blockNum>
+        <type realvalue="1">Bit</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>30acf857-eba8-4a7b-a045-d98ea4e56598</id>
+        <name>Tk1_ActivarSimu</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="131">M</blockType>
+        <blockNum realvalue="9">M10</blockNum>
+        <type realvalue="1">Bit</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>8dd4c2ec-fd29-4e12-8840-8d8b3800bc76</id>
+        <name>Tk2_ActivarSimu</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="131">M</blockType>
+        <blockNum realvalue="10">M11</blockNum>
+        <type realvalue="1">Bit</type>
+        <length realvalue="1">1</length>
+    </variables>
+</tVariableTable>

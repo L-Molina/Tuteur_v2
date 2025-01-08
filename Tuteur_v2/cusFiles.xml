@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CustomizeFiles>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\analogValue\comp.xml" count="35">
+        <ComponentIDs>
+            <ComponentID>43398c2cb2b987bc7cf3</ComponentID>
+            <ComponentID>4e05b14f63d8f967d971</ComponentID>
+            <ComponentID>4b019d7036e89e603d77</ComponentID>
+            <ComponentID>4af5a03d736e58bd7625</ComponentID>
+            <ComponentID>463ab200491d93da7762</ComponentID>
+            <ComponentID>475382b495034d62e95e</ComponentID>
+            <ComponentID>4e0b98817e1208ee2adc</ComponentID>
+            <ComponentID>4ec99b6c9f305a6e6fa4</ComponentID>
+            <ComponentID>4ba9abce10a4d8862e1e</ComponentID>
+            <ComponentID>4bf6aeda7efcfb7925f0</ComponentID>
+            <ComponentID>41dc8f12a00773372db0</ComponentID>
+            <ComponentID>43b9a67c980645d4fadf</ComponentID>
+            <ComponentID>4c5fbe7bca5379bd9b07</ComponentID>
+            <ComponentID>48c1b21f345f1ecd517a</ComponentID>
+            <ComponentID>46fd8ed24a20ba831aa5</ComponentID>
+            <ComponentID>4d919664e0de19305c07</ComponentID>
+            <ComponentID>443595c805fdec978abd</ComponentID>
+            <ComponentID>439d807b68c4cee12981</ComponentID>
+            <ComponentID>41288a0eac8f7c6a5016</ComponentID>
+            <ComponentID>4bafb60fdf841433be29</ComponentID>
+            <ComponentID>416dad2aa15ab1deee9d</ComponentID>
+            <ComponentID>40beb7875d5ab73c9e1a</ComponentID>
+            <ComponentID>453ea683ca94510b8cac</ComponentID>
+            <ComponentID>4300b365ba6d3849d6dc</ComponentID>
+            <ComponentID>44a9a53235537e094472</ComponentID>
+            <ComponentID>48b38ea927b5a1ce9a17</ComponentID>
+            <ComponentID>4e6f9e4322e4c8b5d171</ComponentID>
+            <ComponentID>445d9aa30f8ccc59026e</ComponentID>
+            <ComponentID>4bb998020113d8cadf22</ComponentID>
+            <ComponentID>4323bbca07c959447992</ComponentID>
+            <ComponentID>401a827fae5feb9c5424</ComponentID>
+            <ComponentID>47afb3fc461931d59d41</ComponentID>
+            <ComponentID>4263910a8a5c25a3df7f</ComponentID>
+            <ComponentID>4c1fbb25f40490034993</ComponentID>
+            <ComponentID>424abc15f53f1637712e</ComponentID>
+        </ComponentIDs>
+        <Files>
+            <File>js\anavalue.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\rainbow\comp.xml" count="0">
+        <ComponentIDs/>
+        <Files>
+            <File>js\rainbow.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\trendView\comp.xml" count="0">
+        <ComponentIDs/>
+        <Files>
+            <File>js\trend.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\webcam\comp.xml" count="0">
+        <ComponentIDs/>
+        <Files>
+            <File>css\webcam.css</File>
+            <File>js\video.js</File>
+            <File>js\webcam.js</File>
+            <File>css\video.css</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\login\comp.xml" count="1">
+        <ComponentIDs>
+            <ComponentID>LOGIN_CMP</ComponentID>
+        </ComponentIDs>
+        <Files>
+            <File>js\login.js</File>
+        </Files>
+    </CustomizeComponent>
+</CustomizeFiles>
