@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#main {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-size: 10px 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(235, 235, 235);
+  width: 100%;
+  height: 150%;
+  z-index: 0;
+}
+
+.MainContainer {
+  position: absolute;
+  left: 0;
+  top: 27px;
+  width: 150%;
+  height: 150%;
+  padding-left: 20px;
+  background-color: #282c34;
+}
+
+.dateTime {
+  overflow: hidden;
+  line-height: 100%;
+  text-align: center;
+  position: absolute;
+  left: 1038px;
+  top: 13px;
+  width: 124px;
+  height: 44px;
+  background-size: 124px 45px;
+  transform: rotate(0deg);
+  font-style: normal;
+  font-family: Arial;
+  font-size: 18px;
+  z-index: 9;
+  background-repeat: no-repeat no-repeat;
+}
+
+.outer {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  color: black;
+}
+
+.Tanque {
+  border: 1px #00b1fe;
+  border-radius: 10px;
+  background-image: url("file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/1CC49F7C.png");
+  background-size: 183px 326px;
+  width: 183px;
+  height: 325px;
+  transform: rotate(0deg);
+  z-index: 25;
+  background-repeat: no-repeat no-repeat;
+}
+
+.Tanque2 {
+  width: 528px;
+  height: 671px;
+  border: 1px #00b1fe;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.textCenter {
+  margin-left: auto;
+  vertical-align: middle;
+  text-align: center;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.TextComponent {
+  overflow: hidden;
+  line-height: 100%;
+  position: absolute;
+  transform: rotate(0deg);
+  font-style: normal;
+  font-size: 48px;
+  background-repeat: no-repeat no-repeat;
+}
+
+.TextComponentTanque1 {
+  overflow: hidden;
+  line-height: 100%;
+  position: absolute;
+  width: 228px;
+  height: fit-content;
+  background-size: 228px 54px;
+  z-index: 40;
+  background-repeat: no-repeat no-repeat;
+}
+
+.TextComponentTanque2 {
+  overflow: hidden;
+  line-height: 100%;
+  position: relative;
+  width: 228px;
+  height: fit-content;
+  background-size: 228px 54px;
+  z-index: 40;
+  background-repeat: no-repeat no-repeat;
+}
+
+.ImageComponentTanque1 {
+  background-image: url("file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/1CC49F7C.png");
+  background-size: 183px 326px;
+  position: relative;
+  top: 558px;
+  width: 183px;
+  height: 325px;
+  transform: rotate(0deg);
+  z-index: 50;
+  background-repeat: no-repeat no-repeat;
+}
+
+.Logo {
+  background-image: url("file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/8CAD163D.png");
+  background-size: 83px 71px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 83px;
+  height: 71px;
+  transform: rotate(0deg);
+  z-index: 60;
+  border: 1px solid black;
+  background-repeat: no-repeat no-repeat;
+}
+
+.LogoBar {
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  z-index: 60;
+  width: 100%;
+  height: 71px;
+  border: 1px solid black;
+}
+
+h1 {
+  text-align: left;
+  font-size: 54px;
+  width: 654px;
+  height: 100%;
+  color: #00b1fe;
+}
+
+h2 {
+  text-align: left;
+  width: 228px;
+  height: 65px;
+  font-size: 24px;
+}
+
+h3 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 154px;
+  height: 84px;
+}
+
+h4 {
+  width: 114px;
+  height: 44px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.server_binding {
+  overflow: hidden;
+  line-height: 100%;
+  text-align: center;
+  position: relative;
+  left: 1138px;
+  top: 13px;
+  width: 124px;
+  height: 44px;
+  background-size: 124px 45px;
+  border-radius: 6px;
+  transform: rotate(0deg);
+  font-style: normal;
+  font-family: Arial;
+  font-size: 18px;
+  color: rgb(235, 235, 235);
+  z-index: 9;
+  background-repeat: no-repeat no-repeat;
+}
+
+.inputVal {
+  width: 100%;
+  height: 100%;
+}
+
+.bar {
+  border: 0px solid red;
+  height: 240px;
+  width: 28px;
+}
+
+.bar ul > li {
+  position: absolute;
+  border-top: 1px solid black;
+  width: 5px;
+}
+.bar ul > li:first-child {
+  width: 15px;
+}
+.bar ul > li:nth-last-child(5n + 1) {
+  width: 15px;
+}
+.bar ul > li:last-child {
+  margin-top: 1px;
+  width: 15px;
+}
+.bar ul > li > a {
+  display: block;
+  position: absolute;
+  height: 0px;
+  line-height: 0px;
+  cursor: default;
+  text-decoration: none;
+  font-size: 11px;
+  margin-left: 17px;
+}
+
+ul {
+  float: left;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+li {
+  height: 23.2px;
+  border-color: rgb(235, 235, 235);
+}
+
+ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-family: Arial;
+  font-size: 14px;
+  color: rgb(235, 235, 235);
+}
+
+.form__group {
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+  height: 110%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+  }
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, white, whitesmoke);
+  border-image-slice: 1;
+}
