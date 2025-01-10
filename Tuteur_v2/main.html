@@ -105,6 +105,30 @@
         </h1>
       </div>
       <div
+        comp_type="analogDateTimeComponent"
+        class="server_binding dateTime"
+        show_function="_callback_showDateTime"
+        range="132"
+        address="7920"
+        type="2"
+        length="6"
+        show_param="475bb2d8a22911ba6bc2"
+        block_format="Unsigned"
+        id="475bb2d8a22911ba6bc2"
+        degree="0"
+        device_name=""
+        text_align="center"
+        time_format="ft"
+        title="yyyy-MM-dd"
+      >
+        <div>
+          <div class="outer">
+            <div class="dayTime">Fri.13:01:59</div>
+            <div class="date">2019-01-11</div>
+          </div>
+        </div>
+      </div>
+      <div
         comp_type="PushButton"
         show_function="_callback_loadPushButton"
         class="server_binding textCenter"
@@ -214,7 +238,7 @@
             type="text"
             size="5"
             value=""
-            style="color: black;"
+            style="color: black"
           />
           <span
             class="unit"
@@ -241,28 +265,60 @@
         ></div>
       </div>
       <div
-        comp_type="analogDateTimeComponent"
-        class="server_binding dateTime"
-        show_function="_callback_showDateTime"
-        range="132"
-        address="7920"
-        type="2"
-        length="6"
-        show_param="475bb2d8a22911ba6bc2"
-        block_format="Unsigned"
-        id="475bb2d8a22911ba6bc2"
+        comp_type="PushButton"
+        show_function="_callback_loadPushButton"
+        class="server_binding textCenter"
+        style="
+          line-height: 34px;
+          cursor: pointer;
+          position: absolute;
+          left: 1034px;
+          top: 20px;
+          width: 71px;
+          height: 34px;
+          background-size: 71px 35px;
+          transform: rotate(0deg);
+          background-color: rgb(20, 60, 112);
+          font-style: normal;
+          font-family: Arial;
+          font-size: 18px;
+          color: rgb(255, 255, 255);
+          z-index: 45;
+          background-repeat: no-repeat no-repeat;
+        "
+        range="131"
+        address="8"
+        type="1"
+        length="1"
+        on_text="Log off"
+        off_text="Log off"
+        frequency="1000"
+        mouse_mode="Click"
+        ontouchstart="renderJs.FuncTouchDown(this)"
+        onmousedown="renderJs.FuncMouseDown(this)"
+        onmouseout="renderJs.FuncMouseUp(this)"
+        onmouseup="renderJs.FuncMouseUp(this)"
+        ontouchend="renderJs.FuncTouchUp(this)"
+        onclick="renderJs.onPushButtonClicked(this)"
+        id="405fa89dbc34fef3173f"
+        show_param="405fa89dbc34fef3173f"
         degree="0"
+        tag_id="7284b247-24b4-418a-acbd-7079ad7ed0e9"
         device_name=""
+        mode="true"
         text_align="center"
-        time_format="ft"
-        title="yyyy-MM-dd"
       >
-        <div>
-          <div class="outer">
-            <div class="dayTime">Fri.13:01:59</div>
-            <div class="date">2019-01-11</div>
-          </div>
-        </div>
+        <p
+          style="
+            width: 71px;
+            height: 34px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+          "
+        >
+          Log In
+        </p>
       </div>
       <div
         id="main"
@@ -890,66 +946,6 @@
               "
             >
               Tiempo entre alertas
-            </p>
-          </div>
-
-          <div
-            comp_type="PushButton"
-            show_function="_callback_loadPushButton"
-            class="server_binding textCenter"
-            style="
-              line-height: 34px;
-              cursor: pointer;
-              position: absolute;
-              left: 1184px;
-              top: 963px;
-              width: 71px;
-              height: 34px;
-              background-size: 71px 35px;
-              transform: rotate(0deg);
-              background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/6531503C.png');
-              font-style: normal;
-              font-family: Arial;
-              font-size: 18px;
-              color: rgb(0, 0, 0);
-              z-index: 45;
-              background-repeat: no-repeat no-repeat;
-            "
-            range="131"
-            address="8"
-            type="1"
-            length="1"
-            on_text="Log off"
-            off_text="Log off"
-            frequency="1000"
-            mouse_mode="Click"
-            ontouchstart="renderJs.FuncTouchDown(this)"
-            onmousedown="renderJs.FuncMouseDown(this)"
-            onmouseout="renderJs.FuncMouseUp(this)"
-            onmouseup="renderJs.FuncMouseUp(this)"
-            ontouchend="renderJs.FuncTouchUp(this)"
-            onclick="renderJs.onPushButtonClicked(this)"
-            id="405fa89dbc34fef3173f"
-            show_param="405fa89dbc34fef3173f"
-            degree="0"
-            tag_id="7284b247-24b4-418a-acbd-7079ad7ed0e9"
-            device_name=""
-            on_image="img/6531503C.png"
-            off_image="img/6531503C.png"
-            bg_image="img/6531503C.png"
-            mode="true"
-            text_align="center"
-          >
-            <p
-              style="
-                width: 71px;
-                height: 34px;
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-              "
-            >
-              Log off
             </p>
           </div>
 
