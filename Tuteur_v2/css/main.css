@@ -1,259 +1,313 @@
+:root {
+  --tank-width: 220px;
+  --tank-height: 390px;
+  --logo-width: 83px;
+  --logo-height: 71px;
+
+  /* Dark theme colors (default) */
+  --bg-primary: #282c34;
+  --bg-secondary: white;
+  --text-primary: rgb(235, 235, 235);
+  --text-secondary: black;
+  --accent-color: #00b1fe;
+  --button-gradient-1: #1a4f8f;
+  --button-gradient-2: #143c70;
+  --button-hover-1: #1d5aa3;
+  --button-hover-2: #194785;
+  --bar-color: #4682b4;
+  --border-color: #00b1fe;
+}
+
+/* Light theme colors */
+[data-theme="light"] {
+  --bg-primary: #f0f2f5;
+  --bg-secondary: #ffffff;
+  --text-primary: #2c3e50;
+  --text-secondary: #34495e;
+  --accent-color: #2980b9;
+  --button-gradient-1: #3498db;
+  --button-gradient-2: #2980b9;
+  --button-hover-1: #2980b9;
+  --button-hover-2: #2573a7;
+  --bar-color: #3498db;
+  --border-color: #2980b9;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 2px solid var(--accent-color);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;  /* Prevent horizontal scroll */
 }
 
 #main {
   position: relative;
-  top: 0;
-  left: 0;
+  flex: 1;
   background-size: 10px 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(235, 235, 235);
+  color: var(--text-primary);
   width: 100%;
-  height: 150%;
-  z-index: 0;
-}
-
-.MainContainer {
-  position: absolute;
-  left: -1;
-  top: 27px;
-  width: 113%;
-  height: 150%;
-  padding-left: 20px;
-  background-color: #282c34;
-}
-
-.dateTime {
-  overflow: hidden;
-  line-height: 100%;
-  text-align: center;
-  position: absolute;
-  left: 1738px;
-  top: 13px;
-  width: 124px;
-  height: 44px;
-  background-size: 124px 45px;
-  transform: rotate(0deg);
-  font-style: normal;
-  font-family: Arial;
-  font-size: 18px;
-  z-index: 9;
-  background-repeat: no-repeat no-repeat;
-}
-
-.outer {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
-  color: black;
-}
-
-.Tanque {
-  border: 1px #00b1fe;
-  border-radius: 10px;
-  background-image: url("file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/1CC49F7C.png");
-  background-size: 183px 326px;
-  width: 183px;
-  height: 325px;
-  transform: rotate(0deg);
-  z-index: 25;
-  background-repeat: no-repeat no-repeat;
-}
-
-.Tanque2 {
-  width: 528px;
-  height: 671px;
-  border: 1px #00b1fe;
-  border-radius: 10px;
-  z-index: 10;
-}
-
-.textCenter {
-  margin-left: auto;
-  vertical-align: middle;
-  text-align: center;
-  word-wrap: break-word;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.TextComponent {
-  overflow: hidden;
-  line-height: 100%;
-  position: absolute;
-  transform: rotate(0deg);
-  font-style: normal;
-  font-size: 48px;
-  background-repeat: no-repeat no-repeat;
-}
-
-.TextComponentTanque1 {
-  overflow: hidden;
-  line-height: 100%;
-  position: absolute;
-  width: 228px;
-  height: fit-content;
-  background-size: 228px 54px;
-  z-index: 40;
-  background-repeat: no-repeat no-repeat;
-}
-
-.TextComponentTanque2 {
-  overflow: hidden;
-  line-height: 100%;
-  position: relative;
-  width: 228px;
-  height: fit-content;
-  background-size: 228px 54px;
-  z-index: 40;
-  background-repeat: no-repeat no-repeat;
-}
-
-.ImageComponentTanque1 {
-  background-image: url("file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/1CC49F7C.png");
-  background-size: 183px 326px;
-  position: relative;
-  top: 558px;
-  width: 183px;
-  height: 325px;
-  transform: rotate(0deg);
-  z-index: 50;
-  background-repeat: no-repeat no-repeat;
-}
-
-.Logo {
-  background-image: url("file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/8CAD163D.png");
-  background-size: 83px 71px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 83px;
-  height: 71px;
-  transform: rotate(0deg);
-  z-index: 60;
-  border: 1px solid black;
-  background-repeat: no-repeat no-repeat;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .LogoBar {
   background-color: white;
-  position: absolute;
-  left: 0px;
-  top: 1px;
+  position: sticky;
+  top: 0;
+  left: 0;
   z-index: 60;
   width: 100%;
-  height: 71px;
-  border: 1px solid black;
+  height: var(--logo-height);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  text-align: left;
-  font-size: 54px;
-  width: 654px;
-  height: 100%;
-  color: #00b1fe;
+.Logo {
+  background-image: url("../img/8CAD163D.png");
+  background-size: var(--logo-width) var(--logo-height);
+  width: var(--logo-width);
+  height: var(--logo-height);
+  background-repeat: no-repeat;
+  flex-shrink: 0;
 }
 
-h2 {
-  text-align: left;
-  width: 228px;
-  height: 65px;
-  font-size: 24px;
-}
-
-h3 {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  width: 154px;
-  height: 84px;
-}
-
-h4 {
-  width: 114px;
-  height: 44px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.server_binding {
-  overflow: hidden;
-  line-height: 100%;
-  text-align: center;
+.TextComponent.header-title {
+  flex: 1;
   position: relative;
-  font-style: normal;
-  font-family: Arial;
-  z-index: 9;
+  margin-left: calc(var(--logo-width) * 0.2);
 }
 
-.inputVal {
+.TextComponent.header-title h1 {
+  font-size: calc(var(--logo-height) * 0.76);
+  line-height: var(--logo-height);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dateTime {
+  margin-left: 0;
+  padding-left: 10px;
+  height: 44px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.dateTime .outer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.dateTime .dayTime,
+.dateTime .date {
+  display: inline-block;
+}
+
+.MainContainer {
+  flex: 1;
+  background-color: var(--bg-primary);
+  padding: 27px max(20px, 5%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
-  height: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.bar {
-  border: 0px solid red;
-  height: 240px;
+.TanqueContainer {
+  width: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tank-group {
+  display: flex;
+  gap: 40px;
+}
+
+.tank-info {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.tank-info .action-buttons {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.tank-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  min-width: 300px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.server_binding.bar {
+  position: absolute;
+  left: 55%;
+  top: 8%;
+  height: 65%;
   width: 28px;
+  background: var(--bar-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  z-index: 2;
+  position: relative;
 }
 
-.bar ul > li {
+.whiteBg {
   position: absolute;
-  border-top: 1px solid black;
-  width: 5px;
-}
-.bar ul > li:first-child {
-  width: 15px;
-}
-.bar ul > li:nth-last-child(5n + 1) {
-  width: 15px;
-}
-.bar ul > li:last-child {
-  margin-top: 1px;
-  width: 15px;
-}
-.bar ul > li > a {
-  display: block;
-  position: absolute;
-  height: 0px;
-  line-height: 0px;
-  cursor: default;
-  text-decoration: none;
-  font-size: 11px;
-  margin-left: 17px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: white;
 }
 
-ul {
-  float: left;
+.server_binding.bar ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   list-style: none;
-  margin: 0px;
-  padding: 0px;
-  text-align: left;
+  z-index: 99;
 }
 
-li {
-  height: 23.2px;
-  border-color: rgb(235, 235, 235);
+.server_binding.bar ul > li {
+  position: relative;
+  border-top: 1px solid var(--text-primary);
+  width: 15px;
+  margin: 0;
 }
 
-ul li a {
-  font-style: normal;
-  font-weight: 400;
-  font-family: Arial;
-  font-size: 14px;
-  color: rgb(235, 235, 235);
+.server_binding.bar ul > li > a {
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  color: var(--text-primary);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* Restore button styles */
+button.server_binding {
+  flex: 1;
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+button.server_binding:hover {
+  background-color: var(--button-hover-1);
+}
+
+.Tanque {
+  border-radius: 10px;
+  background-image: url("../img/1CC49F7C.png");
+  background-size: var(--tank-width) var(--tank-height);
+  width: var(--tank-width);
+  height: var(--tank-height);
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.TextComponent {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.TextComponentTanque1,
+.TextComponentTanque2 {
+  width: 228px;
+  height: fit-content;
+  background-size: 228px 54px;
+  z-index: 40;
 }
 
 .form__group {
   width: 100%;
   height: 100%;
+  position: relative;
+  max-width: 150px;
 }
 
 .form__field {
@@ -263,9 +317,9 @@ ul li a {
   border: 0;
   border-bottom: 2px solid gray;
   outline: 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: white;
-  padding: 7px 0;
+  padding: 5px 0;
   background: transparent;
   transition: border-color 0.2s;
   text-align: center;
@@ -305,4 +359,834 @@ ul li a {
   border-width: 3px;
   border-image: linear-gradient(to right, white, whitesmoke);
   border-image-slice: 1;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 1200px) {
+  .tank-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tank-controls {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  :root {
+    --logo-width: 70px;
+    --logo-height: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --tank-width: 180px;
+    --tank-height: 320px;
+    --logo-width: 60px;
+    --logo-height: 50px;
+  }
+
+  .LogoBar {
+    flex-wrap: wrap;
+    padding: 10px;
+    height: auto;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  /* Adjust logo size */
+  :root {
+    --logo-width: 50px;
+    --logo-height: 42px;
+  }
+
+  /* Make title smaller */
+  .TextComponent.header-title {
+    order: 2;
+    margin-left: 0;
+    flex: 0 0 100%;  /* Take full width in second row */
+    text-align: center;
+  }
+
+  .TextComponent.header-title h1 {
+    font-size: 24px;  /* Smaller font size */
+    line-height: 1.2;
+    white-space: normal;  /* Allow wrapping if needed */
+  }
+
+  /* Adjust controls layout */
+  .header-controls {
+    order: 1;
+    margin-left: 0;
+    gap: 15px;
+  }
+
+  /* Adjust login section */
+  .login-section {
+    gap: 8px;
+  }
+
+  .login-icon {
+    width: 28px;
+    height: 28px;
+    background-size: 28px 28px;
+  }
+
+  .login-input {
+    width: 80px;
+  }
+
+  .login-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    height: 28px;
+  }
+
+  /* Adjust datetime */
+  .dateTime {
+    order: 3;
+    height: auto;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .dateTime .outer {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .TextComponent {
+    font-size: 24px;
+  }
+
+  .form__field {
+    font-size: 1.3rem;
+  }
+
+  .TextComponent.header-title h1 {
+    font-size: calc(var(--logo-height) * 0.7);
+  }
+
+  .action-buttons button.server_binding {
+    font-size: 12px;
+    min-height: 36px;
+    padding: 6px 10px;
+  }
+
+  .login-button {
+    font-size: 16px;
+    padding: 6px 12px;
+    min-width: 80px;
+  }
+
+  .tank-controls {
+    flex-direction: column;  /* Stack columns on smaller screens */
+    gap: 20px;
+  }
+
+  .tank-group {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tank-info {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .tank-info .TextComponent {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tank-info .TextComponent h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .action-buttons {
+    width: 100%;
+    max-width: var(--tank-width);
+    margin: 0 auto;
+  }
+
+  .dateTime {
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .dateTime .outer {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .percentage-controls {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .tank-controls-container {
+    width: 100%;
+    min-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .tank-controls {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .other-controls {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --logo-width: 50px;
+    --logo-height: 42px;
+  }
+
+  .TextComponent.header-title h1 {
+    font-size: calc(var(--logo-height) * 0.65);
+  }
+  
+  .LogoBar {
+    padding: 5px 10px;
+  }
+}
+
+/* Bar styling improvements */
+.server_binding.bar {
+  background: var(--bar-color);
+}
+
+.whiteBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  transition: height 0.3s ease;
+}
+
+/* Improve button styling */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+button.server_binding {
+  flex: 1;
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+/* Container improvements */
+.MainContainer {
+  padding: 27px max(20px, 5%);
+}
+
+.TanqueContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Form improvements */
+.control-group {
+  width: 100%;
+}
+
+.form__group {
+  max-width: 150px;
+}
+
+/* Update existing classes for better responsiveness */
+.tank-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.tank-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 300px;
+}
+
+/* Add smooth transitions */
+.Tanque, .Logo, button, input {
+  transition: all 0.3s ease;
+}
+
+/* Add these styles for the login section */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.login-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 10px;
+}
+
+.login-icon {
+  background-image: url("../img/028F28FA.png");
+  background-size: 35px 35px;
+  width: 35px;
+  height: 34px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.login-input {
+  width: 102px;
+  height: 30px;
+}
+
+.login-input .form__field {
+  color: black;
+  font-size: 16px;
+}
+
+.login-button {
+  background-color: rgb(20, 60, 112);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  height: 34px;
+  width: auto;
+  min-width: 90px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button:hover {
+  background-color: rgb(30, 70, 122);
+}
+
+/* Improved button styling */
+.action-buttons button.server_binding {
+  flex: 1;
+  min-height: 40px;
+  padding: 8px 12px;
+  background: linear-gradient(145deg, var(--button-gradient-1), var(--button-gradient-2));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.action-buttons button.server_binding:hover {
+  background: linear-gradient(145deg, var(--button-hover-1), var(--button-hover-2));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+.action-buttons button.server_binding:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Update tank title styling */
+.tank-info .TextComponent {
+  font-size: 32px;  /* Reduced from 48px */
+}
+
+.tank-info .TextComponent h2 {
+  margin: 0;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* Update media queries for responsive tank titles */
+@media screen and (max-width: 768px) {
+  .tank-info .TextComponent {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tank-info .TextComponent {
+    font-size: 20px;
+  }
+}
+
+/* Add styles for separated input groups */
+.tank-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;  /* Increased gap between sections */
+}
+
+.percentage-controls {
+  padding-bottom: 0;  /* Remove padding that was used for the border */
+  border-bottom: none;  /* Remove the horizontal line */
+}
+
+.other-controls {
+  flex: 1;  /* Make both columns take equal space */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  min-width: 150px;  /* Minimum width for each column */
+}
+
+/* Style for percentage inputs */
+.percentage-input input {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.percentage-input input::-webkit-outer-spin-button,
+.percentage-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tank-controls-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Update tank controls layout */
+.tank-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  min-width: 320px;
+}
+
+/* Style for the input sections */
+.percentage-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;  /* Space between PV and CV */
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+}
+
+.percentage-controls .control-group {
+  flex: 1;
+  max-width: 150px;  /* Reduced width for better appearance */
+}
+
+.other-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  max-height: 100px;
+}
+
+.other-controls .control-group {
+  width: 100%;
+  max-width: 320px;  /* Reduced width of approximately two percentage inputs plus gap */
+}
+
+/* Media query adjustments */
+@media screen and (max-width: 768px) {
+  .percentage-controls {
+    flex-direction: column;  /* Stack PV and CV vertically */
+    gap: 15px;
+  }
+
+  .percentage-controls .control-group,
+  .other-controls .control-group {
+    max-width: 220px;  /* Reduced from 280px */
+  }
+}
+
+/* Update media queries for better mobile alignment */
+@media screen and (max-width: 768px) {
+  .tank-controls {
+    align-items: center;  /* Center all controls */
+    width: 100%;
+  }
+
+  .percentage-controls {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;  /* Center PV and CV inputs */
+  }
+
+  .percentage-controls .control-group,
+  .other-controls .control-group {
+    max-width: 220px;  /* Reduced from 280px */
+    width: 100%;
+  }
+
+  .other-controls {
+    width: 100%;
+    align-items: center;  /* Center other inputs */
+  }
+
+  .control-group {
+    align-items: center;  /* Center the input labels and fields */
+  }
+
+  .TextComponent {
+    justify-content: center;  /* Center the text labels */
+    width: 100%;
+  }
+
+  .form__group {
+    margin: 0 auto;  /* Center the input fields */
+  }
+}
+
+/* Additional adjustments for even smaller screens */
+@media screen and (max-width: 480px) {
+  .percentage-controls .control-group,
+  .other-controls .control-group {
+    max-width: 180px;  /* Reduced from 240px */
+  }
+}
+
+/* Update header controls spacing */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.login-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 10px;
+}
+
+.dateTime {
+  margin-left: 0;
+  padding-left: 10px;
+  height: 44px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* Update responsive behavior */
+@media screen and (max-width: 768px) {
+  .header-controls {
+    gap: 20px;
+  }
+
+  .login-section {
+    padding-right: 5px;
+  }
+
+  .dateTime {
+    padding-left: 5px;
+  }
+
+  /* Mobile alignment */
+  .tank-controls {
+    align-items: center;
+    width: 100%;
+  }
+
+  .percentage-controls {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .percentage-controls .control-group,
+  .other-controls .control-group {
+    max-width: 220px;
+    width: 100%;
+  }
+
+  .other-controls {
+    width: 100%;
+    align-items: center;
+  }
+
+  .control-group {
+    align-items: center;
+  }
+
+  .TextComponent {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form__group {
+    margin: 0 auto;
+  }
+}
+
+/* Update container widths and responsive behavior */
+.MainContainer {
+  flex: 1;
+  background-color: var(--bg-primary);
+  padding: 27px max(20px, 5%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;  /* Include padding in width calculation */
+}
+
+.TanqueContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Update media queries for mobile */
+@media screen and (max-width: 768px) {
+  .MainContainer {
+    padding: 20px;
+    min-width: 100%;
+  }
+
+  .TanqueContainer {
+    width: 100%;
+    padding: 0;
+  }
+
+  .tank-group {
+    width: 100%;
+    max-width: none;  /* Remove max-width constraint on mobile */
+    margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .tank-controls-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .tank-controls {
+    width: 100%;
+    min-width: 100%;  /* Force full width */
+    padding: 0;
+  }
+
+  .other-controls {
+    flex-direction: column;  /* Stack controls vertically on mobile */
+    width: 100%;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .MainContainer {
+    padding: 15px;
+  }
+
+  .tank-group {
+    padding: 0 5px;
+  }
+}
+
+/* Update mobile styles for input components */
+@media screen and (max-width: 768px) {
+  .tank-controls {
+    flex-direction: column;
+    gap: 30px;
+    min-height: 400px;  /* Add minimum height to prevent overlap */
+    padding: 20px 0;    /* Add padding for spacing */
+  }
+
+  .percentage-controls {
+    flex-direction: column;
+    height: auto;       /* Remove fixed height */
+    min-height: 120px;  /* Set minimum height */
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .other-controls {
+    flex-direction: column;
+    height: auto;       /* Remove fixed height */
+    min-height: 200px;  /* Set minimum height */
+    max-height: none;   /* Remove max height constraint */
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .control-group {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 10px;  /* Add margin between groups */
+  }
+
+  .tank-group {
+    margin-bottom: 40px;  /* Add space between tank groups */
+  }
+
+  /* Ensure proper spacing between tanks */
+  .tank-group + .tank-group {
+    margin-top: 60px;
+  }
+
+  /* Adjust container spacing */
+  .tank-controls-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Additional adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+  .tank-controls {
+    min-height: 450px;  /* Increase minimum height for smaller screens */
+  }
+
+  .control-group {
+    max-width: 240px;
+  }
+}
+
+/* Additional adjustments for even smaller screens */
+@media screen and (max-width: 480px) {
+  .LogoBar {
+    padding: 8px;
+  }
+
+  .TextComponent.header-title h1 {
+    font-size: 20px;
+  }
+
+  .login-input {
+    width: 70px;
+  }
+
+  .login-button {
+    min-width: 70px;
+    font-size: 12px;
+  }
+
+  .dateTime {
+    font-size: 12px;
+  }
+}
+
+/* Add tablet-specific styles (between 768px and 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .LogoBar {
+    flex-wrap: wrap;
+    padding: 15px;
+    height: auto;
+    gap: 15px;
+  }
+
+  /* Adjust logo and title for tablets */
+  :root {
+    --logo-width: 60px;
+    --logo-height: 52px;
+  }
+
+  .TextComponent.header-title {
+    order: 2;
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .TextComponent.header-title h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  /* Adjust controls layout for tablets */
+  .header-controls {
+    order: 1;
+    margin-left: auto;
+    gap: 20px;
+  }
+
+  .login-section {
+    gap: 12px;
+  }
+
+  .login-input {
+    width: 90px;
+  }
+
+  .login-button {
+    min-width: 85px;
+    font-size: 15px;
+  }
+
+  /* Adjust datetime for tablets */
+  .dateTime {
+    order: 3;
+    height: auto;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  /* Adjust tank controls for tablets */
+  .tank-controls {
+    min-height: 350px;
+    padding: 15px 0;
+  }
+
+  .percentage-controls {
+    height: auto;
+    min-height: 100px;
+  }
+
+  .other-controls {
+    flex-direction: column;
+    height: auto;
+    min-height: 80px;
+    gap: 18px;
+  }
+
+  .control-group {
+    max-width: 260px;
+  }
+}
+
+/* Update existing mobile breakpoint to not conflict with tablet */
+@media screen and (max-width: 768px) {
+  /* ... existing mobile styles ... */
 }

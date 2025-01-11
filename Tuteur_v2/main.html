@@ -65,2280 +65,286 @@
     <link rel="stylesheet" href="css/video.css" id="css/video.css" />
 
     <link rel="stylesheet" href="css/webcam.css" id="css/webcam.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <script type="text/javascript" src="js/theme.js"></script>
   </head>
 
   <body onload="loadEditPage()">
+    <button
+      class="theme-toggle"
+      onclick="toggleTheme()"
+      aria-label="Toggle theme"
+    >
+      🌙
+    </button>
     <div class="LogoBar">
-      <div
-        class="Logo"
-        comp_type="ImageComponent"
-        bg_image="img/8CAD163D.png"
-        id="4829918a9367d3723e5f"
-        degree="0"
-      ></div>
-
-      <div
-        class="TextComponent"
-        comp_type="TextComponent"
-        style="
-          left: 105px;
-          top: 0px;
-          width: 654px;
-          height: 70px;
-          background-size: 654px 71px;
-          font-size: 48px;
-          z-index: 2;
-        "
-        id="478ebbcd7729cb88812e"
-        degree="0"
-      >
-        <h1
-          style="
-            display: table-cell;
-            vertical-align: middle;
-            text-align: left;
-            width: 654px;
-            height: 70px;
-          "
-        >
-          ESTADO DE TANQUES
-        </h1>
+      <div class="Logo" role="img" aria-label="Logo"></div>
+      <div class="TextComponent header-title">
+        <h1>ESTADO DE TANQUES</h1>
       </div>
-      <div
-        comp_type="analogDateTimeComponent"
-        class="server_binding dateTime"
-        show_function="_callback_showDateTime"
-        range="132"
-        address="7920"
-        type="2"
-        length="6"
-        show_param="475bb2d8a22911ba6bc2"
-        block_format="Unsigned"
-        id="475bb2d8a22911ba6bc2"
-        degree="0"
-        device_name=""
-        text_align="center"
-        time_format="ft"
-        title="yyyy-MM-dd"
-      >
-        <div>
-          <div class="outer">
-            <div class="dayTime">Fri.13:01:59</div>
-            <div class="date">2019-01-11</div>
-          </div>
-        </div>
-      </div>
-      <div
-        comp_type="PushButton"
-        show_function="_callback_loadPushButton"
-        class="server_binding textCenter"
-        style="
-          line-height: 34px;
-          cursor: pointer;
-          position: absolute;
-          left: 872px;
-          top: 18px;
-          width: 35px;
-          height: 34px;
-          background-size: 35px 35px;
-          transform: rotate(0deg);
-          background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/028F28FA.png');
-          font-style: normal;
-          font-family: Arial;
-          font-size: 14px;
-          color: rgb(0, 0, 0);
-          z-index: 47;
-          background-repeat: no-repeat no-repeat;
-        "
-        range="131"
-        address="5"
-        type="1"
-        length="1"
-        on_text=""
-        off_text=""
-        frequency="1000"
-        mouse_mode="Click"
-        ontouchstart="renderJs.FuncTouchDown(this)"
-        onmousedown="renderJs.FuncMouseDown(this)"
-        onmouseout="renderJs.FuncMouseUp(this)"
-        onmouseup="renderJs.FuncMouseUp(this)"
-        ontouchend="renderJs.FuncTouchUp(this)"
-        onclick="renderJs.onPushButtonClicked(this)"
-        id="4e70841b6577b360d5ef"
-        show_param="4e70841b6577b360d5ef"
-        degree="0"
-        tag_id="533fbfb2-2975-461f-afd6-cae83fa058c1"
-        device_name=""
-        on_image="img/7457F639.png"
-        off_image="img/028F28FA.png"
-        bg_image="img/028F28FA.png"
-        mode="true"
-        text_align="center"
-      >
-        <p
-          style="
-            width: 35px;
-            height: 34px;
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-          "
-        ></p>
-      </div>
-      <div
-        xmlns="http://www.w3.org/1999/xhtml"
-        class="server_binding analog_input LogOff"
-        comp_type="AnalogValueComponent"
-        comp_version="8.3"
-        show_function="_callback_analogValue"
-        style="
-          border: 0px solid red;
-          text-align: right;
-          position: absolute;
-          left: 920px;
-          top: 23px;
-          width: 102px;
-          height: 30px;
-          transform: rotate(0deg);
-          color: rgb(0, 0, 0);
-          z-index: 40;
-        "
-        range="20"
-        address="64"
-        type="4"
-        length="1"
-        show_param="416dad2aa15ab1deee9d"
-        id="416dad2aa15ab1deee9d"
-        degree="0"
-        tag_id="3cd70d5f-c0b6-440d-bb1f-17539c02c344"
-        device_name=""
-        block_format="Unsigned"
-        decimal="1"
-        mode="true"
-        text_align="center"
-      >
-        <style class="invalid416dad2aa15ab1deee9d">
-          .invalid416dad2aa15ab1deee9d:-moz-placeholder {
-            color: rgb(0, 0, 0);
-          }
-          .invalid416dad2aa15ab1deee9d::-moz-placeholder {
-            color: rgb(0, 0, 0);
-          }
-          input.invalid416dad2aa15ab1deee9d:-ms-input-placeholder {
-            color: rgb(0, 0, 0);
-          }
-          input.invalid416dad2aa15ab1deee9d::-webkit-input-placeholder {
-            color: rgb(0, 0, 0);
-          }
-        </style>
-
-        <div class="valueText form__group">
-          <input
-            class="inputVal invalid416dad2aa15ab1deee9d form__field"
-            type="text"
-            size="5"
-            value=""
-            style="color: black"
-          />
-          <span
-            class="unit"
-            style="
-              position: absolute;
-              top: 8px;
-              font-style: normal;
-              font-family: Arial;
-              font-size: 18px;
-              line-height: 18px;
-              color: rgb(0, 0, 0);
-            "
-          ></span>
-        </div>
-
-        <div
-          class="notice"
-          style="
-            color: red;
-            font-style: normal;
-            font-family: Arial;
-            font-size: 18px;
-          "
-        ></div>
-      </div>
-      <div
-        comp_type="PushButton"
-        show_function="_callback_loadPushButton"
-        class="server_binding textCenter"
-        style="
-          line-height: 34px;
-          cursor: pointer;
-          position: absolute;
-          left: 1034px;
-          top: 20px;
-          width: 71px;
-          height: 34px;
-          background-size: 71px 35px;
-          transform: rotate(0deg);
-          background-color: rgb(20, 60, 112);
-          font-style: normal;
-          font-family: Arial;
-          font-size: 18px;
-          color: rgb(255, 255, 255);
-          z-index: 45;
-          background-repeat: no-repeat no-repeat;
-        "
-        range="131"
-        address="8"
-        type="1"
-        length="1"
-        on_text="Log off"
-        off_text="Log off"
-        frequency="1000"
-        mouse_mode="Click"
-        ontouchstart="renderJs.FuncTouchDown(this)"
-        onmousedown="renderJs.FuncMouseDown(this)"
-        onmouseout="renderJs.FuncMouseUp(this)"
-        onmouseup="renderJs.FuncMouseUp(this)"
-        ontouchend="renderJs.FuncTouchUp(this)"
-        onclick="renderJs.onPushButtonClicked(this)"
-        id="405fa89dbc34fef3173f"
-        show_param="405fa89dbc34fef3173f"
-        degree="0"
-        tag_id="7284b247-24b4-418a-acbd-7079ad7ed0e9"
-        device_name=""
-        mode="true"
-        text_align="center"
-      >
-        <p
-          style="
-            width: 71px;
-            height: 34px;
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-          "
-        >
-          Log In
-        </p>
-      </div>
-      <div
-        id="main"
-        onclick="renderJs.hideMenu()"
-        prefix="Siemens"
-        style="width: 1260px; height: 1004px"
-      >
-        <div class="MainContainer">
-          <div class="TanqueContainer">
-            <div
-              class="TextComponent"
-              comp_type="TextComponent"
-              style="
-                left: 154px;
-                top: 103px;
-                width: 228px;
-                height: 53px;
-                background-size: 228px 54px;
-                font-size: 48px;
-                z-index: 16;
-              "
-              id="476c9a6dbe2132c96551"
-              degree="0"
-              text_align="center"
-            >
-              <p
-                style="
-                  display: table-cell;
-                  vertical-align: middle;
-                  text-align: center;
-                  width: 228px;
-                  height: 53px;
-                "
-              >
-                Tanque 1
-              </p>
+      <div class="header-controls">
+        <div class="login-section">
+          <div
+            class="login-icon"
+            role="button"
+            onclick="renderJs.FuncMouseDown(this)"
+            onmouseout="renderJs.FuncMouseUp(this)"
+            onmouseup="renderJs.FuncMouseUp(this)"
+          ></div>
+          <div class="server_binding analog_input login-input">
+            <div class="valueText form__group">
+              <input class="form__field" type="text" size="5" value="" />
             </div>
-            <div
-              class="Tanque"
-              comp_type="ImageComponent"
-              style="position: absolute; left: 154px; top: 188px"
-              bg_image="img/1CC49F7C.png"
-              id="41428175ee5ea8b7173c"
-              degree="0"
-            ></div>
-            <div
-              class="server_binding bar"
-              style="
-                position: absolute;
-                left: 265px;
-                top: 208px;
-                border: 0px solid green;
-                height: 232px;
-                width: 80px;
-                transform: rotate(0deg);
-                z-index: 33;
-              "
-              comp_type="AnalogBarComponent"
-              show_function="_callback_loadAnalogBarComponent"
-              range="18"
-              address="0"
-              type="4"
-              length="1"
-              show_param="42eda9d4f6ca594df210"
-              valbarcol="rgb(255, 0, 0);"
-              max_val="100"
-              min_val="0"
-              min_scale="10"
-              scale_height="23.2"
-              bar_value="50"
-              id="42eda9d4f6ca594df210"
-              degree="0"
-              tag_id="ede4bd44-4cda-4777-9cfd-d35711018f2b"
-              device_name=""
-              block_format="Unsigned"
-              decimal="1"
-              scope_color="100.0,0.0,0.0:30.0:-8355712,30.1:60.0:-12156236,60.1:100.0:-5952982"
-            >
-              <div
-                style="border: 0px solid red; height: 102px; width: 28px"
-                class="bar"
-              >
-                <div style="float: right; margin: 0px">
-                  <ul>
-                    <li
-                      style="
-                        height: 23.2px;
-                        top: 0px;
-                        border-color: rgb(0, 0, 0);
-                      "
-                    >
-                      <a>100</a>
-                    </li>
+          </div>
+          <button
+            class="login-button"
+            onclick="renderJs.onPushButtonClicked(this)"
+          >
+            Log In
+          </button>
+        </div>
+      </div>
+      <div class="dateTime">
+        <div class="outer">
+          <div class="dayTime">Fri.13:01:59</div>
+          <div class="date">2019-01-11</div>
+        </div>
+      </div>
+    </div>
 
-                    <li style="top: 23.2px">
-                      <a>90</a>
-                    </li>
-
-                    <li style="top: 46.4px">
-                      <a>80</a>
-                    </li>
-
-                    <li style="top: 69.6px">
-                      <a>70</a>
-                    </li>
-
-                    <li style="top: 92.8px">
-                      <a>60</a>
-                    </li>
-
-                    <li style="top: 116px; border-color: rgb(0, 0, 0)">
-                      <a>50</a>
-                    </li>
-
-                    <li style="top: 139.2px">
-                      <a>40</a>
-                    </li>
-
-                    <li style="top: 162.39999999999998px">
-                      <a>30</a>
-                    </li>
-
-                    <li style="top: 185.59999999999997px">
-                      <a>20</a>
-                    </li>
-
-                    <li style="top: 208.79999999999995px">
-                      <a>10</a>
-                    </li>
-
-                    <li
-                      style="
-                        height: 1px;
-                        top: 232px;
-                        border-color: rgb(0, 0, 0);
-                      "
-                    >
-                      <a>0</a>
-                    </li>
-                  </ul>
+    <div id="main">
+      <div class="MainContainer">
+        <div class="TanqueContainer">
+          <div class="tank-group">
+            <div class="tank-info">
+              <div class="TextComponent">
+                <h2>Tanque 1</h2>
+              </div>
+              <div class="Tanque" role="img" aria-label="Tanque 1">
+                <div class="server_binding bar">
+                  <div class="bar">
+                    <ul>
+                      <li><a>100</a></li>
+                      <li><a>90</a></li>
+                      <li><a>80</a></li>
+                      <li><a>70</a></li>
+                      <li><a>60</a></li>
+                      <li><a>50</a></li>
+                      <li><a>40</a></li>
+                      <li><a>30</a></li>
+                      <li><a>20</a></li>
+                      <li><a>10</a></li>
+                      <li><a>0</a></li>
+                    </ul>
+                  </div>
+                  <div class="whiteBg"></div>
                 </div>
               </div>
-
-              <div
-                id="barBg"
-                class="barBg"
-                style="
-                  width: 28px;
-                  background-color: rgb(70, 130, 180);
-                  height: 100%;
-                  float: left;
-                  border: 1px solid rgb(0, 0, 0);
-                "
-              ></div>
-
-              <div
-                class="whiteBg"
-                style="
-                  width: 28px;
-                  height: 115px;
-                  position: absolute;
-                  background-color: white;
-                  top: 1px;
-                  left: 1px;
-                "
-              ></div>
-              <input type="hidden" class="k" value="0/" />
-              <input type="hidden" class="analogValueColor" value="" />
-            </div>
-          </div>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            comp_type="LineComponent"
-            id="47ec851b55c3d743acae"
-            version="1.1"
-            baseProfile="tiny"
-            width="100%"
-            height="100%"
-            style="
-              position: absolute;
-              top: 0px;
-              left: 0px;
-              z-index: 37;
-              pointer-events: none;
-            "
-          >
-            <g>
-              <polyline
-                fill="none"
-                stroke="rgb(0,0,0)"
-                stroke-width="1"
-                stroke-dasharray="0"
-                filter="Alpha(opacity=100)"
-                opacity="1"
-                points="-6848,81 -5547,80 "
-                stroke-linecap="round"
-              ></polyline>
-            </g>
-          </svg>
-
-          <script
-            type="text/javascript"
-            id="script_416dad2aa15ab1deee9d"
-          ></script>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: center;
-              position: absolute;
-              left: 638px;
-              top: 228px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              z-index: 42;
-              color: rgb(204, 204, 204);
-            "
-            range="18"
-            address="0"
-            type="4"
-            length="1"
-            show_param="40beb7875d5ab73c9e1a"
-            id="40beb7875d5ab73c9e1a"
-            degree="0"
-            tag_id="ede4bd44-4cda-4777-9cfd-d35711018f2b"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="false"
-            text_align="right"
-          >
-            <style class="invalid40beb7875d5ab73c9e1a">
-              .invalid40beb7875d5ab73c9e1a:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid40beb7875d5ab73c9e1a::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid40beb7875d5ab73c9e1a:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid40beb7875d5ab73c9e1a::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid40beb7875d5ab73c9e1a form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-                >%</span
-              >
-            </div>
-
-            <div
-              class="notice"
-              style="color: red; font-style: normal; font-size: 36px"
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_40beb7875d5ab73c9e1a"
-          ></script>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 1154px;
-              top: 586px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(255, 255, 255);
-              z-index: 43;
-            "
-            range="10"
-            address="480"
-            type="4"
-            length="1"
-            show_param="453ea683ca94510b8cac"
-            id="453ea683ca94510b8cac"
-            degree="0"
-            tag_id="40ec982b-a149-4b18-b206-9ec20bade01e"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="true"
-            text_align="center"
-          >
-            <style class="invalid453ea683ca94510b8cac">
-              .invalid453ea683ca94510b8cac:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid453ea683ca94510b8cac::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid453ea683ca94510b8cac:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid453ea683ca94510b8cac::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid453ea683ca94510b8cac form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 23px;
-                  font-style: normal;
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-                >%</span
-              >
-            </div>
-
-            <div
-              class="notice"
-              style="color: red; font-style: normal; font-size: 36px"
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_453ea683ca94510b8cac"
-          ></script>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 638px;
-              top: 286px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(204, 204, 204);
-              z-index: 42;
-            "
-            range="20"
-            address="0"
-            type="4"
-            length="1"
-            show_param="4300b365ba6d3849d6dc"
-            id="4300b365ba6d3849d6dc"
-            degree="0"
-            tag_id="f8a185f6-9b33-425b-8fea-ebe5c8166d58"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="false"
-            text_align="right"
-          >
-            <style class="invalid4300b365ba6d3849d6dc">
-              .invalid4300b365ba6d3849d6dc:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid4300b365ba6d3849d6dc::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4300b365ba6d3849d6dc:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4300b365ba6d3849d6dc::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid4300b365ba6d3849d6dc form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-                >seg</span
-              >
-            </div>
-
-            <div
-              class="notice"
-              style="color: red; font-style: normal; font-size: 36px"
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_4300b365ba6d3849d6dc"
-          ></script>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 638px;
-              top: 345px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(204, 204, 204);
-              z-index: 42;
-            "
-            range="20"
-            address="16"
-            type="4"
-            length="1"
-            show_param="44a9a53235537e094472"
-            id="44a9a53235537e094472"
-            degree="0"
-            tag_id="09a28bb3-c3d0-45c8-a63c-59dd7c80e88e"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="false"
-            text_align="right"
-          >
-            <style class="invalid44a9a53235537e094472">
-              .invalid44a9a53235537e094472:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid44a9a53235537e094472::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid44a9a53235537e094472:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid44a9a53235537e094472::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid44a9a53235537e094472 form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-                >min</span
-              >
-            </div>
-
-            <div
-              class="notice"
-              style="color: red; font-style: normal; font-size: 36px"
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_44a9a53235537e094472"
-          ></script>
-
-          <div
-            class="TextComponent"
-            comp_type="TextComponent"
-            style="
-              left: 514px;
-              top: 186px;
-              width: 114px;
-              height: 34px;
-              background-size: 114px 35px;
-              font-size: 24px;
-              z-index: 40;
-            "
-            id="4be1a7cea4fabbfc80a4"
-            degree="0"
-            text_align="center"
-          >
-            <p
-              style="
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-                width: 114px;
-                height: 34px;
-              "
-            >
-              PV
-            </p>
-          </div>
-
-          <div
-            class="TextComponent"
-            comp_type="TextComponent"
-            style="
-              left: 640px;
-              top: 186px;
-              width: 114px;
-              height: 34px;
-              background-size: 114px 35px;
-              font-size: 24px;
-              z-index: 41;
-            "
-            id="46fdaf915b38adac02ea"
-            degree="0"
-            text_align="center"
-          >
-            <p
-              style="
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-                width: 114px;
-                height: 34px;
-              "
-            >
-              CV
-            </p>
-          </div>
-
-          <div
-            class="TextComponent"
-            comp_type="TextComponent"
-            style="
-              left: 358px;
-              top: 256px;
-              width: 154px;
-              height: 84px;
-              background-size: 154px 85px;
-              font-size: 20px;
-              z-index: 40;
-            "
-            id="4340bd6a04854f93dbc7"
-            degree="0"
-            text_align="center"
-          >
-            <p
-              style="
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-                width: 154px;
-                height: 84px;
-              "
-            >
-              Filtro
-            </p>
-          </div>
-
-          <div
-            class="TextComponent"
-            comp_type="TextComponent"
-            style="
-              left: 358px;
-              top: 326px;
-              width: 154px;
-              height: 84px;
-              background-size: 154px 85px;
-              font-size: 18px;
-              z-index: 43;
-            "
-            id="4c00a7948ca85a4401d9"
-            degree="0"
-            text_align="center"
-          >
-            <p
-              style="
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-                width: 154px;
-                height: 84px;
-              "
-            >
-              Tiempo entre alertas
-            </p>
-          </div>
-
-          <div
-            class="TextComponent"
-            comp_type="TextComponent"
-            style="
-              left: 514px;
-              top: 545px;
-              width: 114px;
-              height: 34px;
-              background-size: 114px 35px;
-              font-size: 24px;
-              z-index: 41;
-            "
-            id="47bd9a5d10aebdc3a4d4"
-            degree="0"
-            text_align="center"
-          >
-            <p
-              style="
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-                width: 114px;
-                height: 34px;
-              "
-            >
-              PV
-            </p>
-          </div>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 518px;
-              top: 586px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(255, 255, 255);
-              z-index: 42;
-            "
-            range="10"
-            address="240"
-            type="4"
-            length="1"
-            show_param="48b38ea927b5a1ce9a17"
-            id="48b38ea927b5a1ce9a17"
-            degree="0"
-            tag_id="39091180-aaba-4ed0-8e5c-27dd525c0b28"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="true"
-            text_align="center"
-          >
-            <style class="invalid48b38ea927b5a1ce9a17">
-              .invalid48b38ea927b5a1ce9a17:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid48b38ea927b5a1ce9a17::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid48b38ea927b5a1ce9a17:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid48b38ea927b5a1ce9a17::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid48b38ea927b5a1ce9a17 form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-              ></span>
-            </div>
-
-            <div
-              class="notice"
-              style="
-                color: red;
-                font-style: normal;
-
-                font-size: 36px;
-              "
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_48b38ea927b5a1ce9a17"
-          ></script>
-
-          <div
-            class="TextComponent"
-            comp_type="TextComponent"
-            style="
-              left: 640px;
-              top: 545px;
-              width: 114px;
-              height: 34px;
-              background-size: 114px 35px;
-
-              font-size: 24px;
-              z-index: 43;
-            "
-            id="4d528c7375fe5b1add40"
-            degree="0"
-            text_align="center"
-          >
-            <p
-              style="
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-                width: 114px;
-                height: 34px;
-              "
-            >
-              CV
-            </p>
-          </div>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 518px;
-              top: 686px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(255, 255, 255);
-              z-index: 44;
-            "
-            range="10"
-            address="400"
-            type="4"
-            length="1"
-            show_param="4e6f9e4322e4c8b5d171"
-            id="4e6f9e4322e4c8b5d171"
-            degree="0"
-            tag_id="67827609-d76a-4be8-a9f9-35a518523950"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="true"
-            text_align="center"
-          >
-            <style class="invalid4e6f9e4322e4c8b5d171">
-              .invalid4e6f9e4322e4c8b5d171:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid4e6f9e4322e4c8b5d171::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4e6f9e4322e4c8b5d171:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4e6f9e4322e4c8b5d171::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid4e6f9e4322e4c8b5d171 form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-              ></span>
-            </div>
-
-            <div
-              class="notice"
-              style="
-                color: red;
-                font-style: normal;
-
-                font-size: 36px;
-              "
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_4e6f9e4322e4c8b5d171"
-          ></script>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 518px;
-              top: 788px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(255, 255, 255);
-              z-index: 45;
-            "
-            range="10"
-            address="320"
-            type="4"
-            length="1"
-            show_param="445d9aa30f8ccc59026e"
-            id="445d9aa30f8ccc59026e"
-            degree="0"
-            tag_id="f706925f-12db-43d6-a3de-29359cac6ad9"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="true"
-            text_align="center"
-          >
-            <style class="invalid445d9aa30f8ccc59026e">
-              .invalid445d9aa30f8ccc59026e:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid445d9aa30f8ccc59026e::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid445d9aa30f8ccc59026e:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid445d9aa30f8ccc59026e::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid445d9aa30f8ccc59026e form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-              ></span>
-            </div>
-
-            <div
-              class="notice"
-              style="
-                color: red;
-                font-style: normal;
-
-                font-size: 36px;
-              "
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_445d9aa30f8ccc59026e"
-          ></script>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 638px;
-              top: 586px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(204, 204, 204);
-              z-index: 46;
-            "
-            range="18"
-            address="16"
-            type="4"
-            length="1"
-            show_param="4bb998020113d8cadf22"
-            id="4bb998020113d8cadf22"
-            degree="0"
-            tag_id="6bf93ebc-7739-419f-8911-88be486a6d6e"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="false"
-            text_align="right"
-          >
-            <style class="invalid4bb998020113d8cadf22">
-              .invalid4bb998020113d8cadf22:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid4bb998020113d8cadf22::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4bb998020113d8cadf22:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4bb998020113d8cadf22::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid4bb998020113d8cadf22 form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-                >%</span
-              >
-            </div>
-
-            <div
-              class="notice"
-              style="
-                color: red;
-                font-style: normal;
-
-                font-size: 36px;
-              "
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_4bb998020113d8cadf22"
-          ></script>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 638px;
-              top: 788px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(204, 204, 204);
-              z-index: 47;
-            "
-            range="20"
-            address="48"
-            type="4"
-            length="1"
-            show_param="4323bbca07c959447992"
-            id="4323bbca07c959447992"
-            degree="0"
-            tag_id="7edf21cf-1e22-4bee-84f7-597f709515a2"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="false"
-            text_align="right"
-          >
-            <style class="invalid4323bbca07c959447992">
-              .invalid4323bbca07c959447992:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid4323bbca07c959447992::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4323bbca07c959447992:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4323bbca07c959447992::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid4323bbca07c959447992 form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-                >min</span
-              >
-            </div>
-
-            <div
-              class="notice"
-              style="
-                color: red;
-                font-style: normal;
-
-                font-size: 36px;
-              "
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_4323bbca07c959447992"
-          ></script>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 638px;
-              top: 686px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(204, 204, 204);
-              z-index: 48;
-            "
-            range="20"
-            address="32"
-            type="4"
-            length="1"
-            show_param="401a827fae5feb9c5424"
-            id="401a827fae5feb9c5424"
-            degree="0"
-            tag_id="c5f36024-8b3f-41e8-a0e0-7a91180ca535"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="false"
-            text_align="right"
-          >
-            <style class="invalid401a827fae5feb9c5424">
-              .invalid401a827fae5feb9c5424:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid401a827fae5feb9c5424::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid401a827fae5feb9c5424:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid401a827fae5feb9c5424::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid401a827fae5feb9c5424 form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-                >seg</span
-              >
-            </div>
-
-            <div
-              class="notice"
-              style="
-                color: red;
-                font-style: normal;
-
-                font-size: 36px;
-              "
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_401a827fae5feb9c5424"
-          ></script>
-          <div
-            class="TextComponent"
-            comp_type="TextComponent"
-            style="
-              position: absolute;
-              left: 358px;
-              top: 195px;
-              width: 154px;
-              height: 84px;
-              background-size: 154px 85px;
-              font-size: 18px;
-              z-index: 18;
-            "
-            id="4f23887d154b95e66743"
-            degree="0"
-            text_align="center"
-          >
-            <p
-              style="
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-                width: 154px;
-                height: 84px;
-              "
-            >
-              Nivel de alerta
-            </p>
-          </div>
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 518px;
-              top: 228px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              z-index: 39;
-            "
-            range="10"
-            address="560"
-            type="4"
-            length="1"
-            show_param="47afb3fc461931d59d41"
-            id="47afb3fc461931d59d41"
-            degree="0"
-            tag_id="2dfd4767-f7b6-4e0e-8a18-4b11b775440a"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="true"
-            text_align="center"
-          >
-            <style class="invalid47afb3fc461931d59d41">
-              .invalid47afb3fc461931d59d41:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid47afb3fc461931d59d41::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid47afb3fc461931d59d41:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid47afb3fc461931d59d41::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid47afb3fc461931d59d41 form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 923px;
-                  font-style: normal;
-                  left: 200px;
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(255, 255, 255);
-                  z-index: 60;
-                "
-                >%</span
-              >
-            </div>
-
-            <div
-              class="notice"
-              style="
-                color: red;
-                font-style: normal;
-
-                font-size: 36px;
-              "
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_47afb3fc461931d59d41"
-          ></script>
-          <div class="TanqueContainer">
-            <div
-              class="TextComponent"
-              comp_type="TextComponent"
-              style="
-                left: 154px;
-                top: 552px;
-                width: 228px;
-                height: 53px;
-                background-size: 228px 54px;
-                font-size: 48px;
-                z-index: 40;
-              "
-              id="4c04ad7599cef777fc36"
-              degree="0"
-              text_align="center"
-            >
-              <p
-                style="
-                  display: table-cell;
-                  vertical-align: middle;
-                  text-align: center;
-                  width: 228px;
-                  height: 53px;
-                "
-              >
-                Tanque 2
-              </p>
-            </div>
-          </div>
-          <div
-            class="Tanque"
-            comp_type="ImageComponent"
-            style="
-              background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/1CC49F7C.png');
-              background-size: 183px 326px;
-              position: absolute;
-              left: 154px;
-              top: 688px;
-              width: 183px;
-              height: 325px;
-              transform: rotate(0deg);
-              z-index: 40;
-              background-repeat: no-repeat no-repeat;
-            "
-            bg_image="img/1CC49F7C.png"
-            id="4e86947c427c6c037a77"
-            degree="0"
-          ></div>
-
-          <div
-            class="server_binding"
-            style="
-              position: absolute;
-              left: 268px;
-              top: 705px;
-              border: 0px solid green;
-              height: 232px;
-              width: 80px;
-              transform: rotate(0deg);
-              z-index: 41;
-            "
-            comp_type="AnalogBarComponent"
-            show_function="_callback_loadAnalogBarComponent"
-            range="18"
-            address="16"
-            type="4"
-            length="1"
-            show_param="434b8f5c8a9635cada8a"
-            valbarcol="rgb(255, 0, 0);"
-            max_val="100"
-            min_val="0"
-            min_scale="10"
-            scale_height="23.2"
-            bar_value="50"
-            id="434b8f5c8a9635cada8a"
-            degree="0"
-            tag_id="6bf93ebc-7739-419f-8911-88be486a6d6e"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            scope_color="100.0,0.0,0.0:30.0:-8355712,30.1:60.0:-12156236,60.1:100.0:-5952982"
-          >
-            <div
-              style="border: 0px solid red; height: 232px; width: 28px"
-              class="bar"
-            >
-              <div style="float: right; margin: 0px">
-                <ul>
-                  <li
-                    style="height: 23.2px; top: 0px; border-color: rgb(0, 0, 0)"
-                  >
-                    <a>100</a>
-                  </li>
-
-                  <li style="top: 23.2px">
-                    <a>90</a>
-                  </li>
-
-                  <li style="top: 46.4px">
-                    <a>80</a>
-                  </li>
-
-                  <li style="top: 69.6px">
-                    <a>70</a>
-                  </li>
-
-                  <li style="top: 92.8px">
-                    <a>60</a>
-                  </li>
-
-                  <li style="top: 116px; border-color: rgb(0, 0, 0)">
-                    <a>50</a>
-                  </li>
-
-                  <li style="top: 139.2px">
-                    <a>40</a>
-                  </li>
-
-                  <li style="top: 162.39999999999998px">
-                    <a>30</a>
-                  </li>
-
-                  <li style="top: 185.59999999999997px">
-                    <a>20</a>
-                  </li>
-
-                  <li style="top: 208.79999999999995px">
-                    <a>10</a>
-                  </li>
-
-                  <li
-                    style="height: 1px; top: 232px; border-color: rgb(0, 0, 0)"
-                  >
-                    <a>0</a>
-                  </li>
-                </ul>
+              <div class="action-buttons">
+                <button
+                  class="server_binding textCenter"
+                  onclick="renderJs.setDigitalData(this)"
+                >
+                  Simular valor
+                </button>
+                <button
+                  class="server_binding textCenter"
+                  onclick="renderJs.onPushButtonClicked(this)"
+                >
+                  Enviar mail
+                </button>
               </div>
+            </div>
+            <div class="tank-controls-container">
+              <div class="tank-controls">
+                <div class="percentage-controls">
+                  <div class="control-group">
+                    <div class="TextComponent">PV</div>
+                    <div class="server_binding analog_input percentage-input">
+                      <div class="valueText form__group">
+                        <input
+                          type="number"
+                          class="form__field"
+                          value=""
+                          min="0"
+                          max="100"
+                          onkeypress="return validatePercentage(event)"
+                          oninput="limitPercentage(this)"
+                        />
+                        <span class="unit">%</span>
+                      </div>
+                    </div>
+                  </div>
 
-              <div
-                id="barBg"
-                class="barBg"
-                style="
-                  width: 28px;
-                  background-color: rgb(70, 130, 180);
-                  height: 100%;
-                  float: left;
-                  border: 1px solid rgb(0, 0, 0);
-                "
-              ></div>
+                  <div class="control-group">
+                    <div class="TextComponent">CV</div>
+                    <div class="server_binding analog_input percentage-input">
+                      <div class="valueText form__group">
+                        <input
+                          type="number"
+                          class="form__field"
+                          value=""
+                          min="0"
+                          max="100"
+                          onkeypress="return validatePercentage(event)"
+                          oninput="limitPercentage(this)"
+                        />
+                        <span class="unit">%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-              <div
-                class="whiteBg"
-                style="
-                  width: 28px;
-                  height: 115px;
-                  position: absolute;
-                  background-color: white;
-                  top: 1px;
-                  left: 1px;
-                "
-              ></div>
-              <input type="hidden" class="k" value="0/" />
-              <input type="hidden" class="analogValueColor" value="" />
+                <div class="other-controls">
+                  <div class="control-group">
+                    <div class="TextComponent">Nivel de alerta</div>
+                    <div class="server_binding analog_input">
+                      <div class="valueText form__group">
+                        <input type="text" class="form__field" value="" />
+                        <span class="unit">%</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="control-group">
+                    <div class="TextComponent">Filtro</div>
+                    <div class="server_binding analog_input">
+                      <div class="valueText form__group">
+                        <input type="text" class="form__field" value="" />
+                        <span class="unit">seg</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="control-group">
+                    <div class="TextComponent">Tiempo entre alertas</div>
+                    <div class="server_binding analog_input">
+                      <div class="valueText form__group">
+                        <input type="text" class="form__field" value="" />
+                        <span class="unit">min</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 518px;
-              top: 286px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(255, 255, 255);
-              z-index: 42;
-            "
-            range="10"
-            address="0"
-            type="4"
-            length="1"
-            show_param="4263910a8a5c25a3df7f"
-            id="4263910a8a5c25a3df7f"
-            degree="0"
-            tag_id="4460aaa3-5ef4-4929-b56b-d1ea13e90bc7"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="true"
-            text_align="center"
-          >
-            <style class="invalid4263910a8a5c25a3df7f">
-              .invalid4263910a8a5c25a3df7f:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid4263910a8a5c25a3df7f::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4263910a8a5c25a3df7f:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4263910a8a5c25a3df7f::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
 
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid4263910a8a5c25a3df7f form__field"
-                type="text"
-                size="5"
-                value=""
-                style=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-              ></span>
+          <div class="tank-group">
+            <div class="tank-info">
+              <div class="TextComponent">
+                <h2>Tanque 2</h2>
+              </div>
+              <div class="Tanque" role="img" aria-label="Tanque 1">
+                <div class="server_binding bar">
+                  <div class="bar">
+                    <ul>
+                      <li><a>100</a></li>
+                      <li><a>90</a></li>
+                      <li><a>80</a></li>
+                      <li><a>70</a></li>
+                      <li><a>60</a></li>
+                      <li><a>50</a></li>
+                      <li><a>40</a></li>
+                      <li><a>30</a></li>
+                      <li><a>20</a></li>
+                      <li><a>10</a></li>
+                      <li><a>0</a></li>
+                    </ul>
+                  </div>
+                  <div class="whiteBg"></div>
+                </div>
+              </div>
+              <div class="action-buttons">
+                <button
+                  class="server_binding textCenter"
+                  onclick="renderJs.setDigitalData(this)"
+                >
+                  Simular valor
+                </button>
+                <button
+                  class="server_binding textCenter"
+                  onclick="renderJs.onPushButtonClicked(this)"
+                >
+                  Enviar mail
+                </button>
+              </div>
             </div>
+            <div class="tank-controls-container">
+              <div class="tank-controls">
+                <div class="percentage-controls">
+                  <div class="control-group">
+                    <div class="TextComponent">PV</div>
+                    <div class="server_binding analog_input percentage-input">
+                      <div class="valueText form__group">
+                        <input
+                          type="number"
+                          class="form__field"
+                          value=""
+                          min="0"
+                          max="100"
+                          onkeypress="return validatePercentage(event)"
+                          oninput="limitPercentage(this)"
+                        />
+                        <span class="unit">%</span>
+                      </div>
+                    </div>
+                  </div>
 
-            <div
-              class="notice"
-              style="color: red; font-style: normal; font-size: 36px"
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_4263910a8a5c25a3df7f"
-          ></script>
+                  <div class="control-group">
+                    <div class="TextComponent">CV</div>
+                    <div class="server_binding analog_input percentage-input">
+                      <div class="valueText form__group">
+                        <input
+                          type="number"
+                          class="form__field"
+                          value=""
+                          min="0"
+                          max="100"
+                          onkeypress="return validatePercentage(event)"
+                          oninput="limitPercentage(this)"
+                        />
+                        <span class="unit">%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 518px;
-              top: 345px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(255, 255, 255);
-              z-index: 43;
-            "
-            range="10"
-            address="160"
-            type="4"
-            length="1"
-            show_param="4c1fbb25f40490034993"
-            id="4c1fbb25f40490034993"
-            degree="0"
-            tag_id="2b883231-4e40-47e0-bdee-edfe9b3d33b9"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="true"
-            text_align="center"
-          >
-            <style class="invalid4c1fbb25f40490034993">
-              .invalid4c1fbb25f40490034993:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid4c1fbb25f40490034993::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4c1fbb25f40490034993:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid4c1fbb25f40490034993::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
+                <div class="other-controls">
+                  <div class="control-group">
+                    <div class="TextComponent">Nivel de alerta</div>
+                    <div class="server_binding analog_input">
+                      <div class="valueText form__group">
+                        <input type="text" class="form__field" value="" />
+                        <span class="unit">%</span>
+                      </div>
+                    </div>
+                  </div>
 
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid4c1fbb25f40490034993 form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
+                  <div class="control-group">
+                    <div class="TextComponent">Filtro</div>
+                    <div class="server_binding analog_input">
+                      <div class="valueText form__group">
+                        <input type="text" class="form__field" value="" />
+                        <span class="unit">seg</span>
+                      </div>
+                    </div>
+                  </div>
 
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-              ></span>
+                  <div class="control-group">
+                    <div class="TextComponent">Tiempo entre alertas</div>
+                    <div class="server_binding analog_input">
+                      <div class="valueText form__group">
+                        <input type="text" class="form__field" value="" />
+                        <span class="unit">min</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div
-              class="notice"
-              style="
-                color: red;
-                font-style: normal;
-
-                font-size: 36px;
-              "
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_4c1fbb25f40490034993"
-          ></script>
-
-          <div
-            class="server_binding analog_input"
-            comp_type="AnalogValueComponent"
-            comp_version="8.3"
-            show_function="_callback_analogValue"
-            style="
-              border: 0px solid red;
-              text-align: right;
-              position: absolute;
-              left: 804px;
-              top: 286px;
-              width: 114px;
-              height: 30px;
-              transform: rotate(0deg);
-              color: rgb(255, 255, 255);
-              z-index: 44;
-            "
-            range="10"
-            address="80"
-            type="4"
-            length="1"
-            show_param="424abc15f53f1637712e"
-            id="424abc15f53f1637712e"
-            degree="0"
-            tag_id="0423c298-ba8f-40b6-b5a6-23627620b99c"
-            device_name=""
-            block_format="Unsigned"
-            decimal="1"
-            mode="true"
-            text_align="center"
-          >
-            <style class="invalid424abc15f53f1637712e">
-              .invalid424abc15f53f1637712e:-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              .invalid424abc15f53f1637712e::-moz-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid424abc15f53f1637712e:-ms-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-              input.invalid424abc15f53f1637712e::-webkit-input-placeholder {
-                color: rgb(0, 0, 0);
-              }
-            </style>
-
-            <div class="valueText form__group">
-              <input
-                class="inputVal invalid424abc15f53f1637712e form__field"
-                type="text"
-                size="5"
-                value=""
-              />
-              <span
-                class="unit"
-                style="
-                  position: absolute;
-                  top: 24px;
-                  font-style: normal;
-
-                  font-size: 36px;
-                  line-height: 36px;
-                  color: rgb(0, 0, 0);
-                "
-              ></span>
-            </div>
-
-            <div
-              class="notice"
-              style="
-                color: red;
-                font-style: normal;
-
-                font-size: 36px;
-              "
-            ></div>
-          </div>
-          <script
-            type="text/javascript"
-            id="script_424abc15f53f1637712e"
-          ></script>
-
-          <div
-            comp_type="CustomizedComponent"
-            show_function="_callback_loadCustomizedComponent"
-            class="server_binding textCenter"
-            style="
-              position: absolute;
-              left: 937px;
-              top: 280px;
-              width: 114px;
-              height: 44px;
-              background-size: 114px 45px;
-              transform: rotate(0deg);
-              background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/Default.png');
-              cursor: pointer;
-              font-style: normal;
-              font-family: Arial;
-              font-size: 14px;
-              color: rgb(0, 0, 0);
-              z-index: 42;
-              background-repeat: no-repeat no-repeat;
-            "
-            range="131"
-            address="9"
-            type="1"
-            length="1"
-            on_text="SIMULACION<br/>CARGADA"
-            off_text="Simular valor"
-            id="4f9a91d639bbc63a0092"
-            show_param="4f9a91d639bbc63a0092"
-            degree="0"
-            tag_id="30acf857-eba8-4a7b-a045-d98ea4e56598"
-            device_name=""
-            on_image="img/00823023.png"
-            off_image="img/Default.png"
-            bg_image="img/Default.png"
-            mode="true"
-            text_align="center"
-            onclick="renderJs.setDigitalData(this)"
-          >
-            <p
-              style="
-                width: 114px;
-                height: 44px;
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-              "
-            >
-              Simular valor
-            </p>
-          </div>
-
-          <div
-            comp_type="CustomizedComponent"
-            show_function="_callback_loadCustomizedComponent"
-            class="server_binding textCenter"
-            style="
-              position: absolute;
-              left: 988px;
-              top: 675px;
-              width: 114px;
-              height: 44px;
-              background-size: 114px 45px;
-              transform: rotate(0deg);
-              background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/Default.png');
-              cursor: pointer;
-              font-style: normal;
-              font-family: Arial;
-              font-size: 14px;
-              color: rgb(0, 0, 0);
-              z-index: 41;
-              background-repeat: no-repeat no-repeat;
-            "
-            range="131"
-            address="10"
-            type="1"
-            length="1"
-            on_text="SIMULACION<br/>CARGADA"
-            off_text="Simular valor"
-            id="4b929838491a293de8ca"
-            show_param="4b929838491a293de8ca"
-            degree="0"
-            tag_id="8dd4c2ec-fd29-4e12-8840-8d8b3800bc76"
-            device_name=""
-            on_image="img/00823023.png"
-            off_image="img/Default.png"
-            bg_image="img/Default.png"
-            mode="true"
-            text_align="center"
-            onclick="renderJs.setDigitalData(this)"
-          >
-            <p
-              style="
-                width: 114px;
-                height: 44px;
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-              "
-            >
-              Simular valor
-            </p>
-          </div>
-
-          <div
-            comp_type="PushButton"
-            show_function="_callback_loadPushButton"
-            class="server_binding textCenter"
-            style="
-              line-height: 44px;
-              cursor: pointer;
-              position: absolute;
-              left: 1067px;
-              top: 280px;
-              width: 122px;
-              height: 44px;
-              background-size: 122px 45px;
-              transform: rotate(0deg);
-              background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/620118B2.png');
-              font-style: normal;
-              font-family: Arial;
-              font-size: 14px;
-              color: rgb(0, 0, 0);
-              z-index: 44;
-              background-repeat: no-repeat no-repeat;
-            "
-            range="131"
-            address="1"
-            type="1"
-            length="1"
-            on_text="Mantener 10sec"
-            off_text="Enviar mail"
-            frequency="1000"
-            mouse_mode="Hold"
-            ontouchstart="renderJs.FuncTouchDown(this)"
-            onmousedown="renderJs.FuncMouseDown(this)"
-            onmouseout="renderJs.FuncMouseUp(this)"
-            onmouseup="renderJs.FuncMouseUp(this)"
-            ontouchend="renderJs.FuncTouchUp(this)"
-            onclick="renderJs.onPushButtonClicked(this)"
-            id="4b66a5200bf17d934783"
-            show_param="4b66a5200bf17d934783"
-            degree="0"
-            tag_id="1c637a15-10c7-47bb-872e-ad7c51f55895"
-            device_name=""
-            on_image="img/00823023.png"
-            off_image="img/620118B2.png"
-            bg_image="img/620118B2.png"
-            mode="true"
-            text_align="center"
-          >
-            <p
-              style="
-                width: 122px;
-                height: 44px;
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-              "
-            >
-              Enviar mail
-            </p>
-          </div>
-
-          <div
-            comp_type="PushButton"
-            show_function="_callback_loadPushButton"
-            class="server_binding textCenter"
-            style="
-              line-height: 44px;
-              cursor: pointer;
-              position: absolute;
-              left: 1002px;
-              top: 806px;
-              width: 122px;
-              height: 44px;
-              background-size: 122px 45px;
-              transform: rotate(0deg);
-              background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/620118B2.png');
-              font-style: normal;
-              font-family: Arial;
-              font-size: 14px;
-              color: rgb(0, 0, 0);
-              z-index: 43;
-              background-repeat: no-repeat no-repeat;
-            "
-            range="131"
-            address="4"
-            type="1"
-            length="1"
-            on_text="Mantener 10sec"
-            off_text="Enviar mail"
-            frequency="1000"
-            mouse_mode="Hold"
-            ontouchstart="renderJs.FuncTouchDown(this)"
-            onmousedown="renderJs.FuncMouseDown(this)"
-            onmouseout="renderJs.FuncMouseUp(this)"
-            onmouseup="renderJs.FuncMouseUp(this)"
-            ontouchend="renderJs.FuncTouchUp(this)"
-            onclick="renderJs.onPushButtonClicked(this)"
-            id="45769d2dde598663426a"
-            show_param="45769d2dde598663426a"
-            degree="0"
-            tag_id="46b2859d-4049-42c6-91b7-631996daee86"
-            device_name=""
-            on_image="img/00823023.png"
-            off_image="img/620118B2.png"
-            bg_image="img/620118B2.png"
-            mode="true"
-            text_align="center"
-          >
-            <p
-              style="
-                width: 122px;
-                height: 44px;
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-              "
-            >
-              Enviar mail
-            </p>
-          </div>
-
-          <div
-            comp_type="CustomizedComponent"
-            show_function="_callback_loadCustomizedComponent"
-            class="server_binding textCenter"
-            style="
-              position: absolute;
-              left: 1200px;
-              top: 280px;
-              width: 44px;
-              height: 44px;
-              background-size: 44px 45px;
-              transform: rotate(0deg);
-              background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/5A35E79C.png');
-              cursor: not-allowed;
-              font-style: normal;
-              font-family: Arial;
-              font-size: 14px;
-              color: rgb(0, 0, 0);
-              z-index: 43;
-              background-repeat: no-repeat no-repeat;
-            "
-            range="131"
-            address="0"
-            type="1"
-            length="1"
-            on_text=""
-            off_text=""
-            id="4b8fa97ed1a9c7df0091"
-            show_param="4b8fa97ed1a9c7df0091"
-            degree="0"
-            tag_id="5cffcebd-5991-4544-96cc-39f1bf1d0883"
-            device_name=""
-            on_image="img/7457F639.png"
-            off_image="img/5A35E79C.png"
-            bg_image="img/5A35E79C.png"
-            mode="false"
-            text_align="center"
-          >
-            <p
-              style="
-                width: 44px;
-                height: 44px;
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-              "
-            ></p>
-          </div>
-          <div
-            comp_type="CustomizedComponent"
-            show_function="_callback_loadCustomizedComponent"
-            class="server_binding textCenter"
-            style="
-              position: absolute;
-              left: 933px;
-              top: 806px;
-              width: 44px;
-              height: 44px;
-              background-size: 44px 45px;
-              transform: rotate(0deg);
-              background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur_v2/img/5A35E79C.png');
-              cursor: not-allowed;
-              font-style: normal;
-              font-family: Arial;
-              font-size: 14px;
-              color: rgb(0, 0, 0);
-              z-index: 44;
-              background-repeat: no-repeat no-repeat;
-            "
-            range="131"
-            address="3"
-            type="1"
-            length="1"
-            on_text=""
-            off_text=""
-            id="4b398bfd01c5b036373c"
-            show_param="4b398bfd01c5b036373c"
-            degree="0"
-            tag_id="ddba25a1-91f1-4ff8-8428-7643374be07f"
-            device_name=""
-            on_image="img/7457F639.png"
-            off_image="img/5A35E79C.png"
-            bg_image="img/5A35E79C.png"
-            mode="false"
-            text_align="center"
-          >
-            <p
-              style="
-                width: 44px;
-                height: 44px;
-                display: table-cell;
-                vertical-align: middle;
-                text-align: center;
-              "
-            ></p>
           </div>
         </div>
       </div>
