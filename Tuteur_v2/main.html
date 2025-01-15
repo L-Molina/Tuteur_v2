@@ -66,7 +66,10 @@
 
     <link rel="stylesheet" href="css/webcam.css" id="css/webcam.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
 
     <script type="text/javascript" src="js/theme.js"></script>
   </head>
@@ -80,14 +83,22 @@
       🌙
     </button>
     <div class="LogoBar">
-      <div class="Logo" role="img" aria-label="Logo"></div>
+      <div
+        class="Logo"
+        role="img"
+        aria-label="Logo"
+        id="4829918a9367d3723e5f"
+      ></div>
       <div class="TextComponent header-title">
         <h1>ESTADO DE TANQUES</h1>
       </div>
       <div class="header-controls">
         <div class="login-section">
           <div
+          comp_type="PushButton"
             class="login-icon"
+            id="4e70841b6577b360d5ef"
+            tag_id="533fbfb2-2975-461f-afd6-cae83fa058c1"
             role="button"
             onclick="renderJs.FuncMouseDown(this)"
             onmouseout="renderJs.FuncMouseUp(this)"
@@ -95,11 +106,14 @@
           ></div>
           <div class="server_binding analog_input login-input">
             <div class="valueText form__group">
-              <input class="form__field" type="text" size="5" value="" />
+              <input class="form__field inputVal invalid416dad2aa15ab1deee9d" type="text" size="5" value="" />
             </div>
           </div>
           <button
             class="login-button"
+            comp_type="PushButton"
+            id="405fa89dbc34fef3173f"
+            tag_id="7284b247-24b4-418a-acbd-7079ad7ed0e9"
             onclick="renderJs.onPushButtonClicked(this)"
           >
             Log In
@@ -119,11 +133,22 @@
         <div class="TanqueContainer">
           <div class="tank-group">
             <div class="tank-info">
-              <div class="TextComponent">
+              <div class="TextComponent" id="476c9a6dbe2132c96551">
                 <h2>Tanque 1</h2>
               </div>
-              <div class="Tanque" role="img" aria-label="Tanque 1">
-                <div class="server_binding bar">
+              <div
+                comp_type="ImageComponent"
+                class="Tanque ImageComponent"
+                role="img"
+                aria-label="Tanque 1"
+                id="41428175ee5ea8b7173c"
+              >
+                <div
+                  class="server_binding bar"
+                  comp_type="AnalogBarComponent"
+                  id="42eda9d4f6ca594df210"
+                  tag_id="3a26f2f4-9996-4e6e-8ece-7bc7007160dc"
+                >
                   <div class="bar">
                     <ul>
                       <li><a>100</a></li>
@@ -142,38 +167,58 @@
                   <div class="whiteBg"></div>
                 </div>
               </div>
-              <div class="action-buttons">
-                <button
-                  class="server_binding textCenter"
-                  onclick="renderJs.setDigitalData(this)"
-                >
-                  Simular valor
-                </button>
-                <button
-                  class="server_binding textCenter"
-                  onclick="renderJs.onPushButtonClicked(this)"
-                >
-                  Enviar mail
-                </button>
-              </div>
             </div>
             <div class="tank-controls-container">
               <div class="tank-controls">
                 <div class="percentage-controls">
                   <div class="control-group">
-                    <div class="TextComponent">PV</div>
+                    <div class="TextComponent" id="4be1a7cea4fabbfc80a4">
+                      PV
+                    </div>
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
-                        <input
-                          type="number"
-                          class="form__field"
-                          value=""
-                          min="0"
-                          max="100"
-                          onkeypress="return validatePercentage(event)"
-                          oninput="limitPercentage(this)"
-                        />
-                        <span class="unit">%</span>
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="number"
+                                class="form__field inputVal invalid4263910a8a5c25a3df7f"
+                                value=""
+                                min="0"
+                                max="100"
+                                onkeypress="return validatePercentage(event)"
+                                oninput="limitPercentage(this)"
+                              />
+                            </div>
+                          </div>
+                          <div class="TextComponent">Nivel de alerta</div>
+                        </div>
+
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="text"
+                                class="form__field inputVal invalid4c1fbb25f40490034993"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="TextComponent">Filtro</div>
+                        </div>
+
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="text"
+                                class="form__field inputVal invalid424abc15f53f1637712e"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="TextComponent">Tiempo entre alertas</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -182,9 +227,61 @@
                     <div class="TextComponent">CV</div>
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="number"
+                                class="form__field inputVal invalid40beb7875d5ab73c9e1a"
+                                value=""
+                                min="0"
+                                max="100"
+                                onkeypress="return validatePercentage(event)"
+                                oninput="limitPercentage(this)"
+                              />
+                              <span class="unit">%</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="text"
+                                class="form__field inputVal invalid4300b365ba6d3849d6dc"
+                                value=""
+                              />
+                              <span class="unit">seg</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="text"
+                                class="form__field inputVal invalid44a9a53235537e094472"
+                                value=""
+                              />
+                              <span class="unit">min</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="other-controls">
+                  <div class="action-buttons">
+                    <h3>Simular Valores</h3>
+                    <div class="server_binding analog_input">
+                      <div class="valueText form__group">
                         <input
                           type="number"
-                          class="form__field"
+                          class="form__field inputVal invalid453ea683ca94510b8cac"
                           value=""
                           min="0"
                           max="100"
@@ -194,38 +291,30 @@
                         <span class="unit">%</span>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <div class="other-controls">
-                  <div class="control-group">
-                    <div class="TextComponent">Nivel de alerta</div>
-                    <div class="server_binding analog_input">
-                      <div class="valueText form__group">
-                        <input type="text" class="form__field" value="" />
-                        <span class="unit">%</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="control-group">
-                    <div class="TextComponent">Filtro</div>
-                    <div class="server_binding analog_input">
-                      <div class="valueText form__group">
-                        <input type="text" class="form__field" value="" />
-                        <span class="unit">seg</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="control-group">
-                    <div class="TextComponent">Tiempo entre alertas</div>
-                    <div class="server_binding analog_input">
-                      <div class="valueText form__group">
-                        <input type="text" class="form__field" value="" />
-                        <span class="unit">min</span>
-                      </div>
-                    </div>
+                    <button
+                      class="server_binding textCenter"
+                      id="4f9a91d639bbc63a0092"
+                      tag_id="30acf857-eba8-4a7b-a045-d98ea4e56598"
+                      onclick="renderJs.setDigitalData(this)"
+                    >
+                      Simular valor
+                    </button>
+                    <button
+                      class="server_binding textCenter"
+                      id="4483a1e42b7f45f8fd16"
+                      tag_id="45a5cce8-4ca5-4ab6-97c5-d11808183f60"
+                      onclick="renderJs.setDigitalData(this)"
+                    >
+                      Activar/Desactivar
+                    </button>
+                    <button
+                      class="server_binding textCenter"
+                      id="4b66a5200bf17d934783"
+                      tag_id="1c637a15-10c7-47bb-872e-ad7c51f55895"
+                      onclick="renderJs.onPushButtonClicked(this)"
+                    >
+                      Enviar mail
+                    </button>
                   </div>
                 </div>
               </div>
@@ -234,11 +323,22 @@
 
           <div class="tank-group">
             <div class="tank-info">
-              <div class="TextComponent">
+              <div class="TextComponent" id="4c04ad7599cef777fc36">
                 <h2>Tanque 2</h2>
               </div>
-              <div class="Tanque" role="img" aria-label="Tanque 1">
-                <div class="server_binding bar">
+              <div
+                comp_type="ImageComponent"
+                class="Tanque ImageComponent"
+                role="img"
+                aria-label="Tanque 1"
+                id="4e86947c427c6c037a77"
+              >
+                <div
+                  class="server_binding bar AnalogBarComponent"
+                  comp_type="AnalogBarComponent"
+                  id="434b8f5c8a9635cada8a"
+                  tag_id="226a36e7-ef47-44b7-b4ea-d52011337797"
+                >
                   <div class="bar">
                     <ul>
                       <li><a>100</a></li>
@@ -257,20 +357,6 @@
                   <div class="whiteBg"></div>
                 </div>
               </div>
-              <div class="action-buttons">
-                <button
-                  class="server_binding textCenter"
-                  onclick="renderJs.setDigitalData(this)"
-                >
-                  Simular valor
-                </button>
-                <button
-                  class="server_binding textCenter"
-                  onclick="renderJs.onPushButtonClicked(this)"
-                >
-                  Enviar mail
-                </button>
-              </div>
             </div>
             <div class="tank-controls-container">
               <div class="tank-controls">
@@ -279,16 +365,48 @@
                     <div class="TextComponent">PV</div>
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
-                        <input
-                          type="number"
-                          class="form__field"
-                          value=""
-                          min="0"
-                          max="100"
-                          onkeypress="return validatePercentage(event)"
-                          oninput="limitPercentage(this)"
-                        />
-                        <span class="unit">%</span>
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="number"
+                                class="form__field inputVal invalid48b38ea927b5a1ce9a17"
+                                value=""
+                                min="0"
+                                max="100"
+                                onkeypress="return validatePercentage(event)"
+                                oninput="limitPercentage(this)"
+                              />
+                            </div>
+                          </div>
+                          <div class="TextComponent">Nivel de alerta</div>
+                        </div>
+
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="text"
+                                class="form__field inputVal invalid4e6f9e4322e4c8b5d171"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="TextComponent">Filtro</div>
+                        </div>
+
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="text"
+                                class="form__field inputVal invalid445d9aa30f8ccc59026e"
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="TextComponent">Tiempo entre alertas</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -297,9 +415,60 @@
                     <div class="TextComponent">CV</div>
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="number"
+                                class="form__field inputVal invalid4bb998020113d8cadf22"
+                                value=""
+                                min="0"
+                                max="100"
+                                onkeypress="return validatePercentage(event)"
+                                oninput="limitPercentage(this)"
+                              />
+                              <span class="unit">%</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="text"
+                                class="form__field inputVal invalid401a827fae5feb9c5424"
+                                value=""
+                              />
+                              <span class="unit">seg</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="control-group">
+                          <div class="server_binding analog_input">
+                            <div class="valueText form__group">
+                              <input
+                                type="text"
+                                class="form__field inputVal invalid4323bbca07c959447992"
+                                value=""
+                              />
+                              <span class="unit">min</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="other-controls">
+                  <div class="action-buttons">
+                    <h3>Simular Valores</h3>
+                    <div class="server_binding analog_input">
+                      <div class="valueText form__group">
                         <input
                           type="number"
-                          class="form__field"
+                          class="form__field inputVal invalid47afb3fc461931d59d41"
                           value=""
                           min="0"
                           max="100"
@@ -309,38 +478,30 @@
                         <span class="unit">%</span>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <div class="other-controls">
-                  <div class="control-group">
-                    <div class="TextComponent">Nivel de alerta</div>
-                    <div class="server_binding analog_input">
-                      <div class="valueText form__group">
-                        <input type="text" class="form__field" value="" />
-                        <span class="unit">%</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="control-group">
-                    <div class="TextComponent">Filtro</div>
-                    <div class="server_binding analog_input">
-                      <div class="valueText form__group">
-                        <input type="text" class="form__field" value="" />
-                        <span class="unit">seg</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="control-group">
-                    <div class="TextComponent">Tiempo entre alertas</div>
-                    <div class="server_binding analog_input">
-                      <div class="valueText form__group">
-                        <input type="text" class="form__field" value="" />
-                        <span class="unit">min</span>
-                      </div>
-                    </div>
+                    <button
+                      class="server_binding textCenter"
+                      id="4b929838491a293de8ca"
+                      tag_id="8dd4c2ec-fd29-4e12-8840-8d8b3800bc76"
+                      onclick="renderJs.setDigitalData(this)"
+                    >
+                      Simular valor
+                    </button>
+                    <button
+                      class="server_binding textCenter"
+                      id="4166b297458862215fe4"
+                      tag_id="49f67a1e-e37e-4d79-89f3-aaf37d3ff5b4"
+                      onclick="renderJs.setDigitalData(this)"
+                    >
+                      Activar/Desactivar
+                    </button>
+                    <button
+                      class="server_binding textCenter"
+                      id="45769d2dde598663426a"
+                      tag_id="46b2859d-4049-42c6-91b7-631996daee86"
+                      onclick="renderJs.onPushButtonClicked(this)"
+                    >
+                      Enviar mail
+                    </button>
                   </div>
                 </div>
               </div>

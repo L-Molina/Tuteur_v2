@@ -211,6 +211,7 @@ body {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .server_binding.bar {
@@ -533,6 +534,7 @@ button.server_binding:hover {
 
   .percentage-controls {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -788,7 +790,7 @@ button.server_binding {
 /* Update tank controls layout */
 .tank-controls {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 50px;
   min-width: 320px;
 }
@@ -800,7 +802,6 @@ button.server_binding {
   gap: 30px;  /* Space between PV and CV */
   justify-content: flex-start;
   align-items: center;
-  height: 100px;
 }
 
 .percentage-controls .control-group {

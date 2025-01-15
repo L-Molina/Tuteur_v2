@@ -1,170 +1,452 @@
-<HTML xmlns="http://www.w3.org/1999/xhtml">
-    <HEAD>
-        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-         
-  
-        <META charset="UTF-8">
-         
-  
-        <STYLE type="text/css">
-                #main{
-                    position:relative; 
-                    margin:0;
-                    padding:0;
-                    top:0;
-                    left:0;
-                    background-color: white;
-                    //border:1px solid red;
-                    background:-webkit-linear-gradient(60deg, white 0px, black 1px, red 0px, white 0px) 25px -24px;
-                    background:-moz-linear-gradient(60deg, white 0px, black 1px, red 0px, white 0px) 25px -24px;
-                    background:-o-linear-gradient(60deg, white 0px, black 1px, red 0px, white 0px) 25px -24px;
-                    background:linear-gradient(60deg, white 0px, black 1px, red 0px, white 0px) 25px -24px;
-                    background-size: 10px 10px;
-                }
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-            </STYLE>
-         
-  
-        <LINK href="js/jqueryui/jqueryui.css" rel="stylesheet" type="text/css">
-         
-  <SCRIPT type="text/javascript" src="js/jquery.js"></SCRIPT> 
-  <SCRIPT type="text/javascript" src="js/jqueryui/jqueryui.js"></SCRIPT> 
-  <SCRIPT type="text/javascript" src="js/load.js"></SCRIPT> 
-  <SCRIPT type="text/javascript" src="js/map.js"></SCRIPT> 
-  <SCRIPT type="text/javascript" src="js/edit.js"></SCRIPT> 
-  <SCRIPT type="text/javascript" src="js/analog.js"></SCRIPT> 
-  
-        <TITLE>login</TITLE>
-         
-  <SCRIPT src="js/login.js?rdm=1736268598288" type="text/javascript" id="js/login.js"></SCRIPT> 
- 
-    </HEAD>
-     
- 
-    <BODY onload="loadEditPage()" logo_public_key1="0" logo_public_key2="0">
-         
-  
-        <DIV id="main" style="width: 1260px; height: 1004px;" prefix="Siemens">
-             
-   
-            <DIV comp_type="cus_loginCmp" id="LOGIN_CMP" style="border: 1px solid rgb(0, 0, 0); width: 392px; height: 202px; background-color: rgb(204, 204, 204); opacity: 0.75; font-style: normal; font-variant-caps: normal; font-weight: normal; font-stretch: normal; font-size: 100%; line-height: 1.5; font-family: &quot;Helvectica Neue&quot;, Helvetica, Arial, sans-serif; position: absolute; left: 494px; top: 340px; transform: rotate(0deg); background-size: 392px 203px; zoom: 1; z-index: 2; background-repeat: no-repeat no-repeat;" degree="0">
-                 
-    
-                <FORM id="login" style="width:90%;height:90%;margin:5%;border: 0;text-align:left">
-                     
-     
-                    <DIV style="height: 40%; font-style: normal; font-variant-caps: normal; font-stretch: normal; font-size: 16px; line-height: 1.5; font-family: Arial; color: rgb(0, 0, 0);" class="loginText">
-                         
-      
-                        <DIV class="logininputDiv" style="width: 100%;height: 45%;clear: both;border: 0px solid gray;">
-                             
-       
-                            <DIV class="logininputTitle loginText" style="float: left; width: 30%; font-family: Arial; font-size: 16px; font-style: normal; color: rgb(0, 0, 0);">
-        Name
-       </DIV>
-                             
-       
-                            <DIV class="logininput" style="float: left;width: 70%;">
-                                 
-        <SELECT id="input_username" style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size: 100%;font-family: inherit;padding-left: 2px;padding-top: 3px;padding-bottom: 3px;border: 1px solid #879baa;border-radius: 0 !important;background: #fff;"><OPTION value="Web User" selected>Web User</OPTION><OPTION value="Web Guest">Web Guest</OPTION> </SELECT> 
-       
-                            </DIV>
-                             
-      
-                        </DIV>
-                         
-      
-                        <DIV class="logininputDiv" style="width: 100%;height: 45%;clear: both;border: 0px solid gray;">
-                             
-       
-                            <DIV class="logininputTitle loginText" style="float: left; width: 30%; font-family: Arial; font-size: 16px; font-style: normal; color: rgb(0, 0, 0);">
-        Password
-       </DIV>
-                             
-       
-                            <DIV class="logininput" style="float: left;width: 70%;">
-                                 
-        <INPUT id="input_password" type="password" maxlength="10" onfocus="OnPasswordFocus(this);" style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size: 100%;font-family: inherit;padding-left: 2px;padding-top: 3px;padding-bottom: 3px;border: 1px solid #879baa;border-radius: 0 !important;background: #fff;"> 
-       
-                            </DIV>
-                             
-      
-                        </DIV>
-                         
-     
-                    </DIV>
-                     
-     
-                    <DIV style="display: none; font-style: normal; font-variant-caps: normal; font-stretch: normal; font-size: 16px; line-height: 1.5; font-family: Arial; color: rgb(0, 0, 0);" class="loginText">
-      Language
-     </DIV>
-                     
-     
-                    <DIV style="display:none">
-                         
-      <SELECT id="select_language" onchange="OnLanguageChange(this);"><OPTION value="1">English</OPTION><OPTION value="0">Deutsch</OPTION><OPTION value="2">Fran?ais</OPTION><OPTION value="4">Italiano</OPTION><OPTION value="3">Espa?ol</OPTION><OPTION value="5">中文</OPTION><OPTION value="9">日本語</OPTION></SELECT> 
-     
-                    </DIV>
-                     
-     
-                    <DIV style="height: 28%; font-style: normal; font-variant-caps: normal; font-stretch: normal; font-size: 16px; line-height: 1.5; font-family: Arial; color: rgb(0, 0, 0);" class="loginText">
-                         
-      
-                        <FIELDSET style="float:right;border: 0;">
-                             
-       
-                            <DIV style="display: none;" id="toCustomizedSite">
-                                 
-        <INPUT id="check_logoncustomized" name="logonCustomizedWeb" type="checkbox" checked style="border: 1px solid #879baa;border-radius: 0 !important;margin-right: .6em;padding: 2px;"> 
-        <LABEL for="check_logoncustomized" onselectstart="return false;">To customized site </LABEL> 
-       
-                            </DIV>
-                             
-       
-                            <DIV id="keepMeLoggedOn">
-                                 
-        <INPUT id="check_keepsignin" name="staySignedIn" type="checkbox" checked style="border: 1px solid #879baa;border-radius: 0 !important;margin-right: .6em;padding: 2px;"> 
-        <LABEL for="check_keepsignin" onselectstart="return false;">Keep me logged on </LABEL> 
-       
-                            </DIV>
-                             
-      
-                        </FIELDSET>
-                         
-     
-                    </DIV>
-                     
-     
-                    <DIV style="clear:both;height:16%;margin-bottom: 10px" class="loginbutton">
-                         
-      <BUTTON id="button_login" onclick="return LoginPageLogin();" failed_by_password="Invalid password" webserver_disabled="Web server is disabled." style="display: block;font-size: 100%;float: right;width: 60%;max-width: 12em;height: 100%;max-height: 3em;cursor: pointer;background-color: #879baa;color: #fff; border-width: 1px;border-style: solid;border-color: #fff #000 #000 #fff;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Log on</BUTTON> 
-     
-                    </DIV>
-                     
-    
-                </FORM>
-                 
-   
-            </DIV>
-             
-  
-            <DIV comp_type="ImageComponent" style="background-image: url(&quot;file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur/img/EB591CF2.jpg&quot;); background-size: 276px 107px; position: absolute; left: 553px; top: 218px; width: 276px; height: 106px; transform: rotate(0deg); z-index: 3; background-repeat: no-repeat no-repeat;" bg_image="img/EB591CF2.jpg" id="4be0b490f6311e325006" degree="0"></DIV>
-            <DIV class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 305px; top: 0px; width: 654px; height: 70px; background-size: 654px 71px; transform: rotate(0deg); font-style: normal; font-family: &quot;Siemens Sans Global&quot;; font-size: 48px; color: rgb(0, 0, 0); z-index: 4; background-repeat: no-repeat no-repeat;" id="4803a57bb9b544a582e9" degree="0" text_align="center">
-                    
-                <P style="display: table-cell; vertical-align: middle; text-align: center; width: 654px; height: 70px;">ESTADO DE TANQUES</P>
-            </DIV>
-            <DIV comp_type="ImageComponent" style="background-image: url(&quot;file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur/img/8CAD163D.png&quot;); background-size: 83px 71px; position: absolute; left: 0px; top: 0px; width: 83px; height: 70px; transform: rotate(0deg); z-index: 5; background-repeat: no-repeat no-repeat;" bg_image="img/8CAD163D.png" id="4219b90801eb67135f6e" degree="0"></DIV>
-            <DIV comp_type="analogDateTimeComponent" class="server_binding" show_function="_callback_showDateTime" range="132" address="7920" type="2" length="6" show_param="436c90887ed29c284869" block_format="Unsigned" style="overflow: hidden; line-height: 100%; text-align: center; position: absolute; left: 1140px; top: 13px; width: 124px; height: 44px; background-size: 124px 45px; transform: rotate(0deg); font-style: normal; font-family: Arial; font-size: 18px; color: rgb(0, 0, 0); z-index: 6; background-repeat: no-repeat no-repeat;" id="436c90887ed29c284869" degree="0" device_name="" text_align="center" time_format="ft" title="yyyy-MM-dd">
-                <DIV style="display: table;height:100%;width:100%">
-                    <DIV style="position:relative;display: table-cell; vertical-align:middle;" class="outer">
-                        <DIV class="dayTime">Fri.13:01:59</DIV>
-                        <DIV class="date">2019-01-11</DIV>
-                    </DIV>
-                </DIV>
-            </DIV>
-        </DIV>
-          
- 
+    <meta charset="UTF-8" />
 
-    </BODY>
-</HTML>
+    <style type="text/css">
+      #main {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        background-color: white;
+        //border:1px solid red;
+        background: -webkit-linear-gradient(
+            60deg,
+            white 0px,
+            black 1px,
+            red 0px,
+            white 0px
+          )
+          25px -24px;
+        background: -moz-linear-gradient(
+            60deg,
+            white 0px,
+            black 1px,
+            red 0px,
+            white 0px
+          )
+          25px -24px;
+        background: -o-linear-gradient(
+            60deg,
+            white 0px,
+            black 1px,
+            red 0px,
+            white 0px
+          )
+          25px -24px;
+        background: linear-gradient(
+            60deg,
+            white 0px,
+            black 1px,
+            red 0px,
+            white 0px
+          )
+          25px -24px;
+        background-size: 10px 10px;
+      }
+    </style>
+
+    <link href="js/jqueryui/jqueryui.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jqueryui/jqueryui.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/edit.js"></script>
+    <script type="text/javascript" src="js/analog.js"></script>
+
+    <title>login</title>
+
+    <script
+      src="js/login.js?rdm=1736268598288"
+      type="text/javascript"
+      id="js/login.js"
+    ></script>
+  </head>
+
+  <body onload="loadEditPage()" logo_public_key1="0" logo_public_key2="0">
+    <div id="main" style="width: 1260px; height: 1004px" prefix="Siemens">
+      <div
+        comp_type="cus_loginCmp"
+        id="LOGIN_CMP"
+        style="
+          border: 1px solid rgb(0, 0, 0);
+          width: 392px;
+          height: 202px;
+          background-color: rgb(204, 204, 204);
+          opacity: 0.75;
+          font-style: normal;
+          font-variant-caps: normal;
+          font-weight: normal;
+          font-stretch: normal;
+          font-size: 100%;
+          line-height: 1.5;
+          font-family: 'Helvectica Neue', Helvetica, Arial, sans-serif;
+          position: absolute;
+          left: 494px;
+          top: 340px;
+          transform: rotate(0deg);
+          background-size: 392px 203px;
+          zoom: 1;
+          z-index: 2;
+          background-repeat: no-repeat no-repeat;
+        "
+        degree="0"
+      >
+        <form
+          id="login"
+          style="
+            width: 90%;
+            height: 90%;
+            margin: 5%;
+            border: 0;
+            text-align: left;
+          "
+        >
+          <div
+            style="
+              height: 40%;
+              font-style: normal;
+              font-variant-caps: normal;
+              font-stretch: normal;
+              font-size: 16px;
+              line-height: 1.5;
+              font-family: Arial;
+              color: rgb(0, 0, 0);
+            "
+            class="loginText"
+          >
+            <div
+              class="logininputDiv"
+              style="
+                width: 100%;
+                height: 45%;
+                clear: both;
+                border: 0px solid gray;
+              "
+            >
+              <div
+                class="logininputTitle loginText"
+                style="
+                  float: left;
+                  width: 30%;
+                  font-family: Arial;
+                  font-size: 16px;
+                  font-style: normal;
+                  color: rgb(0, 0, 0);
+                "
+              >
+                Name
+              </div>
+
+              <div class="logininput" style="float: left; width: 70%">
+                <select
+                  id="input_username"
+                  style="
+                    width: 100%;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    font-size: 100%;
+                    font-family: inherit;
+                    padding-left: 2px;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                    border: 1px solid #879baa;
+                    border-radius: 0 !important;
+                    background: #fff;
+                  "
+                >
+                  <option value="Web User" selected>Web User</option>
+                  <option value="Web Guest">Web Guest</option>
+                </select>
+              </div>
+            </div>
+
+            <div
+              class="logininputDiv"
+              style="
+                width: 100%;
+                height: 45%;
+                clear: both;
+                border: 0px solid gray;
+              "
+            >
+              <div
+                class="logininputTitle loginText"
+                style="
+                  float: left;
+                  width: 30%;
+                  font-family: Arial;
+                  font-size: 16px;
+                  font-style: normal;
+                  color: rgb(0, 0, 0);
+                "
+              >
+                Password
+              </div>
+
+              <div class="logininput" style="float: left; width: 70%">
+                <input
+                  id="input_password"
+                  type="password"
+                  maxlength="10"
+                  onfocus="OnPasswordFocus(this);"
+                  style="
+                    width: 100%;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    font-size: 100%;
+                    font-family: inherit;
+                    padding-left: 2px;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                    border: 1px solid #879baa;
+                    border-radius: 0 !important;
+                    background: #fff;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: none;
+              font-style: normal;
+              font-variant-caps: normal;
+              font-stretch: normal;
+              font-size: 16px;
+              line-height: 1.5;
+              font-family: Arial;
+              color: rgb(0, 0, 0);
+            "
+            class="loginText"
+          >
+            Language
+          </div>
+
+          <div style="display: none">
+            <select id="select_language" onchange="OnLanguageChange(this);">
+              <option value="1">English</option>
+              <option value="0">Deutsch</option>
+              <option value="2">Fran?ais</option>
+              <option value="4">Italiano</option>
+              <option value="3">Espa?ol</option>
+              <option value="5">中文</option>
+              <option value="9">日本語</option>
+            </select>
+          </div>
+
+          <div
+            style="
+              height: 28%;
+              font-style: normal;
+              font-variant-caps: normal;
+              font-stretch: normal;
+              font-size: 16px;
+              line-height: 1.5;
+              font-family: Arial;
+              color: rgb(0, 0, 0);
+            "
+            class="loginText"
+          >
+            <fieldset style="float: right; border: 0">
+              <div style="display: none" id="toCustomizedSite">
+                <input
+                  id="check_logoncustomized"
+                  name="logonCustomizedWeb"
+                  type="checkbox"
+                  checked
+                  style="
+                    border: 1px solid #879baa;
+                    border-radius: 0 !important;
+                    margin-right: 0.6em;
+                    padding: 2px;
+                  "
+                />
+                <label for="check_logoncustomized" onselectstart="return false;"
+                  >To customized site
+                </label>
+              </div>
+
+              <div id="keepMeLoggedOn">
+                <input
+                  id="check_keepsignin"
+                  name="staySignedIn"
+                  type="checkbox"
+                  checked
+                  style="
+                    border: 1px solid #879baa;
+                    border-radius: 0 !important;
+                    margin-right: 0.6em;
+                    padding: 2px;
+                  "
+                />
+                <label for="check_keepsignin" onselectstart="return false;"
+                  >Keep me logged on
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div
+            style="clear: both; height: 16%; margin-bottom: 10px"
+            class="loginbutton"
+          >
+            <button
+              id="button_login"
+              onclick="return LoginPageLogin();"
+              failed_by_password="Invalid password"
+              webserver_disabled="Web server is disabled."
+              style="
+                display: block;
+                font-size: 100%;
+                float: right;
+                width: 60%;
+                max-width: 12em;
+                height: 100%;
+                max-height: 3em;
+                cursor: pointer;
+                background-color: #879baa;
+                color: #fff;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #fff #000 #000 #fff;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+              "
+            >
+              Log on
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div
+        comp_type="ImageComponent"
+        style="
+          background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur/img/EB591CF2.jpg');
+          background-size: 276px 107px;
+          position: absolute;
+          left: 553px;
+          top: 218px;
+          width: 276px;
+          height: 106px;
+          transform: rotate(0deg);
+          z-index: 3;
+          background-repeat: no-repeat no-repeat;
+        "
+        bg_image="img/EB591CF2.jpg"
+        id="4be0b490f6311e325006"
+        degree="0"
+      ></div>
+      <div
+        class="TextComponent"
+        comp_type="TextComponent"
+        style="
+          overflow: hidden;
+          line-height: 100%;
+          position: absolute;
+          left: 305px;
+          top: 0px;
+          width: 654px;
+          height: 70px;
+          background-size: 654px 71px;
+          transform: rotate(0deg);
+          font-style: normal;
+          font-family: 'Siemens Sans Global';
+          font-size: 48px;
+          color: rgb(0, 0, 0);
+          z-index: 4;
+          background-repeat: no-repeat no-repeat;
+        "
+        id="4803a57bb9b544a582e9"
+        degree="0"
+        text_align="center"
+      >
+        <p
+          style="
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 654px;
+            height: 70px;
+          "
+        >
+          ESTADO DE TANQUES
+        </p>
+      </div>
+      <div
+        comp_type="ImageComponent"
+        style="
+          background-image: url('file:///C:/Users/jcastillo/Desktop/Tuteur/Tuteur/img/8CAD163D.png');
+          background-size: 83px 71px;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 83px;
+          height: 70px;
+          transform: rotate(0deg);
+          z-index: 5;
+          background-repeat: no-repeat no-repeat;
+        "
+        bg_image="img/8CAD163D.png"
+        id="4219b90801eb67135f6e"
+        degree="0"
+      ></div>
+      <div
+        comp_type="analogDateTimeComponent"
+        class="server_binding"
+        show_function="_callback_showDateTime"
+        range="132"
+        address="7920"
+        type="2"
+        length="6"
+        show_param="436c90887ed29c284869"
+        block_format="Unsigned"
+        style="
+          overflow: hidden;
+          line-height: 100%;
+          text-align: center;
+          position: absolute;
+          left: 1140px;
+          top: 13px;
+          width: 124px;
+          height: 44px;
+          background-size: 124px 45px;
+          transform: rotate(0deg);
+          font-style: normal;
+          font-family: Arial;
+          font-size: 18px;
+          color: rgb(0, 0, 0);
+          z-index: 6;
+          background-repeat: no-repeat no-repeat;
+        "
+        id="436c90887ed29c284869"
+        degree="0"
+        device_name=""
+        text_align="center"
+        time_format="ft"
+        title="yyyy-MM-dd"
+      >
+        <div style="display: table; height: 100%; width: 100%">
+          <div
+            style="
+              position: relative;
+              display: table-cell;
+              vertical-align: middle;
+            "
+            class="outer"
+          >
+            <div class="dayTime">Fri.13:01:59</div>
+            <div class="date">2019-01-11</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
