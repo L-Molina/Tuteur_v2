@@ -83,62 +83,69 @@
       🌙
     </button>
     <div class="LogoBar">
-      <div
-        class="Logo"
-        role="img"
-        aria-label="Logo"
-        id="4829918a9367d3723e5f"
-      ></div>
+      <div class="LogoBarContainer">
+        <div
+          class="Logo"
+          role="img"
+          aria-label="Logo"
+          id="4829918a9367d3723e5f"
+        ></div>
+        <div class="header-controls">
+          <div class="login-section">
+            <div
+              comp_type="PushButton"
+              class="login-icon"
+              id="4e70841b6577b360d5ef"
+              tag_id="533fbfb2-2975-461f-afd6-cae83fa058c1"
+              role="button"
+              onclick="renderJs.FuncMouseDown(this)"
+              onmouseout="renderJs.FuncMouseUp(this)"
+              onmouseup="renderJs.FuncMouseUp(this)"
+            ></div>
+            <div class="server_binding analog_input login-input">
+              <div class="valueText form__group">
+                <input
+                  class="form__field inputVal invalid416dad2aa15ab1deee9d"
+                  type="text"
+                  size="5"
+                  value=""
+                />
+              </div>
+            </div>
+            <button
+              class="login-button"
+              comp_type="PushButton"
+              id="405fa89dbc34fef3173f"
+              tag_id="7284b247-24b4-418a-acbd-7079ad7ed0e9"
+              onclick="renderJs.onPushButtonClicked(this)"
+            >
+              Log In
+            </button>
+          </div>
+        </div>
+        <div
+          class="server_binding"
+          comp_type="analogDateTimeComponent"
+          show_function="_callback_showDateTime"
+          range="132"
+          address="7920"
+          type="2"
+          length="6"
+          show_param="475bb2d8a22911ba6bc2"
+          block_format="Unsigned"
+          id="475bb2d8a22911ba6bc2"
+          degree="0"
+          device_name=""
+          title="yyyy-MM-dd"
+        >
+          <div class="outer">
+            <div class="dayTime">Fri.13:01:59</div>
+            <div class="date">2019-01-11</div>
+          </div>
+        </div>
+      </div>
       <div class="TextComponent header-title">
         <h1>ESTADO DE TANQUES</h1>
-      </div>
-      <div class="header-controls">
-        <div class="login-section">
-          <div
-            comp_type="PushButton"
-            class="login-icon"
-            id="4e70841b6577b360d5ef"
-            tag_id="533fbfb2-2975-461f-afd6-cae83fa058c1"
-            role="button"
-            onclick="renderJs.FuncMouseDown(this)"
-            onmouseout="renderJs.FuncMouseUp(this)"
-            onmouseup="renderJs.FuncMouseUp(this)"
-          ></div>
-          <div class="server_binding analog_input login-input">
-            <div class="valueText form__group">
-              <input
-                class="form__field inputVal invalid416dad2aa15ab1deee9d"
-                type="text"
-                size="5"
-                value=""
-              />
-            </div>
-          </div>
-          <button
-            class="login-button"
-            comp_type="PushButton"
-            id="405fa89dbc34fef3173f"
-            tag_id="7284b247-24b4-418a-acbd-7079ad7ed0e9"
-            onclick="renderJs.onPushButtonClicked(this)"
-          >
-            Log In
-          </button>
-        </div>
-      </div>
-      <div
-        class="dateTime"
-        show_function="_callback_showDateTime"
-        range="132"
-        address="7920"
-        type="2"
-        length="6"
-        show_param="475bb2d8a22911ba6bc2"
-        block_format="Unsigned"
-      >
-        <div class="outer">
-          <div class="dayTime">Fri.13:01:59</div>
-          <div class="date">2019-01-11</div>
-        </div>
       </div>
     </div>
 
