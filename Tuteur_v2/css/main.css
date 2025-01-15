@@ -33,7 +33,6 @@
   --border-color: #2980b9;
 }
 
-/* Theme toggle button */
 .theme-toggle {
   position: fixed;
   bottom: 20px;
@@ -72,7 +71,7 @@ body {
   color: var(--text-secondary);
   width: 100%;
   min-width: 100%;
-  overflow-x: hidden;  /* Prevent horizontal scroll */
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 #main {
@@ -131,10 +130,12 @@ body {
 .dateTime {
   margin-left: 0;
   padding-left: 10px;
-  height: 44px;
   font-size: 16px;
   display: flex;
   align-items: center;
+  order: 3;
+  height: auto;
+  padding: 0;
 }
 
 .dateTime .outer {
@@ -165,10 +166,10 @@ body {
 
 .TanqueContainer {
   width: 100%;
-  min-width: 100%;
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .tank-group {
@@ -186,16 +187,17 @@ body {
   position: relative;
 }
 
-.tank-info .action-buttons {
+.action-buttons {
   display: flex;
-  gap: 10px;
+  gap: 25px;
   width: 100%;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .tank-controls {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 50px;
   min-width: 300px;
 }
@@ -207,11 +209,8 @@ body {
   width: 100%;
 }
 
-.action-buttons {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  flex-direction: column;
+.server_binding {
+  width: 100%;
 }
 
 .server_binding.bar {
@@ -220,11 +219,11 @@ body {
   top: 8%;
   height: 65%;
   width: 28px;
-  background: var(--bar-color);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   z-index: 2;
   position: relative;
+  background: var(--bar-color);
 }
 
 .whiteBg {
@@ -234,6 +233,7 @@ body {
   width: 100%;
   height: 50%;
   background-color: white;
+  transition: height 0.3s ease;
 }
 
 .server_binding.bar ul {
@@ -308,7 +308,7 @@ button.server_binding:hover {
   width: 100%;
   height: 100%;
   position: relative;
-  max-width: 150px;
+  max-width: 175px;
 }
 
 .form__field {
@@ -380,214 +380,6 @@ button.server_binding:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
-  :root {
-    --tank-width: 180px;
-    --tank-height: 320px;
-    --logo-width: 60px;
-    --logo-height: 50px;
-  }
-
-  .LogoBar {
-    flex-wrap: wrap;
-    padding: 10px;
-    height: auto;
-    gap: 10px;
-    justify-content: space-between;
-  }
-
-  /* Adjust logo size */
-  :root {
-    --logo-width: 50px;
-    --logo-height: 42px;
-  }
-
-  /* Make title smaller */
-  .TextComponent.header-title {
-    order: 2;
-    margin-left: 0;
-    flex: 0 0 100%;  /* Take full width in second row */
-    text-align: center;
-  }
-
-  .TextComponent.header-title h1 {
-    font-size: 24px;  /* Smaller font size */
-    line-height: 1.2;
-    white-space: normal;  /* Allow wrapping if needed */
-  }
-
-  /* Adjust controls layout */
-  .header-controls {
-    order: 1;
-    margin-left: 0;
-    gap: 15px;
-  }
-
-  /* Adjust login section */
-  .login-section {
-    gap: 8px;
-  }
-
-  .login-icon {
-    width: 28px;
-    height: 28px;
-    background-size: 28px 28px;
-  }
-
-  .login-input {
-    width: 80px;
-  }
-
-  .login-button {
-    padding: 6px 12px;
-    font-size: 14px;
-    height: 28px;
-  }
-
-  /* Adjust datetime */
-  .dateTime {
-    order: 3;
-    height: auto;
-    padding: 0;
-    font-size: 14px;
-  }
-
-  .dateTime .outer {
-    flex-direction: row;
-    gap: 8px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  .TextComponent {
-    font-size: 24px;
-  }
-
-  .form__field {
-    font-size: 1.3rem;
-  }
-
-  .TextComponent.header-title h1 {
-    font-size: calc(var(--logo-height) * 0.7);
-  }
-
-  .action-buttons button.server_binding {
-    font-size: 12px;
-    min-height: 36px;
-    padding: 6px 10px;
-  }
-
-  .login-button {
-    font-size: 16px;
-    padding: 6px 12px;
-    min-width: 80px;
-  }
-
-  .tank-controls {
-    flex-direction: column;  /* Stack columns on smaller screens */
-    gap: 20px;
-  }
-
-  .tank-group {
-    width: 100%;
-    min-width: 100%;
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tank-info {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .tank-info .TextComponent {
-    width: 100%;
-    text-align: center;
-  }
-
-  .tank-info .TextComponent h2 {
-    width: 100%;
-    text-align: center;
-  }
-
-  .action-buttons {
-    width: 100%;
-    max-width: var(--tank-width);
-    margin: 0 auto;
-  }
-
-  .dateTime {
-    flex-direction: column;
-    font-size: 14px;
-  }
-
-  .dateTime .outer {
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .percentage-controls {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .tank-controls-container {
-    width: 100%;
-    min-width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
-  .tank-controls {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  .other-controls {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  :root {
-    --logo-width: 50px;
-    --logo-height: 42px;
-  }
-
-  .TextComponent.header-title h1 {
-    font-size: calc(var(--logo-height) * 0.65);
-  }
-  
-  .LogoBar {
-    padding: 5px 10px;
-  }
-}
-
-/* Bar styling improvements */
-.server_binding.bar {
-  background: var(--bar-color);
-}
-
-.whiteBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  transition: height 0.3s ease;
-}
-
 /* Improve button styling */
 .action-buttons {
   display: flex;
@@ -601,24 +393,9 @@ button.server_binding {
   white-space: nowrap;
 }
 
-/* Container improvements */
-.MainContainer {
-  padding: 27px max(20px, 5%);
-}
-
-.TanqueContainer {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 /* Form improvements */
 .control-group {
   width: 100%;
-}
-
-.form__group {
-  max-width: 150px;
 }
 
 /* Update existing classes for better responsiveness */
@@ -629,15 +406,11 @@ button.server_binding {
   gap: 20px;
 }
 
-.tank-controls {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  min-width: 300px;
-}
-
 /* Add smooth transitions */
-.Tanque, .Logo, button, input {
+.Tanque,
+.Logo,
+button,
+input {
   transition: all 0.3s ease;
 }
 
@@ -701,7 +474,11 @@ button.server_binding {
   flex: 1;
   min-height: 40px;
   padding: 8px 12px;
-  background: linear-gradient(145deg, var(--button-gradient-1), var(--button-gradient-2));
+  background: linear-gradient(
+    145deg,
+    var(--button-gradient-1),
+    var(--button-gradient-2)
+  );
   color: white;
   border: none;
   border-radius: 8px;
@@ -715,7 +492,11 @@ button.server_binding {
 }
 
 .action-buttons button.server_binding:hover {
-  background: linear-gradient(145deg, var(--button-hover-1), var(--button-hover-2));
+  background: linear-gradient(
+    145deg,
+    var(--button-hover-1),
+    var(--button-hover-2)
+  );
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transform: translateY(-1px);
 }
@@ -727,7 +508,7 @@ button.server_binding {
 
 /* Update tank title styling */
 .tank-info .TextComponent {
-  font-size: 32px;  /* Reduced from 48px */
+  font-size: 32px; /* Reduced from 48px */
 }
 
 .tank-info .TextComponent h2 {
@@ -736,38 +517,23 @@ button.server_binding {
   font-weight: 500;
 }
 
-/* Update media queries for responsive tank titles */
-@media screen and (max-width: 768px) {
-  .tank-info .TextComponent {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .tank-info .TextComponent {
-    font-size: 20px;
-  }
-}
-
-/* Add styles for separated input groups */
-.tank-controls {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;  /* Increased gap between sections */
-}
-
 .percentage-controls {
-  padding-bottom: 0;  /* Remove padding that was used for the border */
-  border-bottom: none;  /* Remove the horizontal line */
+  padding-bottom: 0;
+  border-bottom: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .other-controls {
-  flex: 1;  /* Make both columns take equal space */
+  flex: 1; /* Make both columns take equal space */
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 15px;
-  min-width: 150px;  /* Minimum width for each column */
+  min-width: 150px; /* Minimum width for each column */
 }
 
 /* Style for percentage inputs */
@@ -787,26 +553,9 @@ button.server_binding {
   align-items: center;
 }
 
-/* Update tank controls layout */
-.tank-controls {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  min-width: 320px;
-}
-
-/* Style for the input sections */
-.percentage-controls {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;  /* Space between PV and CV */
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .percentage-controls .control-group {
   flex: 1;
-  max-width: 150px;  /* Reduced width for better appearance */
+  max-width: 150px; /* Reduced width for better appearance */
 }
 
 .other-controls {
@@ -818,67 +567,7 @@ button.server_binding {
 
 .other-controls .control-group {
   width: 100%;
-  max-width: 320px;  /* Reduced width of approximately two percentage inputs plus gap */
-}
-
-/* Media query adjustments */
-@media screen and (max-width: 768px) {
-  .percentage-controls {
-    flex-direction: column;  /* Stack PV and CV vertically */
-    gap: 15px;
-  }
-
-  .percentage-controls .control-group,
-  .other-controls .control-group {
-    max-width: 220px;  /* Reduced from 280px */
-  }
-}
-
-/* Update media queries for better mobile alignment */
-@media screen and (max-width: 768px) {
-  .tank-controls {
-    align-items: center;  /* Center all controls */
-    width: 100%;
-  }
-
-  .percentage-controls {
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    align-items: center;  /* Center PV and CV inputs */
-  }
-
-  .percentage-controls .control-group,
-  .other-controls .control-group {
-    max-width: 220px;  /* Reduced from 280px */
-    width: 100%;
-  }
-
-  .other-controls {
-    width: 100%;
-    align-items: center;  /* Center other inputs */
-  }
-
-  .control-group {
-    align-items: center;  /* Center the input labels and fields */
-  }
-
-  .TextComponent {
-    justify-content: center;  /* Center the text labels */
-    width: 100%;
-  }
-
-  .form__group {
-    margin: 0 auto;  /* Center the input fields */
-  }
-}
-
-/* Additional adjustments for even smaller screens */
-@media screen and (max-width: 480px) {
-  .percentage-controls .control-group,
-  .other-controls .control-group {
-    max-width: 180px;  /* Reduced from 240px */
-  }
+  max-width: 320px; /* Reduced width of approximately two percentage inputs plus gap */
 }
 
 /* Update header controls spacing */
@@ -903,210 +592,6 @@ button.server_binding {
   font-size: 16px;
   display: flex;
   align-items: center;
-}
-
-/* Update responsive behavior */
-@media screen and (max-width: 768px) {
-  .header-controls {
-    gap: 20px;
-  }
-
-  .login-section {
-    padding-right: 5px;
-  }
-
-  .dateTime {
-    padding-left: 5px;
-  }
-
-  /* Mobile alignment */
-  .tank-controls {
-    align-items: center;
-    width: 100%;
-  }
-
-  .percentage-controls {
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    align-items: center;
-  }
-
-  .percentage-controls .control-group,
-  .other-controls .control-group {
-    max-width: 220px;
-    width: 100%;
-  }
-
-  .other-controls {
-    width: 100%;
-    align-items: center;
-  }
-
-  .control-group {
-    align-items: center;
-  }
-
-  .TextComponent {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .form__group {
-    margin: 0 auto;
-  }
-}
-
-/* Update container widths and responsive behavior */
-.MainContainer {
-  flex: 1;
-  background-color: var(--bg-primary);
-  padding: 27px max(20px, 5%);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
-  box-sizing: border-box;  /* Include padding in width calculation */
-}
-
-.TanqueContainer {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-/* Update media queries for mobile */
-@media screen and (max-width: 768px) {
-  .MainContainer {
-    padding: 20px;
-    min-width: 100%;
-  }
-
-  .TanqueContainer {
-    width: 100%;
-    padding: 0;
-  }
-
-  .tank-group {
-    width: 100%;
-    max-width: none;  /* Remove max-width constraint on mobile */
-    margin: 0;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
-  .tank-controls-container {
-    width: 100%;
-    padding: 0;
-  }
-
-  .tank-controls {
-    width: 100%;
-    min-width: 100%;  /* Force full width */
-    padding: 0;
-  }
-
-  .other-controls {
-    flex-direction: column;  /* Stack controls vertically on mobile */
-    width: 100%;
-    gap: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .MainContainer {
-    padding: 15px;
-  }
-
-  .tank-group {
-    padding: 0 5px;
-  }
-}
-
-/* Update mobile styles for input components */
-@media screen and (max-width: 768px) {
-  .tank-controls {
-    flex-direction: column;
-    gap: 30px;
-    min-height: 400px;  /* Add minimum height to prevent overlap */
-    padding: 20px 0;    /* Add padding for spacing */
-  }
-
-  .percentage-controls {
-    flex-direction: column;
-    height: auto;       /* Remove fixed height */
-    min-height: 120px;  /* Set minimum height */
-    gap: 20px;
-    width: 100%;
-    align-items: center;
-  }
-
-  .other-controls {
-    flex-direction: column;
-    height: auto;       /* Remove fixed height */
-    min-height: 200px;  /* Set minimum height */
-    max-height: none;   /* Remove max height constraint */
-    gap: 20px;
-    width: 100%;
-    align-items: center;
-  }
-
-  .control-group {
-    width: 100%;
-    max-width: 280px;
-    margin-bottom: 10px;  /* Add margin between groups */
-  }
-
-  .tank-group {
-    margin-bottom: 40px;  /* Add space between tank groups */
-  }
-
-  /* Ensure proper spacing between tanks */
-  .tank-group + .tank-group {
-    margin-top: 60px;
-  }
-
-  /* Adjust container spacing */
-  .tank-controls-container {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-}
-
-/* Additional adjustments for smaller screens */
-@media screen and (max-width: 480px) {
-  .tank-controls {
-    min-height: 450px;  /* Increase minimum height for smaller screens */
-  }
-
-  .control-group {
-    max-width: 240px;
-  }
-}
-
-/* Additional adjustments for even smaller screens */
-@media screen and (max-width: 480px) {
-  .LogoBar {
-    padding: 8px;
-  }
-
-  .TextComponent.header-title h1 {
-    font-size: 20px;
-  }
-
-  .login-input {
-    width: 70px;
-  }
-
-  .login-button {
-    min-width: 70px;
-    font-size: 12px;
-  }
-
-  .dateTime {
-    font-size: 12px;
-  }
 }
 
 /* Add tablet-specific styles (between 768px and 1024px) */
@@ -1187,7 +672,389 @@ button.server_binding {
   }
 }
 
-/* Update existing mobile breakpoint to not conflict with tablet */
 @media screen and (max-width: 768px) {
-  /* ... existing mobile styles ... */
+  :root {
+    --tank-width: 180px;
+    --tank-height: 320px;
+    --logo-width: 60px;
+    --logo-height: 50px;
+  }
+
+  .LogoBar {
+    flex-wrap: wrap;
+    padding: 10px;
+    height: auto;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  /* Adjust logo size */
+  :root {
+    --logo-width: 50px;
+    --logo-height: 42px;
+  }
+
+  /* Make title smaller */
+  .TextComponent.header-title {
+    order: 2;
+    margin-left: 0;
+    flex: 0 0 100%; /* Take full width in second row */
+    text-align: center;
+  }
+
+  .TextComponent.header-title h1 {
+    font-size: 24px; /* Smaller font size */
+    line-height: 1.2;
+    white-space: normal; /* Allow wrapping if needed */
+  }
+
+  /* Adjust controls layout */
+  .header-controls {
+    order: 1;
+    margin-left: 0;
+    gap: 15px;
+  }
+
+  /* Adjust login section */
+  .login-section {
+    gap: 8px;
+  }
+
+  .login-icon {
+    width: 28px;
+    height: 28px;
+    background-size: 28px 28px;
+  }
+
+  .login-input {
+    width: 80px;
+  }
+
+  .login-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    height: 28px;
+  }
+
+  .dateTime .outer {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .TextComponent {
+    font-size: 24px;
+  }
+
+  .form__field {
+    font-size: 1.3rem;
+  }
+
+  .TextComponent.header-title h1 {
+    font-size: calc(var(--logo-height) * 0.7);
+  }
+
+  .action-buttons button.server_binding {
+    font-size: 12px;
+    min-height: 36px;
+    padding: 6px 10px;
+  }
+
+  .login-button {
+    font-size: 16px;
+    padding: 6px 12px;
+    min-width: 80px;
+  }
+
+  .tank-controls {
+    flex-direction: column; /* Stack columns on smaller screens */
+    gap: 20px;
+  }
+
+  .tank-group {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tank-info {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .tank-info .TextComponent {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .tank-info .TextComponent h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .action-buttons {
+    width: 100%;
+    max-width: var(--tank-width);
+    margin: auto;
+  }
+
+  .dateTime {
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .dateTime .outer {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .percentage-controls {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .tank-controls-container {
+    width: 100%;
+    min-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .tank-controls {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .other-controls {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tank-controls {
+    align-items: center; /* Center all controls */
+    width: 100%;
+  }
+
+  .percentage-controls {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center; /* Center PV and CV inputs */
+  }
+
+  .percentage-controls .control-group,
+  .other-controls .control-group {
+    max-width: 220px;
+    width: 100%;
+  }
+
+  .other-controls {
+    width: 100%;
+    align-items: center; /* Center other inputs */
+  }
+
+  .control-group {
+    align-items: center; /* Center the input labels and fields */
+  }
+
+  .TextComponent {
+    justify-content: center; /* Center the text labels */
+    width: 100%;
+  }
+
+  .form__group {
+    margin: 0 auto; /* Center the input fields */
+  }
+
+  .header-controls {
+    gap: 20px;
+  }
+
+  .login-section {
+    padding-right: 5px;
+  }
+
+  .dateTime {
+    padding-left: 5px;
+  }
+
+  .tank-controls {
+    align-items: center;
+    width: 100%;
+  }
+
+  .other-controls {
+    width: 100%;
+    align-items: center;
+  }
+
+  .control-group {
+    align-items: center;
+  }
+
+  .TextComponent {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form__group {
+    margin: 0 auto;
+  }
+
+  .MainContainer {
+    padding: 20px;
+    min-width: 100%;
+  }
+
+  .TanqueContainer {
+    width: 100%;
+    padding: 0;
+  }
+
+  .tank-group {
+    width: 100%;
+    max-width: none; /* Remove max-width constraint on mobile */
+    margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .tank-controls-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .tank-controls {
+    width: 100%;
+    min-width: 100%; /* Force full width */
+    padding: 0;
+  }
+
+  .other-controls {
+    flex-direction: column; /* Stack controls vertically on mobile */
+    width: 100%;
+    gap: 15px;
+  }
+
+  .tank-controls {
+    flex-direction: column;
+    gap: 30px;
+    min-height: 400px; /* Add minimum height to prevent overlap */
+    padding: 20px 0; /* Add padding for spacing */
+  }
+
+  .percentage-controls {
+    flex-direction: row;
+    height: auto; /* Remove fixed height */
+    min-height: 120px; /* Set minimum height */
+    gap: 20px;
+    width: auto;
+    align-items: center;
+  }
+
+  .other-controls {
+    flex-direction: column;
+    height: auto; /* Remove fixed height */
+    min-height: 200px; /* Set minimum height */
+    max-height: none; /* Remove max height constraint */
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .control-group {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 10px; /* Add margin between groups */
+  }
+
+  .tank-group {
+    margin-bottom: 40px; /* Add space between tank groups */
+  }
+
+  /* Ensure proper spacing between tanks */
+  .tank-group + .tank-group {
+    margin-top: 60px;
+  }
+
+  /* Adjust container spacing */
+  .tank-controls-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --logo-width: 50px;
+    --logo-height: 42px;
+  }
+
+  .TextComponent.header-title h1 {
+    font-size: calc(var(--logo-height) * 0.65);
+  }
+
+  .LogoBar {
+    padding: 5px 10px;
+  }
+
+  .tank-info .TextComponent {
+    font-size: 20px;
+  }
+
+  .percentage-controls .control-group,
+  .other-controls .control-group {
+    max-width: 180px;
+  }
+
+  .MainContainer {
+    padding: 15px;
+  }
+
+  .tank-group {
+    padding: 0 5px;
+  }
+
+  .tank-controls {
+    min-height: 450px;
+  }
+
+  .control-group {
+    max-width: 240px;
+  }
+
+  .LogoBar {
+    padding: 8px;
+  }
+
+  .TextComponent.header-title h1 {
+    font-size: 20px;
+  }
+
+  .login-input {
+    width: 70px;
+  }
+
+  .login-button {
+    min-width: 70px;
+    font-size: 12px;
+  }
+
+  .dateTime {
+    font-size: 12px;
+  }
 }
