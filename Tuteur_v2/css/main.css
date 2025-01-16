@@ -58,6 +58,10 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.MainContainer {
+  color: var(--text-primary);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -74,12 +78,11 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-#main {
+#Main {
   position: relative;
   flex: 1;
   background-size: 10px 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--text-primary);
   width: 100%;
   min-width: 100%;
   margin: 0;
@@ -224,6 +227,12 @@ body {
 
 .server_binding {
   width: 100%;
+}
+
+.bar {
+  border: 0px solid red;
+  height: 232px;
+  width: 28px;
 }
 
 .server_binding.bar {
@@ -1004,7 +1013,8 @@ input {
     font-size: calc(var(--logo-height) * 0.5);
   }
 
-  .dayTime, .date {
+  .dayTime,
+  .date {
     font-size: 10px;
   }
 

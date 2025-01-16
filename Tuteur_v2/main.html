@@ -144,8 +144,15 @@
           </div>
         </div>
       </div>
-      <div class="TextComponent header-title">
-        <h1>ESTADO DE TANQUES</h1>
+      <div id="main" onclick="renderJs.hideMenu()" prefix="Siemens">
+        <div
+          class="TextComponent header-title"
+          comp_type="TextComponent"
+          id="478ebbcd7729cb88812e"
+          degree="0"
+        >
+          <h1>ESTADO DE TANQUES</h1>
+        </div>
       </div>
     </div>
 
@@ -167,6 +174,21 @@
                 <div
                   class="server_binding bar"
                   comp_type="AnalogBarComponent"
+                  show_function="_callback_loadAnalogBarComponent"
+                  range="20"
+                  address="176"
+                  type="4"
+                  length="1"
+                  valbarcol="rgb(255, 0, 0);"
+                  max_val="100"
+                  min_val="0"
+                  min_scale="10"
+                  scale_height="23.2"
+                  bar_value="50"
+                  device_name=""
+                  block_format="Unsigned"
+                  decimal="1"
+                  scope_color="100.0,0.0,0.0:30.0:-8355712,30.1:60.0:-12156236,60.1:100.0:-5952982"
                   id="42eda9d4f6ca594df210"
                   tag_id="3a26f2f4-9996-4e6e-8ece-7bc7007160dc"
                 >
@@ -188,6 +210,26 @@
                   <div class="whiteBg"></div>
                 </div>
               </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                comp_type="LineComponent"
+                id="47ec851b55c3d743acae"
+                version="1.1"
+                baseProfile="tiny"
+              >
+                <g>
+                  <polyline
+                    fill="none"
+                    stroke="rgb(0,0,0)"
+                    stroke-width="1"
+                    stroke-dasharray="0"
+                    filter="Alpha(opacity=100)"
+                    opacity="1"
+                    points="-6848,81 -5547,80 "
+                    stroke-linecap="round"
+                  ></polyline>
+                </g>
+              </svg>
             </div>
             <div class="tank-controls-container">
               <div class="tank-controls">
@@ -216,11 +258,44 @@
                         </div>
 
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="10"
+                            address="160"
+                            type="4"
+                            length="1"
+                            show_param="4c1fbb25f40490034993"
+                            id="4c1fbb25f40490034993"
+                            degree="0"
+                            tag_id="2b883231-4e40-47e0-bdee-edfe9b3d33b9"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="true"
+                          >
+                            <style class="invalid4c1fbb25f40490034993">
+                              .invalid4c1fbb25f40490034993:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid4c1fbb25f40490034993::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4c1fbb25f40490034993:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4c1fbb25f40490034993::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
                             <div class="valueText form__group">
                               <input
                                 type="text"
                                 class="form__field inputVal invalid4c1fbb25f40490034993"
+                                type="text"
+                                size="5"
                                 value=""
                               />
                             </div>
@@ -229,11 +304,43 @@
                         </div>
 
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="10"
+                            address="80"
+                            type="4"
+                            length="1"
+                            show_param="424abc15f53f1637712e"
+                            id="424abc15f53f1637712e"
+                            degree="0"
+                            tag_id="0423c298-ba8f-40b6-b5a6-23627620b99c"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="true"
+                          >
+                            <style class="invalid424abc15f53f1637712e">
+                              .invalid424abc15f53f1637712e:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid424abc15f53f1637712e::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid424abc15f53f1637712e:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid424abc15f53f1637712e::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
                             <div class="valueText form__group">
                               <input
                                 type="text"
                                 class="form__field inputVal invalid424abc15f53f1637712e"
+                                size="5"
                                 value=""
                               />
                             </div>
@@ -319,6 +426,22 @@
                       class="server_binding textCenter"
                       id="4f9a91d639bbc63a0092"
                       tag_id="30acf857-eba8-4a7b-a045-d98ea4e56598"
+                      onclick="renderJs.setDigitalData(this)"
+                      range="131"
+                      address="9"
+                      type="1"
+                      length="1"
+                      on_text="SIMULACION<br/>CARGADA"
+                      off_text="Simular valor"
+                      id="4f9a91d639bbc63a0092"
+                      show_param="4f9a91d639bbc63a0092"
+                      degree="0"
+                      tag_id="30acf857-eba8-4a7b-a045-d98ea4e56598"
+                      device_name=""
+                      on_image="img/00823023.png"
+                      off_image="img/Default.png"
+                      bg_image="img/Default.png"
+                      mode="true"
                       onclick="renderJs.setDigitalData(this)"
                     >
                       Simular valor
@@ -510,6 +633,20 @@
                       id="4b929838491a293de8ca"
                       tag_id="8dd4c2ec-fd29-4e12-8840-8d8b3800bc76"
                       onclick="renderJs.setDigitalData(this)"
+                      range="131"
+                      address="10"
+                      type="1"
+                      length="1"
+                      on_text="SIMULACION<br/>CARGADA"
+                      off_text="Simular valor"
+                      show_param="4b929838491a293de8ca"
+                      degree="0"
+                      tag_id="8dd4c2ec-fd29-4e12-8840-8d8b3800bc76"
+                      device_name=""
+                      on_image="img/00823023.png"
+                      off_image="img/Default.png"
+                      bg_image="img/Default.png"
+                      mode="true"
                     >
                       Simular valor
                     </button>
