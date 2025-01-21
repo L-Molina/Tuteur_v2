@@ -102,7 +102,7 @@
     <script src="js/theme.js"></script>
     <link rel="stylesheet" href="css/video.css" id="css/video.css" />
     <link rel="stylesheet" href="css/webcam.css" id="css/webcam.css" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body onload="loadPage()">
     <div id="main">
@@ -357,7 +357,14 @@
                               />
                             </div>
                           </div>
-                          <div class="TextComponent">Filtro</div>
+                          <div
+                            class="TextComponent"
+                            comp_type="TextComponent"
+                            id="4340bd6a04854f93dbc7"
+                            degree="0"
+                          >
+                            Filtro
+                          </div>
                         </div>
 
                         <div class="control-group">
@@ -402,14 +409,28 @@
                               />
                             </div>
                           </div>
-                          <div class="TextComponent">Tiempo entre alertas</div>
+                          <div
+                            class="TextComponent"
+                            comp_type="TextComponent"
+                            id="4c00a7948ca85a4401d9"
+                            degree="0"
+                          >
+                            Tiempo entre alertas
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div class="control-group">
-                    <div class="TextComponent">CV</div>
+                    <div
+                      class="TextComponent"
+                      comp_type="TextComponent"
+                      id="46fdaf915b38adac02ea"
+                      degree="0"
+                    >
+                      CV
+                    </div>
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
                         <div class="control-group">
@@ -878,27 +899,72 @@
                               />
                             </div>
                           </div>
-                          <div class="TextComponent">Tiempo entre alertas</div>
+                          <div
+                            class="TextComponent"
+                            comp_type="TextComponent"
+                            id="4c00a7948ca85a4401d9"
+                            degree="0"
+                          >
+                            Tiempo entre alertas
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div class="control-group">
-                    <div class="TextComponent">CV</div>
+                    <div
+                      class="TextComponent"
+                      comp_type="TextComponent"
+                      id="46fdaf915b38adac02ea"
+                      degree="0"
+                    >
+                      CV
+                    </div>
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="20"
+                            address="192"
+                            type="4"
+                            length="1"
+                            show_param="4bb998020113d8cadf22"
+                            id="4bb998020113d8cadf22"
+                            degree="0"
+                            tag_id="226a36e7-ef47-44b7-b4ea-d52011337797"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="false"
+                          >
+                            <style class="invalid4bb998020113d8cadf22">
+                              .invalid4bb998020113d8cadf22:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid4bb998020113d8cadf22::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4bb998020113d8cadf22:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4bb998020113d8cadf22::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
                             <div class="valueText form__group">
                               <input
-                                type="number"
+                                type="text"
+                                size="5"
                                 class="form__field inputVal invalid4bb998020113d8cadf22"
                                 value=""
                                 min="0"
                                 max="100"
                                 onkeypress="return validatePercentage(event)"
-                                oninput="limitPercentage(this)"
                                 readonly
                               />
                               <span class="unit">%</span>
@@ -907,10 +973,42 @@
                         </div>
 
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="20"
+                            address="32"
+                            type="4"
+                            length="1"
+                            show_param="401a827fae5feb9c5424"
+                            id="401a827fae5feb9c5424"
+                            degree="0"
+                            tag_id="c5f36024-8b3f-41e8-a0e0-7a91180ca535"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="false"
+                          >
+                            <style class="invalid401a827fae5feb9c5424">
+                              .invalid401a827fae5feb9c5424:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid401a827fae5feb9c5424::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid401a827fae5feb9c5424:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid401a827fae5feb9c5424::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
                             <div class="valueText form__group">
                               <input
                                 type="text"
+                                size="5"
                                 class="form__field inputVal invalid401a827fae5feb9c5424"
                                 value=""
                                 readonly
@@ -921,10 +1019,42 @@
                         </div>
 
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="20"
+                            address="48"
+                            type="4"
+                            length="1"
+                            show_param="4323bbca07c959447992"
+                            id="4323bbca07c959447992"
+                            degree="0"
+                            tag_id="7edf21cf-1e22-4bee-84f7-597f709515a2"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="false"
+                          >
+                            <style class="invalid4323bbca07c959447992">
+                              .invalid4323bbca07c959447992:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid4323bbca07c959447992::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4323bbca07c959447992:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4323bbca07c959447992::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
                             <div class="valueText form__group">
                               <input
                                 type="text"
+                                size="5"
                                 class="form__field inputVal invalid4323bbca07c959447992"
                                 value=""
                                 readonly
@@ -940,16 +1070,47 @@
                 <div class="other-controls">
                   <div class="action-buttons">
                     <h3>Simular Valores</h3>
-                    <div class="server_binding analog_input">
+                    <div
+                      class="server_binding analog_input"
+                      comp_type="AnalogValueComponent"
+                      comp_version="8.3"
+                      show_function="_callback_analogValue"
+                      range="10"
+                      address="560"
+                      type="4"
+                      length="1"
+                      show_param="47afb3fc461931d59d41"
+                      id="47afb3fc461931d59d41"
+                      degree="0"
+                      tag_id="2dfd4767-f7b6-4e0e-8a18-4b11b775440a"
+                      device_name=""
+                      block_format="Unsigned"
+                      decimal="1"
+                      mode="true"
+                    >
+                      <style class="invalid47afb3fc461931d59d41">
+                        .invalid47afb3fc461931d59d41:-moz-placeholder {
+                          color: rgb(0, 0, 0);
+                        }
+                        .invalid47afb3fc461931d59d41::-moz-placeholder {
+                          color: rgb(0, 0, 0);
+                        }
+                        input.invalid47afb3fc461931d59d41:-ms-input-placeholder {
+                          color: rgb(0, 0, 0);
+                        }
+                        input.invalid47afb3fc461931d59d41::-webkit-input-placeholder {
+                          color: rgb(0, 0, 0);
+                        }
+                      </style>
                       <div class="valueText form__group">
                         <input
-                          type="number"
+                          type="text"
+                          size="5"
                           class="form__field inputVal invalid47afb3fc461931d59d41"
                           value=""
                           min="0"
                           max="100"
                           onkeypress="return validatePercentage(event)"
-                          oninput="limitPercentage(this)"
                         />
                         <span class="unit">%</span>
                       </div>
@@ -974,18 +1135,56 @@
                       Simular valor
                     </button>
                     <button
+                      comp_type="PushButton"
+                      show_function="_callback_loadPushButton"
                       class="server_binding textCenter"
                       id="4166b297458862215fe4"
                       tag_id="49f67a1e-e37e-4d79-89f3-aaf37d3ff5b4"
+                      range="131"
+                      address="14"
+                      type="1"
+                      length="1"
+                      on_text="Mantener 10sec"
+                      off_text="Activar/Desactivar"
+                      frequency="1000"
+                      mouse_mode="Hold"
+                      ontouchstart="renderJs.FuncTouchDown(this)"
+                      onmousedown="renderJs.FuncMouseDown(this)"
+                      onmouseout="renderJs.FuncMouseUp(this)"
+                      onmouseup="renderJs.FuncMouseUp(this)"
+                      ontouchend="renderJs.FuncTouchUp(this)"
                       onclick="renderJs.setDigitalData(this)"
+                      show_param="4166b297458862215fe4"
+                      degree="0"
+                      device_name=""
+                      mode="true"
                     >
                       Activar/Desactivar
                     </button>
                     <button
+                      comp_type="PushButton"
+                      show_function="_callback_loadPushButton"
                       class="server_binding textCenter"
                       id="45769d2dde598663426a"
                       tag_id="46b2859d-4049-42c6-91b7-631996daee86"
+                      range="131"
+                      address="4"
+                      type="1"
+                      length="1"
+                      on_text="Mantener 10sec"
+                      off_text="Enviar mail"
+                      frequency="1000"
+                      mouse_mode="Hold"
+                      ontouchstart="renderJs.FuncTouchDown(this)"
+                      onmousedown="renderJs.FuncMouseDown(this)"
+                      onmouseout="renderJs.FuncMouseUp(this)"
+                      onmouseup="renderJs.FuncMouseUp(this)"
+                      ontouchend="renderJs.FuncTouchUp(this)"
                       onclick="renderJs.onPushButtonClicked(this)"
+                      show_param="45769d2dde598663426a"
+                      degree="0"
+                      device_name=""
+                      mode="true"
                     >
                       Enviar mail
                     </button>
