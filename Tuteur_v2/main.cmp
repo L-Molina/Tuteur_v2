@@ -25,7 +25,7 @@
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
             <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1505@-@1034"/>
             <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@48"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@48"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="BasicColorProperty$BackgroundColorProperty" id="PROPERTY_backgroundColor" value="255@-@255@-@255"/>
             <ComponentProperty class="BorderProperty$NoFill" id="PROPERTY_NoFill" value="false"/>
@@ -75,7 +75,7 @@
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
             <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
             <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@48"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@48"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="BasicColorProperty$BackgroundColorProperty" id="PROPERTY_backgroundColor" value="255@-@255@-@255"/>
             <ComponentProperty class="BorderProperty$NoFill" id="PROPERTY_NoFill" value="false"/>
@@ -93,7 +93,7 @@
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
             <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
             <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@24"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@24"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="BasicColorProperty$BackgroundColorProperty" id="PROPERTY_backgroundColor" value="255@-@255@-@255"/>
             <ComponentProperty class="BorderProperty$NoFill" id="PROPERTY_NoFill" value="false"/>
@@ -197,7 +197,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="false"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="2"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="204@-@204@-@204"/>
@@ -207,8 +207,8 @@
             <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="AnalogValue"/>
             <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="453ea683ca94510b8cac"/>
             <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="42"/>
-            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="507@-@186"/>
-            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="130@-@98"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="511@-@288"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="138@-@98"/>
             <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
             <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1230@-@974"/>
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="38@-@38"/>
@@ -223,7 +223,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="true"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="1"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="255@-@255@-@255"/>
@@ -249,7 +249,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="false"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="2"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="204@-@204@-@204"/>
@@ -275,7 +275,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="false"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="2"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="204@-@204@-@204"/>
@@ -292,7 +292,7 @@
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
             <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
             <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@24"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@24"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="BasicColorProperty$BackgroundColorProperty" id="PROPERTY_backgroundColor" value="255@-@255@-@255"/>
             <ComponentProperty class="BorderProperty$NoFill" id="PROPERTY_NoFill" value="false"/>
@@ -310,7 +310,7 @@
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
             <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
             <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@24"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@24"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="BasicColorProperty$BackgroundColorProperty" id="PROPERTY_backgroundColor" value="255@-@255@-@255"/>
             <ComponentProperty class="BorderProperty$NoFill" id="PROPERTY_NoFill" value="false"/>
@@ -328,7 +328,7 @@
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
             <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
             <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@24"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@24"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="BasicColorProperty$BackgroundColorProperty" id="PROPERTY_backgroundColor" value="255@-@255@-@255"/>
             <ComponentProperty class="BorderProperty$NoFill" id="PROPERTY_NoFill" value="false"/>
@@ -346,7 +346,7 @@
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
             <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
             <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@24"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@24"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="BasicColorProperty$BackgroundColorProperty" id="PROPERTY_backgroundColor" value="255@-@255@-@255"/>
             <ComponentProperty class="BorderProperty$NoFill" id="PROPERTY_NoFill" value="false"/>
@@ -420,7 +420,7 @@
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
             <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
             <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@48"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@48"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="BasicColorProperty$BackgroundColorProperty" id="PROPERTY_backgroundColor" value="255@-@255@-@255"/>
             <ComponentProperty class="BorderProperty$NoFill" id="PROPERTY_NoFill" value="false"/>
@@ -438,7 +438,7 @@
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
             <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
             <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@24"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@24"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="BasicColorProperty$BackgroundColorProperty" id="PROPERTY_backgroundColor" value="255@-@255@-@255"/>
             <ComponentProperty class="BorderProperty$NoFill" id="PROPERTY_NoFill" value="false"/>
@@ -465,7 +465,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="true"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="1"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="255@-@255@-@255"/>
@@ -482,7 +482,7 @@
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
             <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
             <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@24"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@24"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="BasicColorProperty$BackgroundColorProperty" id="PROPERTY_backgroundColor" value="255@-@255@-@255"/>
             <ComponentProperty class="BorderProperty$NoFill" id="PROPERTY_NoFill" value="false"/>
@@ -509,7 +509,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="true"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="1"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="255@-@255@-@255"/>
@@ -535,7 +535,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="true"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="1"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="255@-@255@-@255"/>
@@ -561,7 +561,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="false"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="2"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="204@-@204@-@204"/>
@@ -587,7 +587,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="false"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="2"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="204@-@204@-@204"/>
@@ -613,7 +613,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="false"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="2"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="204@-@204@-@204"/>
@@ -623,8 +623,8 @@
             <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="AnalogValue"/>
             <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="47afb3fc461931d59d41"/>
             <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="38"/>
-            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="710@-@186"/>
-            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="130@-@98"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="708@-@288"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="134@-@98"/>
             <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
             <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1230@-@974"/>
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="38@-@38"/>
@@ -639,7 +639,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="true"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="1"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="255@-@255@-@255"/>
@@ -705,7 +705,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="true"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="1"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="255@-@255@-@255"/>
@@ -731,7 +731,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="true"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="1"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="255@-@255@-@255"/>
@@ -757,7 +757,7 @@
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Word"/>
             <ComponentProperty class="AnalogFormatProperty$DecimalPalcesProperty" id="PROPERTY_DECIMAL_PLACES" value="0"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="true"/>
-            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Siemens Sans Global@-@0@-@36"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Dialog@-@0@-@36"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
             <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="1"/>
             <ComponentProperty class="BasicColorProperty$AnalogInputBackgroundColor" id="PROPERTY_ANALOGINPUT_BGCOLOR" value="255@-@255@-@255"/>
@@ -767,8 +767,8 @@
             <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="SwitchButton"/>
             <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="4f9a91d639bbc63a0092"/>
             <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="41"/>
-            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="507@-@275"/>
-            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="130@-@60"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="511@-@376"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="138@-@60"/>
             <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
             <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1230@-@974"/>
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
@@ -781,7 +781,7 @@
             <ComponentProperty class="LogoBindingProperty$VariableLength" id="PROPERTY_Length" value="1"/>
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Bit"/>
             <ComponentProperty class="AnimationProperty$OnImage" id="PROPERTY_ON_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Colors\GreenYellow.png@-@00823023.png@-@Default.png@-@null"/>
-            <ComponentProperty class="AnimationProperty$OffImage" id="PROPERTY_OFF_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Build-In Graph\Default\Default.png@-@Default.png@-@Default.png@-@null"/>
+            <ComponentProperty class="AnimationProperty$OffImage" id="PROPERTY_OFF_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Colors\DarkGray.png@-@620118B2.png@-@Default.png@-@null"/>
             <ComponentProperty class="AnimationProperty$OnText" id="PROPERTY_ON_TEXT" value="SIMULACION&#10;CARGADA"/>
             <ComponentProperty class="AnimationProperty$OffText" id="PROPERTY_OFF_TEXT" value="Simular valor"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="true"/>
@@ -793,8 +793,8 @@
             <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="SwitchButton"/>
             <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="4b929838491a293de8ca"/>
             <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="40"/>
-            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="710@-@275"/>
-            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="130@-@60"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="707@-@376"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="136@-@60"/>
             <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
             <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1230@-@974"/>
             <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
@@ -807,7 +807,7 @@
             <ComponentProperty class="LogoBindingProperty$VariableLength" id="PROPERTY_Length" value="1"/>
             <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Bit"/>
             <ComponentProperty class="AnimationProperty$OnImage" id="PROPERTY_ON_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Colors\GreenYellow.png@-@00823023.png@-@Default.png@-@null"/>
-            <ComponentProperty class="AnimationProperty$OffImage" id="PROPERTY_OFF_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Build-In Graph\Default\Default.png@-@Default.png@-@Default.png@-@null"/>
+            <ComponentProperty class="AnimationProperty$OffImage" id="PROPERTY_OFF_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Colors\DarkGray.png@-@620118B2.png@-@Default.png@-@null"/>
             <ComponentProperty class="AnimationProperty$OnText" id="PROPERTY_ON_TEXT" value="SIMULACION&#10;CARGADA"/>
             <ComponentProperty class="AnimationProperty$OffText" id="PROPERTY_OFF_TEXT" value="Simular valor"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="true"/>
@@ -819,7 +819,7 @@
             <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="Push Button"/>
             <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="4b66a5200bf17d934783"/>
             <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="43"/>
-            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="507@-@406"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="511@-@571"/>
             <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="138@-@60"/>
             <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
             <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1230@-@974"/>
@@ -847,7 +847,7 @@
             <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="Push Button"/>
             <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="45769d2dde598663426a"/>
             <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="42"/>
-            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="702@-@406"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="707@-@571"/>
             <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="138@-@60"/>
             <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
             <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1230@-@974"/>
@@ -875,7 +875,7 @@
             <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="SwitchButton"/>
             <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="4b8fa97ed1a9c7df0091"/>
             <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="42"/>
-            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="464@-@406"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="466@-@571"/>
             <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="60@-@60"/>
             <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
             <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1230@-@974"/>
@@ -901,7 +901,7 @@
             <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="SwitchButton"/>
             <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="4b398bfd01c5b036373c"/>
             <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="43"/>
-            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="823@-@406"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="826@-@571"/>
             <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="60@-@60"/>
             <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
             <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1230@-@974"/>
@@ -918,6 +918,58 @@
             <ComponentProperty class="AnimationProperty$OffImage" id="PROPERTY_OFF_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Build-In Graph\StandardIcons\Clock_40.png@-@5A35E79C.png@-@Default.png@-@null"/>
             <ComponentProperty class="AnimationProperty$OnText" id="PROPERTY_ON_TEXT" value=""/>
             <ComponentProperty class="AnimationProperty$OffText" id="PROPERTY_OFF_TEXT" value=""/>
+            <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="false"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Arial@-@0@-@14"/>
+            <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
+            <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="1"/>
+        </Component>
+        <Component class="com.siemens.logo.udwp.editor.component.CustomizedComponent" id="41f59024c4e04a5a059c" name="SwitchButton">
+            <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="SwitchButton"/>
+            <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="41f59024c4e04a5a059c"/>
+            <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="41"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="511@-@473"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="138@-@60"/>
+            <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
+            <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1230@-@974"/>
+            <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
+            <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
+            <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
+            <ComponentProperty class="LogoBindingProperty$TagName" id="PROPERTY_Tag_Name" value="Tk1_ActivarSimu"/>
+            <ComponentProperty class="LogoBindingProperty$IOTThingNameProperty" id="PROPERTY_DeviceName" value="Local Device"/>
+            <ComponentProperty class="LogoBindingProperty$BlockType" id="PROPERTY_BlockType" value="M"/>
+            <ComponentProperty class="LogoBindingProperty$BlockNumber" id="PROPERTY_BlockNumber" value="M10"/>
+            <ComponentProperty class="LogoBindingProperty$VariableLength" id="PROPERTY_Length" value="1"/>
+            <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Bit"/>
+            <ComponentProperty class="AnimationProperty$OnImage" id="PROPERTY_ON_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Colors\GreenYellow.png@-@00823023.png@-@Default.png@-@null"/>
+            <ComponentProperty class="AnimationProperty$OffImage" id="PROPERTY_OFF_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Colors\DarkGray.png@-@620118B2.png@-@Default.png@-@null"/>
+            <ComponentProperty class="AnimationProperty$OnText" id="PROPERTY_ON_TEXT" value="ACTIVADO"/>
+            <ComponentProperty class="AnimationProperty$OffText" id="PROPERTY_OFF_TEXT" value="Activar/Desactivar"/>
+            <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="false"/>
+            <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Arial@-@0@-@14"/>
+            <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>
+            <ComponentProperty class="TextStyleProperty$TextAlgin" id="PROPERTY_TEXT_ALIGN" value="1"/>
+        </Component>
+        <Component class="com.siemens.logo.udwp.editor.component.CustomizedComponent" id="430496a1dbe140d95661" name="SwitchButton">
+            <ComponentProperty class="NameProperty" id="PROPERTY_Name" value="SwitchButton"/>
+            <ComponentProperty class="BasicProperty$IDProperty" id="PROPERTY_Component_Id" value="430496a1dbe140d95661"/>
+            <ComponentProperty class="BasicProperty$ZIndex" id="PROPERTY_ZIndex" value="42"/>
+            <ComponentProperty class="BoundsProperty$Location" id="PROPERTY_Location" value="708@-@473"/>
+            <ComponentProperty class="BoundsProperty$Size" id="PROPERTY_Size" value="136@-@60"/>
+            <ComponentProperty class="BasicProperty$Degree" id="PROPERTY_Degree" value="0"/>
+            <ComponentProperty class="BoundsProperty$MaxSize" id="PROPERTY_MAX_SIZE" value="1230@-@974"/>
+            <ComponentProperty class="BoundsProperty$MinSize" id="PROPERTY_MIN_SIZE" value="50@-@50"/>
+            <ComponentProperty class="BoundsProperty$MaxPosition" id="PROPERTY_MAX_POSITION" value="1290@-@1034"/>
+            <ComponentProperty class="BoundsProperty$MinPosition" id="PROPERTY_MIN_POSITION" value="0@-@0"/>
+            <ComponentProperty class="LogoBindingProperty$TagName" id="PROPERTY_Tag_Name" value="Tk2_Mail_enviado"/>
+            <ComponentProperty class="LogoBindingProperty$IOTThingNameProperty" id="PROPERTY_DeviceName" value="Local Device"/>
+            <ComponentProperty class="LogoBindingProperty$BlockType" id="PROPERTY_BlockType" value="M"/>
+            <ComponentProperty class="LogoBindingProperty$BlockNumber" id="PROPERTY_BlockNumber" value="M4"/>
+            <ComponentProperty class="LogoBindingProperty$VariableLength" id="PROPERTY_Length" value="1"/>
+            <ComponentProperty class="LogoBindingProperty$AccessMode" id="PROPERTY_AccessMode" value="Bit"/>
+            <ComponentProperty class="AnimationProperty$OnImage" id="PROPERTY_ON_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Colors\GreenYellow.png@-@00823023.png@-@Default.png@-@null"/>
+            <ComponentProperty class="AnimationProperty$OffImage" id="PROPERTY_OFF_IMAGE" value="C:\Program Files\lwe\lwe\res\Graph Library\Colors\DarkGray.png@-@620118B2.png@-@Default.png@-@null"/>
+            <ComponentProperty class="AnimationProperty$OnText" id="PROPERTY_ON_TEXT" value="ACTIVADO"/>
+            <ComponentProperty class="AnimationProperty$OffText" id="PROPERTY_OFF_TEXT" value="Activar/Desactivar"/>
             <ComponentProperty class="LogoBindingProperty$Mode" id="PROPERTY_Mode" value="false"/>
             <ComponentProperty class="TextStyleProperty$FontStyle" id="PROPERTY_Font" value="Arial@-@0@-@14"/>
             <ComponentProperty class="TextStyleProperty$TextColor" id="PROPERTY_TextColor" value="0@-@0@-@0"/>

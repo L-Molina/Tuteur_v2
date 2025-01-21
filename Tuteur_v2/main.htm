@@ -14,64 +14,95 @@
     <meta http-equiv="Cache-control" content="no-cache, must-revalidate" />
     <meta http-equiv="Expires" content="0" />
 
+    <style type="text/css">
+      body {
+        // background-image: url(img/default.jpg);
+        background: gray;
+        background-size: 100%;
+
+        -moz-user-select: none; /*ff*/
+        -webkit-user-select: none; /*webkit*/
+        -ms-user-select: none; /*IE10*/
+        -khtml-user-select: none; /*old*/
+        user-select: none;
+      }
+      #wrap {
+        position: relative;
+        margin: auto;
+      }
+      #main {
+        position: relative;
+        //margin: auto;
+        padding: 0;
+        top: 0;
+        left: 0;
+        background-color: white;
+        //border:1px solid red;
+      }
+      .textCenter {
+        //MARGIN-LEFT: auto;
+        vertical-align: middle;
+        text-align: center;
+        //word-wrap:break-word;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    </style>
     <link href="js/jqueryui/jqueryui.css" rel="stylesheet" type="text/css" />
     <link href="css/nav.css" rel="stylesheet" type="text/css" />
     <!-- this script helps older IE versions to understand html5 -->
     <!--[if lt IE 9]>
       <script src="js/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="/js/utility.js?rdm=173644532"></script>
-    <script type="text/javascript" src="/js/storage.js?rdm=173644532"></script>
-    <script type="text/javascript" src="/js/bigint.js?rdm=173644532"></script>
-    <script type="text/javascript" src="/js/encrypt.js?rdm=173644532"></script>
-    <script type="text/javascript" src="/js/ajax.js?rdm=173644532"></script>
-    <script type="text/javascript" src="/js/login.js?rdm=173644532"></script>
+    <script type="text/javascript" src="/js/utility.js?rdm=173740431"></script>
+    <script type="text/javascript" src="/js/storage.js?rdm=173740431"></script>
+    <script type="text/javascript" src="/js/bigint.js?rdm=173740431"></script>
+    <script type="text/javascript" src="/js/encrypt.js?rdm=173740431"></script>
+    <script type="text/javascript" src="/js/ajax.js?rdm=173740431"></script>
+    <script type="text/javascript" src="/js/login.js?rdm=173740431"></script>
     <script
       type="text/javascript"
-      src="/js/pagecommon.js?rdm=173644532"
+      src="/js/pagecommon.js?rdm=173740431"
     ></script>
-    <script type="text/javascript" src="/js/binding.js?rdm=173644532"></script>
-    <script type="text/javascript" src="js/jquery.js?rdm=173644532"></script>
+    <script type="text/javascript" src="/js/binding.js?rdm=173740431"></script>
+    <script type="text/javascript" src="js/jquery.js?rdm=173740431"></script>
     <script
       type="text/javascript"
-      src="js/jqueryui/jqueryui.js?rdm=173644532"
+      src="js/jqueryui/jqueryui.js?rdm=173740431"
     ></script>
-    <script type="text/javascript" src="js/map.js?rdm=173644532"></script>
-    <script type="text/javascript" src="js/echart.js?rdm=173644532"></script>
-    <script type="text/javascript" src="js/render.js?rdm=173644532"></script>
+    <script type="text/javascript" src="js/map.js?rdm=173740431"></script>
+    <script type="text/javascript" src="js/echart.js?rdm=173740431"></script>
+    <script type="text/javascript" src="js/render.js?rdm=173740431"></script>
     <script
-      src="js/anavalue.js?rdm=1736445329306"
+      src="js/anavalue.js?rdm=1737404317210"
       type="text/javascript"
       id="js/anavalue.js"
     ></script>
     <script
-      src="js/rainbow.js?rdm=1736445329307"
+      src="js/rainbow.js?rdm=1737404317210"
       type="text/javascript"
       id="js/rainbow.js"
     ></script>
     <script
-      src="js/trend.js?rdm=1736445329307"
+      src="js/trend.js?rdm=1737404317210"
       type="text/javascript"
       id="js/trend.js"
     ></script>
     <script
-      src="js/video.js?rdm=1736445329307"
+      src="js/video.js?rdm=1737404317210"
       type="text/javascript"
       id="js/video.js"
     ></script>
     <script
-      src="js/webcam.js?rdm=1736445329307"
+      src="js/webcam.js?rdm=1737404317211"
       type="text/javascript"
       id="js/webcam.js"
     ></script>
-    <script type="text/javascript" src="js/theme.js"></script>
-
     <link rel="stylesheet" href="css/video.css" id="css/video.css" />
     <link rel="stylesheet" href="css/webcam.css" id="css/webcam.css" />
-    <link rel="stylesheet" href="css/main.css">
   </head>
-
-  <body onload="loadEditPage()">
+  <body onload="loadPage()">
     <div id="main">
       <button
         class="theme-toggle"
@@ -87,6 +118,9 @@
             role="img"
             aria-label="Logo"
             id="4829918a9367d3723e5f"
+            bg_image="img/8CAD163D.png"
+            comp_type="ImageComponent"
+            degree="0"
           ></div>
           <div class="header-controls">
             <div class="login-section">
@@ -158,7 +192,12 @@
         <div class="TanqueContainer">
           <div class="tank-group">
             <div class="tank-info">
-              <div class="TextComponent" id="476c9a6dbe2132c96551">
+              <div
+                class="TextComponent"
+                id="476c9a6dbe2132c96551"
+                degree="0"
+                comp_type="TextComponent"
+              >
                 <h2>Tanque 1</h2>
               </div>
               <div
@@ -167,6 +206,8 @@
                 role="img"
                 aria-label="Tanque 1"
                 id="41428175ee5ea8b7173c"
+                bg_image=""
+                degree="0"
               >
                 <div
                   class="server_binding bar"
@@ -212,26 +253,65 @@
               <div class="tank-controls">
                 <div class="percentage-controls">
                   <div class="control-group">
-                    <div class="TextComponent" id="4be1a7cea4fabbfc80a4">
+                    <div
+                      class="TextComponent"
+                      id="4be1a7cea4fabbfc80a4"
+                      comp_type="TextComponent"
+                      degree="0"
+                    >
                       PV
                     </div>
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="10"
+                            address="0"
+                            type="4"
+                            length="1"
+                            show_param="4263910a8a5c25a3df7f"
+                            id="4263910a8a5c25a3df7f"
+                            degree="0"
+                            tag_id="4460aaa3-5ef4-4929-b56b-d1ea13e90bc7"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="true"
+                          >
+                            <style class="invalid4263910a8a5c25a3df7f">
+                              .invalid4263910a8a5c25a3df7f:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid4263910a8a5c25a3df7f::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4263910a8a5c25a3df7f:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4263910a8a5c25a3df7f::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
                             <div class="valueText form__group">
                               <input
-                                type="number"
+                                type="text"
+                                size="5"
                                 class="form__field inputVal invalid4263910a8a5c25a3df7f"
                                 value=""
                                 min="0"
                                 max="100"
-                                onkeypress="return validatePercentage(event)"
-                                oninput="limitPercentage(this)"
                               />
                             </div>
+                            <script
+                              type="text/javascript"
+                              id="script_4263910a8a5c25a3df7f"
+                            ></script>
                           </div>
-                          <div class="TextComponent">Nivel de alerta</div>
+                          <div class="TextComponent unit">Nivel de alerta</div>
                         </div>
 
                         <div class="control-group">
@@ -333,16 +413,46 @@
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="20"
+                            address="176"
+                            type="4"
+                            length="1"
+                            show_param="40beb7875d5ab73c9e1a"
+                            id="40beb7875d5ab73c9e1a"
+                            degree="0"
+                            tag_id="3a26f2f4-9996-4e6e-8ece-7bc7007160dc"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="false"
+                          >
+                            <style class="invalid40beb7875d5ab73c9e1a">
+                              .invalid40beb7875d5ab73c9e1a:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid40beb7875d5ab73c9e1a::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid40beb7875d5ab73c9e1a:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid40beb7875d5ab73c9e1a::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
                             <div class="valueText form__group">
                               <input
-                                type="number"
+                                type="text"
+                                size="5"
                                 class="form__field inputVal invalid40beb7875d5ab73c9e1a"
                                 value=""
                                 min="0"
                                 max="100"
-                                onkeypress="return validatePercentage(event)"
-                                oninput="limitPercentage(this)"
                                 readonly
                               />
                               <span class="unit">%</span>
@@ -351,11 +461,43 @@
                         </div>
 
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="20"
+                            address="0"
+                            type="4"
+                            length="1"
+                            show_param="4300b365ba6d3849d6dc"
+                            id="4300b365ba6d3849d6dc"
+                            degree="0"
+                            tag_id="f8a185f6-9b33-425b-8fea-ebe5c8166d58"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="false"
+                          >
+                            <style class="invalid4300b365ba6d3849d6dc">
+                              .invalid4300b365ba6d3849d6dc:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid4300b365ba6d3849d6dc::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4300b365ba6d3849d6dc:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4300b365ba6d3849d6dc::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
                             <div class="valueText form__group">
                               <input
                                 type="text"
                                 class="form__field inputVal invalid4300b365ba6d3849d6dc"
+                                size="5"
                                 value=""
                                 readonly
                               />
@@ -365,11 +507,44 @@
                         </div>
 
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="20"
+                            address="16"
+                            type="4"
+                            length="1"
+                            show_param="44a9a53235537e094472"
+                            id="44a9a53235537e094472"
+                            degree="0"
+                            tag_id="09a28bb3-c3d0-45c8-a63c-59dd7c80e88e"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="false"
+                          >
+                            <style class="invalid44a9a53235537e094472">
+                              .invalid44a9a53235537e094472:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid44a9a53235537e094472::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid44a9a53235537e094472:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid44a9a53235537e094472::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
+
                             <div class="valueText form__group">
                               <input
                                 type="text"
                                 class="form__field inputVal invalid44a9a53235537e094472"
+                                size="5"
                                 value=""
                                 readonly
                               />
@@ -385,16 +560,46 @@
                 <div class="other-controls">
                   <div class="action-buttons">
                     <h3>Simular Valores</h3>
-                    <div class="server_binding analog_input">
+                    <div
+                      class="server_binding analog_input"
+                      comp_type="AnalogValueComponent"
+                      comp_version="8.3"
+                      show_function="_callback_analogValue"
+                      range="10"
+                      address="480"
+                      type="4"
+                      length="1"
+                      show_param="453ea683ca94510b8cac"
+                      id="453ea683ca94510b8cac"
+                      degree="0"
+                      tag_id="40ec982b-a149-4b18-b206-9ec20bade01e"
+                      device_name=""
+                      block_format="Unsigned"
+                      decimal="1"
+                      mode="true"
+                    >
+                      <style class="invalid453ea683ca94510b8cac">
+                        .invalid453ea683ca94510b8cac:-moz-placeholder {
+                          color: rgb(0, 0, 0);
+                        }
+                        .invalid453ea683ca94510b8cac::-moz-placeholder {
+                          color: rgb(0, 0, 0);
+                        }
+                        input.invalid453ea683ca94510b8cac:-ms-input-placeholder {
+                          color: rgb(0, 0, 0);
+                        }
+                        input.invalid453ea683ca94510b8cac::-webkit-input-placeholder {
+                          color: rgb(0, 0, 0);
+                        }
+                      </style>
                       <div class="valueText form__group">
                         <input
-                          type="number"
                           class="form__field inputVal invalid453ea683ca94510b8cac"
+                          type="text"
+                          size="5"
                           value=""
                           min="0"
                           max="100"
-                          onkeypress="return validatePercentage(event)"
-                          oninput="limitPercentage(this)"
                         />
                         <span class="unit">%</span>
                       </div>
@@ -425,17 +630,60 @@
                     </button>
                     <button
                       class="server_binding textCenter"
+                      comp_type="PushButton"
+                      show_function="_callback_loadPushButton"
+                      range="131"
+                      address="13"
+                      type="1"
+                      length="1"
+                      on_text="Mantener 5sec"
+                      off_text="Activar/Desactivar"
+                      frequency="1000"
+                      mouse_mode="Hold"
+                      ontouchstart="renderJs.FuncTouchDown(this)"
+                      onmousedown="renderJs.FuncMouseDown(this)"
+                      onmouseout="renderJs.FuncMouseUp(this)"
+                      onmouseup="renderJs.FuncMouseUp(this)"
+                      ontouchend="renderJs.FuncTouchUp(this)"
+                      onclick="renderJs.onPushButtonClicked(this)"
                       id="4483a1e42b7f45f8fd16"
+                      show_param="4483a1e42b7f45f8fd16"
+                      degree="0"
                       tag_id="45a5cce8-4ca5-4ab6-97c5-d11808183f60"
-                      onclick="renderJs.setDigitalData(this)"
+                      device_name=""
+                      on_image=""
+                      off_image=""
+                      bg_image=""
+                      mode="true"
                     >
                       Activar/Desactivar
                     </button>
                     <button
                       class="server_binding textCenter"
                       id="4b66a5200bf17d934783"
+                      comp_type="PushButton"
+                      show_function="_callback_loadPushButton"
+                      show_param="4b66a5200bf17d934783"
+                      degree="0"
                       tag_id="1c637a15-10c7-47bb-872e-ad7c51f55895"
+                      range="131"
+                      address="1"
+                      type="1"
+                      length="1"
+                      on_text="Mantener 10sec"
+                      off_text="Enviar mail"
+                      frequency="1000"
+                      mouse_mode="Hold"
+                      ontouchstart="renderJs.FuncTouchDown(this)"
+                      onmousedown="renderJs.FuncMouseDown(this)"
+                      onmouseout="renderJs.FuncMouseUp(this)"
+                      onmouseup="renderJs.FuncMouseUp(this)"
+                      ontouchend="renderJs.FuncTouchUp(this)"
                       onclick="renderJs.onPushButtonClicked(this)"
+                      mode="true"
+                      on_image=""
+                      off_image=""
+                      bg_image=""
                     >
                       Enviar mail
                     </button>
@@ -447,7 +695,13 @@
 
           <div class="tank-group">
             <div class="tank-info">
-              <div class="TextComponent" id="4c04ad7599cef777fc36">
+              <div
+                class="TextComponent"
+                comp_type="TextComponent"
+                id="4c04ad7599cef777fc36"
+                comp_type="TextComponent"
+                degree="0"
+              >
                 <h2>Tanque 2</h2>
               </div>
               <div
@@ -456,12 +710,31 @@
                 role="img"
                 aria-label="Tanque 1"
                 id="4e86947c427c6c037a77"
+                degree="0"
               >
                 <div
                   class="server_binding bar AnalogBarComponent"
                   comp_type="AnalogBarComponent"
                   id="434b8f5c8a9635cada8a"
                   tag_id="226a36e7-ef47-44b7-b4ea-d52011337797"
+                  comp_type="AnalogBarComponent"
+                  show_function="_callback_loadAnalogBarComponent"
+                  range="20"
+                  address="192"
+                  type="4"
+                  length="1"
+                  show_param="434b8f5c8a9635cada8a"
+                  valbarcol="rgb(255, 0, 0);"
+                  max_val="100"
+                  min_val="0"
+                  min_scale="10"
+                  scale_height="23.2"
+                  bar_value="50"
+                  degree="0"
+                  device_name=""
+                  block_format="Unsigned"
+                  decimal="1"
+                  scope_color="100.0,0.0,0.0:30.0:-8355712,30.1:60.0:-12156236,60.1:100.0:-5952982"
                 >
                   <div class="bar">
                     <ul>
@@ -486,35 +759,120 @@
               <div class="tank-controls">
                 <div class="percentage-controls">
                   <div class="control-group">
-                    <div class="TextComponent">PV</div>
+                    <div
+                      class="TextComponent"
+                      id="47bd9a5d10aebdc3a4d4"
+                      comp_type="TextComponent"
+                      degree="0"
+                    >
+                      PV
+                    </div>
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="10"
+                            address="240"
+                            type="4"
+                            length="1"
+                            show_param="48b38ea927b5a1ce9a17"
+                            id="48b38ea927b5a1ce9a17"
+                            degree="0"
+                            tag_id="39091180-aaba-4ed0-8e5c-27dd525c0b28"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="true"
+                          >
+                            <style class="invalid48b38ea927b5a1ce9a17">
+                              .invalid48b38ea927b5a1ce9a17:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid48b38ea927b5a1ce9a17::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid48b38ea927b5a1ce9a17:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid48b38ea927b5a1ce9a17::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
                             <div class="valueText form__group">
                               <input
-                                type="number"
                                 class="form__field inputVal invalid48b38ea927b5a1ce9a17"
-                                value=""
+                                type="text"
+                                size="5"
                                 min="0"
                                 max="100"
-                                onkeypress="return validatePercentage(event)"
-                                oninput="limitPercentage(this)"
                               />
+                              <span class="unit"></span>
                             </div>
+                            <script
+                              type="text/javascript"
+                              id="script_48b38ea927b5a1ce9a17"
+                            ></script>
                           </div>
-                          <div class="TextComponent">Nivel de alerta</div>
+                          <div
+                            class="TextComponent"
+                            comp_type="TextComponent"
+                            id="4d528c7375fe5b1add40"
+                            degree="0"
+                          >
+                            Nivel de alerta
+                          </div>
                         </div>
 
                         <div class="control-group">
-                          <div class="server_binding analog_input">
+                          <div
+                            class="server_binding analog_input"
+                            comp_type="AnalogValueComponent"
+                            comp_version="8.3"
+                            show_function="_callback_analogValue"
+                            range="10"
+                            address="400"
+                            type="4"
+                            length="1"
+                            show_param="4e6f9e4322e4c8b5d171"
+                            id="4e6f9e4322e4c8b5d171"
+                            degree="0"
+                            tag_id="67827609-d76a-4be8-a9f9-35a518523950"
+                            device_name=""
+                            block_format="Unsigned"
+                            decimal="1"
+                            mode="true"
+                          >
+                            <style class="invalid4e6f9e4322e4c8b5d171">
+                              .invalid4e6f9e4322e4c8b5d171:-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              .invalid4e6f9e4322e4c8b5d171::-moz-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4e6f9e4322e4c8b5d171:-ms-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                              input.invalid4e6f9e4322e4c8b5d171::-webkit-input-placeholder {
+                                color: rgb(0, 0, 0);
+                              }
+                            </style>
                             <div class="valueText form__group">
                               <input
                                 type="text"
                                 class="form__field inputVal invalid4e6f9e4322e4c8b5d171"
                                 value=""
+                                size="5"
                               />
+                              <span class="unit"></span>
                             </div>
+                            <script
+                              type="text/javascript"
+                              id="script_4e6f9e4322e4c8b5d171"
+                            ></script>
                           </div>
                           <div class="TextComponent">Filtro</div>
                         </div>
