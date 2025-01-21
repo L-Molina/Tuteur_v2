@@ -135,7 +135,39 @@
                 onmouseout="renderJs.FuncMouseUp(this)"
                 onmouseup="renderJs.FuncMouseUp(this)"
               ></div>
-              <div class="server_binding analog_input login-input">
+              <div
+                class="server_binding analog_input login-input"
+                comp_type="AnalogValueComponent"
+                comp_version="8.3"
+                xmlns="http://www.w3.org/1999/xhtml"
+                show_function="_callback_analogValue"
+                range="20"
+                address="64"
+                type="4"
+                length="1"
+                show_param="416dad2aa15ab1deee9d"
+                id="416dad2aa15ab1deee9d"
+                degree="0"
+                tag_id="3cd70d5f-c0b6-440d-bb1f-17539c02c344"
+                device_name=""
+                block_format="Unsigned"
+                decimal="1"
+                mode="true"
+              >
+                <style class="invalid416dad2aa15ab1deee9d">
+                  .invalid416dad2aa15ab1deee9d:-moz-placeholder {
+                    color: rgb(245, 245, 245);
+                  }
+                  .invalid416dad2aa15ab1deee9d::-moz-placeholder {
+                    color: rgb(245, 245, 245);
+                  }
+                  input.invalid416dad2aa15ab1deee9d:-ms-input-placeholder {
+                    color: rgb(245, 245, 245);
+                  }
+                  input.invalid416dad2aa15ab1deee9d::-webkit-input-placeholder {
+                    color: rgb(245, 245, 245);
+                  }
+                </style>
                 <div class="valueText form__group">
                   <input
                     class="form__field inputVal invalid416dad2aa15ab1deee9d"
@@ -143,6 +175,7 @@
                     size="5"
                     value=""
                   />
+                  <span class="unit"></span>
                 </div>
               </div>
               <button
@@ -150,7 +183,25 @@
                 comp_type="PushButton"
                 id="405fa89dbc34fef3173f"
                 tag_id="7284b247-24b4-418a-acbd-7079ad7ed0e9"
+                show_function="_callback_loadPushButton"
+                range="131"
+                address="8"
+                type="1"
+                length="1"
+                on_text="Log off"
+                off_text="Log off"
+                frequency="1000"
+                mouse_mode="Click"
+                ontouchstart="renderJs.FuncTouchDown(this)"
+                onmousedown="renderJs.FuncMouseDown(this)"
+                onmouseout="renderJs.FuncMouseUp(this)"
+                onmouseup="renderJs.FuncMouseUp(this)"
+                ontouchend="renderJs.FuncTouchUp(this)"
                 onclick="renderJs.onPushButtonClicked(this)"
+                show_param="405fa89dbc34fef3173f"
+                degree="0"
+                device_name=""
+                mode="true"
               >
                 Log In
               </button>
