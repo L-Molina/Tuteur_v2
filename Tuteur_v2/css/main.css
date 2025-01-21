@@ -499,7 +499,7 @@ input {
     145deg,
     var(--button-gradient-1),
     var(--button-gradient-2)
-  );
+  ) !important;
   color: white;
   border: none;
   border-radius: 8px;
