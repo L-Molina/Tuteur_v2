@@ -208,6 +208,7 @@ body {
   width: 100%;
   flex-wrap: wrap;
   flex-direction: column;
+  gap: 23px;
 }
 
 .tank-controls {
@@ -215,7 +216,7 @@ body {
   flex-direction: row;
   gap: 50px;
   min-width: 300px;
-  height: 275px;
+  height: 100%;
 }
 
 .control-group {
@@ -402,25 +403,12 @@ button.server_binding:hover {
   }
 }
 
-/* Improve button styling */
-.action-buttons {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
 button.server_binding {
   flex: 1;
   min-width: 120px;
   white-space: nowrap;
 }
 
-/* Form improvements */
-.control-group {
-  width: 100%;
-}
-
-/* Update existing classes for better responsiveness */
 .tank-info {
   display: flex;
   flex-direction: column;
@@ -428,7 +416,6 @@ button.server_binding {
   gap: 20px;
 }
 
-/* Add smooth transitions */
 .Tanque,
 .Logo,
 button,
@@ -556,7 +543,7 @@ input {
   align-items: center;
   min-width: 150px;
   gap: 25px;
-  max-height: 120px;
+  max-height: 310px;
 }
 
 /* Style for percentage inputs */
@@ -752,7 +739,7 @@ input {
   }
 
   .TextComponent {
-    font-size: 24px;
+    justify-content: center;
   }
 
   .form__field {
@@ -873,15 +860,11 @@ input {
   }
 
   .control-group {
-    align-items: center; /* Center the input labels and fields */
-  }
-
-  .TextComponent {
-    justify-content: center;
+    align-items: center; 
   }
 
   .form__group {
-    margin: 0 auto; /* Center the input fields */
+    margin: 0 auto;
   }
 
   .header-controls {
@@ -908,10 +891,6 @@ input {
 
   .control-group {
     align-items: center;
-  }
-
-  .form__group {
-    margin: 0 auto;
   }
 
   .MainContainer {
@@ -941,19 +920,16 @@ input {
     width: 100%;
     min-width: 100%; /* Force full width */
     padding: 0;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 610px;
+    padding: 20px 0; 
   }
 
   .other-controls {
     flex-direction: column; /* Stack controls vertically on mobile */
     width: 100%;
     gap: 15px;
-  }
-
-  .tank-controls {
-    flex-direction: column;
-    gap: 30px;
-    min-height: 400px; /* Add minimum height to prevent overlap */
-    padding: 20px 0; /* Add padding for spacing */
   }
 
   .percentage-controls {
@@ -968,7 +944,7 @@ input {
   .other-controls {
     flex-direction: column;
     height: auto; /* Remove fixed height */
-    min-height: 200px; /* Set minimum height */
+    min-height: 350px; /* Set minimum height */
     max-height: none; /* Remove max height constraint */
     gap: 20px;
     width: 100%;
@@ -1033,10 +1009,6 @@ input {
     padding: 0 5px;
   }
 
-  .tank-controls {
-    min-height: 450px;
-  }
-
   .control-group {
     max-width: 240px;
   }
@@ -1060,5 +1032,9 @@ input {
 
   .dateTime {
     font-size: 12px;
+  }
+
+  .TextComponent {
+    font-size: 15px;
   }
 }
