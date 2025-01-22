@@ -215,6 +215,7 @@ body {
   flex-direction: row;
   gap: 50px;
   min-width: 300px;
+  height: 275px;
 }
 
 .control-group {
@@ -339,7 +340,7 @@ button.server_binding:hover {
   border: 0;
   border-bottom: 2px solid gray;
   outline: 0;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: white;
   padding: 5px 0;
   background: transparent;
@@ -466,7 +467,7 @@ input {
 
 .login-input .form__field {
   color: black;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .login-button {
@@ -549,12 +550,13 @@ input {
 }
 
 .other-controls {
-  flex: 1; /* Make both columns take equal space */
+  flex: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
-  min-width: 150px; /* Minimum width for each column */
+  min-width: 150px;
+  gap: 25px;
+  max-height: 120px;
 }
 
 /* Style for percentage inputs */
@@ -577,13 +579,6 @@ input {
 .percentage-controls .control-group {
   flex: 1;
   max-width: 150px; /* Reduced width for better appearance */
-}
-
-.other-controls {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  max-height: 100px;
 }
 
 .other-controls .control-group {
