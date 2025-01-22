@@ -297,6 +297,7 @@
                       <li><a>0</a></li>
                     </ul>
                   </div>
+                  <div id="barBg" class="barBg"></div>
                   <div class="whiteBg"></div>
                 </div>
               </div>
@@ -650,6 +651,7 @@
                       block_format="Unsigned"
                       decimal="1"
                       mode="true"
+                      text_align=""
                     >
                       <style class="invalid453ea683ca94510b8cac">
                         .invalid453ea683ca94510b8cac:-moz-placeholder {
@@ -681,9 +683,6 @@
                       comp_type="CustomizedComponent"
                       show_function="_callback_loadCustomizedComponent"
                       class="server_binding textCenter"
-                      id="4f9a91d639bbc63a0092"
-                      tag_id="30acf857-eba8-4a7b-a045-d98ea4e56598"
-                      onclick="renderJs.setDigitalData(this)"
                       range="131"
                       address="9"
                       type="1"
@@ -695,15 +694,19 @@
                       degree="0"
                       tag_id="30acf857-eba8-4a7b-a045-d98ea4e56598"
                       device_name=""
+                      on_image=""
+                      off_image=""
+                      bg_image=""
                       mode="true"
+                      text_align=""
                       onclick="renderJs.setDigitalData(this)"
                     >
                       Simular valor
                     </button>
                     <button
-                      class="server_binding textCenter"
                       comp_type="PushButton"
                       show_function="_callback_loadPushButton"
+                      class="server_binding textCenter"
                       range="131"
                       address="13"
                       type="1"
@@ -723,18 +726,17 @@
                       degree="0"
                       tag_id="45a5cce8-4ca5-4ab6-97c5-d11808183f60"
                       device_name=""
+                      on_image=""
+                      off_image=""
+                      bg_image=""
                       mode="true"
                     >
                       Activar/Desactivar
                     </button>
                     <button
-                      class="server_binding textCenter"
-                      id="4b66a5200bf17d934783"
                       comp_type="PushButton"
                       show_function="_callback_loadPushButton"
-                      show_param="4b66a5200bf17d934783"
-                      degree="0"
-                      tag_id="1c637a15-10c7-47bb-872e-ad7c51f55895"
+                      class="server_binding textCenter"
                       range="131"
                       address="1"
                       type="1"
@@ -749,7 +751,16 @@
                       onmouseup="renderJs.FuncMouseUp(this)"
                       ontouchend="renderJs.FuncTouchUp(this)"
                       onclick="renderJs.onPushButtonClicked(this)"
+                      id="4b66a5200bf17d934783"
+                      show_param="4b66a5200bf17d934783"
+                      degree="0"
+                      tag_id="1c637a15-10c7-47bb-872e-ad7c51f55895"
+                      device_name=""
+                      on_image=""
+                      off_image=""
+                      bg_image=""
                       mode="true"
+                      text_align=""
                     >
                       Enviar mail
                     </button>
@@ -779,10 +790,7 @@
                 degree="0"
               >
                 <div
-                  class="server_binding bar AnalogBarComponent"
-                  comp_type="AnalogBarComponent"
-                  id="434b8f5c8a9635cada8a"
-                  tag_id="226a36e7-ef47-44b7-b4ea-d52011337797"
+                  class="server_binding bar"
                   comp_type="AnalogBarComponent"
                   show_function="_callback_loadAnalogBarComponent"
                   range="20"
@@ -796,7 +804,9 @@
                   min_scale="10"
                   scale_height="23.2"
                   bar_value="50"
+                  id="434b8f5c8a9635cada8a"
                   degree="0"
+                  tag_id="226a36e7-ef47-44b7-b4ea-d52011337797"
                   device_name=""
                   block_format="Unsigned"
                   decimal="1"
@@ -817,6 +827,7 @@
                       <li><a>0</a></li>
                     </ul>
                   </div>
+                  <div id="barBg" class="barBg"></div>
                   <div class="whiteBg"></div>
                 </div>
               </div>

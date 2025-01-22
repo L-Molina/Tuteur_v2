@@ -90,6 +90,11 @@ body {
   flex-direction: column;
 }
 
+h3 {
+  font-family: "Poppins", sans-serif;
+  margin-block-end: 0;
+}
+
 .LogoBar {
   background-color: white;
   position: sticky;
@@ -257,6 +262,14 @@ body {
   height: 50%;
   background-color: white;
   transition: height 0.3s ease;
+}
+
+.barBg {
+  width: 28px;
+  background-color: rgb(70, 130, 180);
+  height: 100%;
+  float: left;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .server_binding.bar ul {
@@ -482,6 +495,7 @@ input {
 .action-buttons button.server_binding {
   flex: 1;
   min-height: 40px;
+  min-width: 185px;
   padding: 8px 12px;
   background: linear-gradient(
     145deg,
@@ -860,7 +874,7 @@ input {
   }
 
   .control-group {
-    align-items: center; 
+    align-items: center;
   }
 
   .form__group {
@@ -923,7 +937,7 @@ input {
     flex-direction: column;
     gap: 30px;
     min-height: 610px;
-    padding: 20px 0; 
+    padding: 20px 0;
   }
 
   .other-controls {
