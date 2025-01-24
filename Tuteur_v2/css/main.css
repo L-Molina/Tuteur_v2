@@ -14,8 +14,6 @@
   --button-gradient-2: #143c70;
   --button-hover-1: #1d5aa3;
   --button-hover-2: #194785;
-  --bar-color: #4682b4;
-  --border-color: #00b1fe;
 }
 
 /* Light theme colors */
@@ -29,8 +27,6 @@
   --button-gradient-2: #2980b9;
   --button-hover-1: #2980b9;
   --button-hover-2: #2573a7;
-  --bar-color: #3498db;
-  --border-color: #2980b9;
 }
 
 .theme-toggle {
@@ -229,10 +225,24 @@ h3 {
   flex-direction: column;
   gap: 8px;
   width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .server_binding {
   width: 100%;
+}
+
+.server_binding.analog_input.percentage-input {
+  height: 275px;
+}
+
+.control-group#readonly {
+  margin-bottom: 24px;
+}
+
+.unit {
+  margin-top: 2px;
 }
 
 .bar {
@@ -259,17 +269,22 @@ h3 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 100%;
   background-color: white;
   transition: height 0.3s ease;
+  border: 1px solid rgb(0, 0, 0);
+  z-index: 100;
 }
 
 .barBg {
+  position: absolute;
+  bottom: -1;
+  left: 1;
   width: 28px;
-  background-color: rgb(70, 130, 180);
-  height: 100%;
+  background-color: rgb(70, 130, 180) !important;
+  height: 50%;
   float: left;
-  border: 1px solid rgb(0, 0, 0);
+  z-index: 101;
 }
 
 .server_binding.bar ul {
@@ -303,7 +318,6 @@ h3 {
   white-space: nowrap;
 }
 
-/* Restore button styles */
 button.server_binding {
   flex: 1;
   min-width: 120px;
@@ -344,7 +358,6 @@ button.server_binding:hover {
   width: 100%;
   height: 100%;
   position: relative;
-  max-width: 175px;
 }
 
 .form__field {
@@ -408,6 +421,10 @@ button.server_binding:hover {
   .tank-controls {
     width: 100%;
     max-width: 600px;
+  }
+
+  .control-group#readonly {
+    margin-bottom: 23px;
   }
 
   :root {
@@ -552,12 +569,16 @@ input {
 
 .other-controls {
   flex: 1;
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   min-width: 150px;
   gap: 25px;
   max-height: 310px;
+}
+
+.other-controls.visible {
+  display: flex;
 }
 
 /* Style for percentage inputs */
@@ -603,7 +624,7 @@ input {
 }
 
 /* Add tablet-specific styles (between 768px and 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   .LogoBar {
     padding: 15px;
     height: auto;
@@ -676,6 +697,10 @@ input {
 
   .control-group {
     max-width: 260px;
+  }
+
+  .control-group#readonly {
+    margin-bottom: 20px;
   }
 }
 
@@ -938,6 +963,10 @@ input {
     gap: 30px;
     min-height: 610px;
     padding: 20px 0;
+  }
+
+  .control-group#readonly {
+    margin-bottom: 18px;
   }
 
   .other-controls {

@@ -51,10 +51,6 @@
     </style>
     <link href="js/jqueryui/jqueryui.css" rel="stylesheet" type="text/css" />
     <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    <!-- this script helps older IE versions to understand html5 -->
-    <!--[if lt IE 9]>
-      <script src="js/html5.js"></script>
-    <![endif]-->
     <script type="text/javascript" src="/js/utility.js?rdm=173740431"></script>
     <script type="text/javascript" src="/js/storage.js?rdm=173740431"></script>
     <script type="text/javascript" src="/js/bigint.js?rdm=173740431"></script>
@@ -156,22 +152,26 @@
               >
                 <style class="invalid416dad2aa15ab1deee9d">
                   .invalid416dad2aa15ab1deee9d:-moz-placeholder {
-                    color: rgb(245, 245, 245);
+                    color: #34495e;
+
                   }
                   .invalid416dad2aa15ab1deee9d::-moz-placeholder {
-                    color: rgb(245, 245, 245);
+                    color: #34495e;
+
                   }
                   input.invalid416dad2aa15ab1deee9d:-ms-input-placeholder {
-                    color: rgb(245, 245, 245);
+                    color: #34495e;
+
                   }
                   input.invalid416dad2aa15ab1deee9d::-webkit-input-placeholder {
-                    color: rgb(245, 245, 245);
+                    color: #34495e;
                   }
                 </style>
                 <div class="valueText form__group">
                   <input
                     class="form__field inputVal invalid416dad2aa15ab1deee9d"
-                    type="text"
+                    type="password"
+                    id="password-input"
                     size="5"
                     value=""
                   />
@@ -188,8 +188,9 @@
                 address="8"
                 type="1"
                 length="1"
-                on_text="Log off"
-                off_text="Log off"
+                onclick="validatePassword()"
+                on_text="Log in"
+                off_text="Log in"
                 frequency="1000"
                 mouse_mode="Click"
                 ontouchstart="renderJs.FuncTouchDown(this)"
@@ -239,7 +240,6 @@
           </div>
         </div>
       </div>
-
       <div class="MainContainer">
         <div class="TanqueContainer">
           <div class="tank-group">
@@ -296,9 +296,9 @@
                       <li><a>10</a></li>
                       <li><a>0</a></li>
                     </ul>
+                    <div id="barBg" class="barBg"></div>
+                    <div class="whiteBg"></div>
                   </div>
-                  <div id="barBg" class="barBg"></div>
-                  <div class="whiteBg"></div>
                 </div>
               </div>
             </div>
@@ -337,16 +337,16 @@
                           >
                             <style class="invalid4263910a8a5c25a3df7f">
                               .invalid4263910a8a5c25a3df7f:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid4263910a8a5c25a3df7f::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4263910a8a5c25a3df7f:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4263910a8a5c25a3df7f::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -366,7 +366,6 @@
                           </div>
                           <div class="TextComponent unit">Nivel de alerta</div>
                         </div>
-
                         <div class="control-group">
                           <div
                             class="server_binding analog_input"
@@ -388,16 +387,16 @@
                           >
                             <style class="invalid4c1fbb25f40490034993">
                               .invalid4c1fbb25f40490034993:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid4c1fbb25f40490034993::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4c1fbb25f40490034993:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4c1fbb25f40490034993::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -419,7 +418,6 @@
                             Filtro
                           </div>
                         </div>
-
                         <div class="control-group">
                           <div
                             class="server_binding analog_input"
@@ -441,16 +439,16 @@
                           >
                             <style class="invalid424abc15f53f1637712e">
                               .invalid424abc15f53f1637712e:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid424abc15f53f1637712e::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid424abc15f53f1637712e:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid424abc15f53f1637712e::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -474,7 +472,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="control-group">
                     <div
                       class="TextComponent"
@@ -486,7 +483,7 @@
                     </div>
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
-                        <div class="control-group">
+                        <div class="control-group" id="readonly">
                           <div
                             class="server_binding analog_input"
                             comp_type="AnalogValueComponent"
@@ -507,16 +504,16 @@
                           >
                             <style class="invalid40beb7875d5ab73c9e1a">
                               .invalid40beb7875d5ab73c9e1a:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid40beb7875d5ab73c9e1a::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid40beb7875d5ab73c9e1a:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid40beb7875d5ab73c9e1a::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -533,8 +530,7 @@
                             </div>
                           </div>
                         </div>
-
-                        <div class="control-group">
+                        <div class="control-group" id="readonly">
                           <div
                             class="server_binding analog_input"
                             comp_type="AnalogValueComponent"
@@ -555,16 +551,16 @@
                           >
                             <style class="invalid4300b365ba6d3849d6dc">
                               .invalid4300b365ba6d3849d6dc:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid4300b365ba6d3849d6dc::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4300b365ba6d3849d6dc:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4300b365ba6d3849d6dc::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -579,8 +575,7 @@
                             </div>
                           </div>
                         </div>
-
-                        <div class="control-group">
+                        <div class="control-group" id="readonly">
                           <div
                             class="server_binding analog_input"
                             comp_type="AnalogValueComponent"
@@ -601,16 +596,16 @@
                           >
                             <style class="invalid44a9a53235537e094472">
                               .invalid44a9a53235537e094472:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid44a9a53235537e094472::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid44a9a53235537e094472:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid44a9a53235537e094472::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
 
@@ -630,8 +625,7 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="other-controls">
+                <div class="other-controls" id="other-controls">
                   <div class="action-buttons">
                     <h3>Simular Valores</h3>
                     <div
@@ -655,16 +649,16 @@
                     >
                       <style class="invalid453ea683ca94510b8cac">
                         .invalid453ea683ca94510b8cac:-moz-placeholder {
-                          color: rgb(245, 245, 245);
+                          color: var(--text-primary)
                         }
                         .invalid453ea683ca94510b8cac::-moz-placeholder {
-                          color: rgb(245, 245, 245);
+                          color: var(--text-primary)
                         }
                         input.invalid453ea683ca94510b8cac:-ms-input-placeholder {
-                          color: rgb(245, 245, 245);
+                          color: var(--text-primary)
                         }
                         input.invalid453ea683ca94510b8cac::-webkit-input-placeholder {
-                          color: rgb(245, 245, 245);
+                          color: var(--text-primary)
                         }
                       </style>
                       <div class="valueText form__group">
@@ -769,7 +763,6 @@
               </div>
             </div>
           </div>
-
           <div class="tank-group">
             <div class="tank-info">
               <div
@@ -826,9 +819,9 @@
                       <li><a>10</a></li>
                       <li><a>0</a></li>
                     </ul>
+                    <div id="barBg" class="barBg"></div>
+                    <div class="whiteBg"></div>
                   </div>
-                  <div id="barBg" class="barBg"></div>
-                  <div class="whiteBg"></div>
                 </div>
               </div>
             </div>
@@ -867,16 +860,16 @@
                           >
                             <style class="invalid48b38ea927b5a1ce9a17">
                               .invalid48b38ea927b5a1ce9a17:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid48b38ea927b5a1ce9a17::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid48b38ea927b5a1ce9a17:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid48b38ea927b5a1ce9a17::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -903,7 +896,6 @@
                             Nivel de alerta
                           </div>
                         </div>
-
                         <div class="control-group">
                           <div
                             class="server_binding analog_input"
@@ -925,16 +917,16 @@
                           >
                             <style class="invalid4e6f9e4322e4c8b5d171">
                               .invalid4e6f9e4322e4c8b5d171:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid4e6f9e4322e4c8b5d171::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4e6f9e4322e4c8b5d171:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4e6f9e4322e4c8b5d171::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -953,7 +945,6 @@
                           </div>
                           <div class="TextComponent">Filtro</div>
                         </div>
-
                         <div class="control-group">
                           <div
                             class="server_binding analog_input"
@@ -975,16 +966,16 @@
                           >
                             <style class="invalid445d9aa30f8ccc59026e">
                               .invalid445d9aa30f8ccc59026e:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid445d9aa30f8ccc59026e::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid445d9aa30f8ccc59026e:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid445d9aa30f8ccc59026e::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -1013,7 +1004,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="control-group">
                     <div
                       class="TextComponent"
@@ -1025,7 +1015,7 @@
                     </div>
                     <div class="server_binding analog_input percentage-input">
                       <div class="valueText form__group">
-                        <div class="control-group">
+                        <div class="control-group" id="readonly">
                           <div
                             class="server_binding analog_input"
                             comp_type="AnalogValueComponent"
@@ -1046,16 +1036,16 @@
                           >
                             <style class="invalid4bb998020113d8cadf22">
                               .invalid4bb998020113d8cadf22:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid4bb998020113d8cadf22::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4bb998020113d8cadf22:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4bb998020113d8cadf22::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -1073,8 +1063,7 @@
                             </div>
                           </div>
                         </div>
-
-                        <div class="control-group">
+                        <div class="control-group" id="readonly">
                           <div
                             class="server_binding analog_input"
                             comp_type="AnalogValueComponent"
@@ -1095,16 +1084,16 @@
                           >
                             <style class="invalid401a827fae5feb9c5424">
                               .invalid401a827fae5feb9c5424:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid401a827fae5feb9c5424::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid401a827fae5feb9c5424:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid401a827fae5feb9c5424::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -1119,8 +1108,7 @@
                             </div>
                           </div>
                         </div>
-
-                        <div class="control-group">
+                        <div class="control-group" id="readonly">
                           <div
                             class="server_binding analog_input"
                             comp_type="AnalogValueComponent"
@@ -1141,16 +1129,16 @@
                           >
                             <style class="invalid4323bbca07c959447992">
                               .invalid4323bbca07c959447992:-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               .invalid4323bbca07c959447992::-moz-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4323bbca07c959447992:-ms-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                               input.invalid4323bbca07c959447992::-webkit-input-placeholder {
-                                color: rgb(245, 245, 245);
+                                color: var(--text-primary)
                               }
                             </style>
                             <div class="valueText form__group">
@@ -1169,7 +1157,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="other-controls">
+                <div class="other-controls" id="other-controls">
                   <div class="action-buttons">
                     <h3>Simular Valores</h3>
                     <div
@@ -1192,16 +1180,16 @@
                     >
                       <style class="invalid47afb3fc461931d59d41">
                         .invalid47afb3fc461931d59d41:-moz-placeholder {
-                          color: rgb(245, 245, 245);
+                          color: var(--text-primary)
                         }
                         .invalid47afb3fc461931d59d41::-moz-placeholder {
-                          color: rgb(245, 245, 245);
+                          color: var(--text-primary)
                         }
                         input.invalid47afb3fc461931d59d41:-ms-input-placeholder {
-                          color: rgb(245, 245, 245);
+                          color: var(--text-primary)
                         }
                         input.invalid47afb3fc461931d59d41::-webkit-input-placeholder {
-                          color: rgb(245, 245, 245);
+                          color: var(--text-primary)
                         }
                       </style>
                       <div class="valueText form__group">

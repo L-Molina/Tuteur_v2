@@ -17,6 +17,20 @@ function updateThemeIcon(theme) {
   button.innerHTML = theme === "dark" ? "🌙" : "☀️";
 }
 
+function validatePassword() {
+  const correctPassword = "1480";
+  const inputPassword = document.getElementById("password-input").value;
+  const otherControls = document.querySelectorAll("#other-controls");
+  if (inputPassword === correctPassword) {
+    otherControls.forEach((section) => {
+      section.classList.add("visible");
+    });
+    alert("Access granted.");
+  } else {
+    alert("Incorrect password. Try again.");
+  }
+}
+
 // Add these functions to handle percentage input validation
 function validatePercentage(event) {
   // Allow only numbers and basic control keys
