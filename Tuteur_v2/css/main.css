@@ -3,6 +3,7 @@
   --tank-height: 390px;
   --logo-width: 83px;
   --logo-height: 81px;
+  --bar-height: 50%;
 
   /* Dark theme colors (default) */
   --bg-primary: #282c34;
@@ -84,6 +85,29 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.login-button {
+  cursor: pointer;
+}
+
+.logged-in {
+  background-color: red;
+  color: white;
 }
 
 h3 {
@@ -282,9 +306,10 @@ h3 {
   left: 1;
   width: 28px;
   background-color: rgb(70, 130, 180) !important;
-  height: 50%;
+  height: 0%;
   float: left;
   z-index: 101;
+  transition: height 0.3s ease;
 }
 
 .server_binding.bar ul {
