@@ -95,7 +95,12 @@
       type="text/javascript"
       id="js/webcam.js"
     ></script>
-    <script src="js/theme.js" type="text/javascript" id="js/theme.js" defer></script>
+    <script
+      src="js/theme.js"
+      type="text/javascript"
+      id="js/theme.js"
+      defer
+    ></script>
     <link rel="stylesheet" href="css/video.css" id="css/video.css" />
     <link rel="stylesheet" href="css/webcam.css" id="css/webcam.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -611,6 +616,7 @@
                             <div class="valueText form__group">
                               <input
                                 type="text"
+                                id="min-tank1"
                                 class="form__field inputVal invalid44a9a53235537e094472"
                                 size="5"
                                 value=""
@@ -745,8 +751,6 @@
                       onmouseout="renderJs.FuncMouseUp(this)"
                       onmouseup="renderJs.FuncMouseUp(this)"
                       ontouchend="renderJs.FuncTouchUp(this)"
-                      onclick="renderJs.onPushButtonClicked(this)"
-                      id="4b66a5200bf17d934783 enviar-mail"
                       show_param="4b66a5200bf17d934783"
                       degree="0"
                       tag_id="1c637a15-10c7-47bb-872e-ad7c51f55895"
@@ -756,6 +760,9 @@
                       bg_image=""
                       mode="true"
                       text_align=""
+                      id="4b66a5200bf17d934783 enviar-mail-tank1 enviar-mail"
+                      onclick="enviarMail('tank1')"
+                      disabled
                     >
                       Enviar mail
                     </button>
@@ -1148,6 +1155,7 @@
                               <input
                                 type="text"
                                 size="5"
+                                id="min-tank2"
                                 class="form__field inputVal invalid4323bbca07c959447992"
                                 value=""
                                 readonly
@@ -1265,7 +1273,7 @@
                       comp_type="PushButton"
                       show_function="_callback_loadPushButton"
                       class="server_binding textCenter"
-                      id="45769d2dde598663426a enviar-mail"
+                      id="enviar-mail-tank2 45769d2dde598663426a enviar-mail"
                       tag_id="46b2859d-4049-42c6-91b7-631996daee86"
                       range="131"
                       address="4"
@@ -1275,60 +1283,22 @@
                       off_text="Enviar mail"
                       frequency="1000"
                       mouse_mode="Hold"
+                      onclick="enviarMail('tank2')"
                       ontouchstart="renderJs.FuncTouchDown(this)"
                       onmousedown="renderJs.FuncMouseDown(this)"
                       onmouseout="renderJs.FuncMouseUp(this)"
                       onmouseup="renderJs.FuncMouseUp(this)"
                       ontouchend="renderJs.FuncTouchUp(this)"
-                      onclick="renderJs.onPushButtonClicked(this)"
                       show_param="45769d2dde598663426a"
                       degree="0"
                       device_name=""
                       mode="true"
+                      disabled
                     >
                       Enviar mail
                     </button>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="nav" id="nav" onclick="renderJs.showMenu()">
-          <div class="tag" id="tag" style="top: 2065.5px">
-            <span class="arrows" id="arrows"></span>
-          </div>
-
-          <div class="menu" id="menu" style="height: 1212px; top: 0px">
-            <div>
-              <div class="menuTitle" style="height: 77px; font-size: 1.2em">
-                <h2>Navigation</h2>
-              </div>
-
-              <div id="items" class="items">
-                <div comp_type="navItem" id="46eb9ba2d0f6ea683509">
-                  <a
-                    class="item"
-                    href="javascript:;"
-                    onclick="return renderJs.navGo(this);"
-                    nav_link="main"
-                    style="color: rgb(243, 239, 224)"
-                    >Pag. Principal</a
-                  >
-                </div>
-
-                <div id="logOff">
-                  <a
-                    class="item"
-                    href="javascript:;"
-                    onclick="return renderJs.logout();"
-                    >LOG OFF</a
-                  >
-                </div>
-
-                <!--<div><a class="item">+ Add New Item</a></div>-->
               </div>
             </div>
           </div>

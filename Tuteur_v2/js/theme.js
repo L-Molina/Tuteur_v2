@@ -24,50 +24,32 @@ function validatePassword() {
   const loginButton = document.getElementById("login-button");
   const passwordInput = document.getElementById("password-input");
   const otherControls = document.querySelectorAll("#other-controls");
-  const enviarMail = document.getElementById("enviar-mail");
-  const simularValor = document.getElementById("simular-valor");
-  const activarEnvio = document.getElementById("activar-envio");
+  const enviarMailTank1 = document.querySelector('[id*="enviar-mail-tank1"]');
+  const enviarMailTank2 = document.querySelector('[id*="enviar-mail-tank2"]');
   const correctPassword = "1480";
 
-  console.log("Current loggedIn state:", loggedIn);
-  if (loggedIn === false) {
-    const enteredPassword = passwordInput.value;
+  clearTimeout(loginTimer); // Prevent multiple timers
 
-    if (enteredPassword === correctPassword) {
-      alert("Sesión Iniciada. Mails de Prueba: Activado");
+  if (!loggedIn) {
+    if (passwordInput.value === correctPassword) {
+      alert("Sesión Iniciada. Mails Activados");
       loggedIn = true;
-      console.log("Current loggedIn state:", loggedIn);
-      otherControls.forEach((section) => {
-        section.classList.add("visible");
-      });
-      enviarMail.disabled = false;
-      simularValor.disabled = true;
-      activarEnvio.disabled = true;
-
-      loginButton.textContent = "Log Off";
-      loginButton.classList.add("logged-in");
-      passwordInput.disabled = true;
-
-      loginTimer = setTimeout(() => {
-        logOut();
-      }, 3 * 60 * 1000);
+      otherControls.forEach(section => section.classList.add("visible"));
+      enviarMailTank1.disabled = false;
+      enviarMailTank2.disabled = false;
     } else {
-      alert("Sesión Iniciada. Mails de Prueba: Desactivado");
+      alert("Sesión Iniciada. Mails Desactivados");
       loggedIn = true;
-      otherControls.forEach((section) => {
-        section.classList.add("visible");
-      });
-      enviarMail.disabled = true;
-      simularValor.disabled = false;
-      activarEnvio.disabled = false;
-      loginButton.textContent = "Log Off";
-      loginButton.classList.add("logged-in");
-      passwordInput.disabled = true;
-
-      loginTimer = setTimeout(() => {
-        logOut();
-      }, 3 * 60 * 1000);
+      otherControls.forEach(section => section.classList.add("visible"));
+      enviarMailTank1.disabled = true;
+      enviarMailTank2.disabled = true;
     }
+
+    loginButton.textContent = "Log Off";
+    loginButton.classList.add("logged-in");
+    passwordInput.disabled = true;
+
+    loginTimer = setTimeout(() => logOut(), 3 * 60 * 1000);
   } else {
     logOut();
   }
@@ -78,19 +60,15 @@ function logOut() {
   const loginButton = document.getElementById("login-button");
   const passwordInput = document.getElementById("password-input");
   const otherControls = document.querySelectorAll("#other-controls");
-  const enviarMail = document.getElementById("enviar-mail");
-  const simularValor = document.getElementById("simular-valor");
-  const activarEnvio = document.getElementById("activar-envio");
+  const enviarMailTank1 = document.querySelector('[id*="enviar-mail-tank1"]');
+  const enviarMailTank2 = document.querySelector('[id*="enviar-mail-tank2"]');
 
   clearTimeout(loginTimer);
 
   loggedIn = false;
-  otherControls.forEach((section) => {
-    section.classList.remove("visible");
-  });
-  enviarMail.disabled = true;
-  simularValor.disabled = true;
-  activarEnvio.disabled = true;
+  otherControls.forEach(section => section.classList.remove("visible"));
+  enviarMailTank1.disabled = true;
+  enviarMailTank2.disabled = true;
 
   loginButton.textContent = "Log In";
   loginButton.classList.remove("logged-in");
@@ -98,7 +76,6 @@ function logOut() {
   passwordInput.value = "";
 }
 
-// Add these functions to handle percentage input validation
 function validatePercentage(event) {
   // Allow only numbers and basic control keys
   if (
@@ -161,50 +138,122 @@ function updateBarHeight(tankId) {
   alert(`Valor del Tanque ${tankId === "tank1" ? "1" : "2"}: ${percentage}%.`);
 }
 
-// Global tankTimers object
-window.tankTimers = {
-  tank1: { timer: null, elapsedTime: 0, isRunning: false },
-  tank2: { timer: null, elapsedTime: 0, isRunning: false },
+window.tankState = {
+  tank1: { timer: null, elapsedTime: 0, isRunning: false, minTime: Infinity },
+  tank2: { timer: null, elapsedTime: 0, isRunning: false, minTime: Infinity },
 };
 
 function toggleTimer(tankId) {
-  const tank = window.tankTimers[tankId]; // Access global tankTimers
-  const timeInput = document.getElementById(`time-${tankId}`);
-  const button = document.querySelector(
-    `button[onclick="toggleTimer('${tankId}')"]`
-  );
+  const timeInput = document.querySelector(`#time-${tankId}`);
 
-  if (!tank) {
-    console.error(`Tanque ${tankId === "tank1" ? "1" : "2"} invalido`);
+  if (!timeInput) {
+    console.error(`Error: Time input (seg) not found for ${tankId}`);
     return;
   }
 
-  if (tank.isRunning) {
-    // Stop the timer
-    clearInterval(tank.timer);
-    tank.isRunning = false;
+  const button = document.querySelector(`[id*="activar-envio"][onclick*="toggleTimer('${tankId}')"]`);
 
-    // Update button text and style
+  const tank = window.tankState[tankId];
+
+  console.log(`Toggling timer for ${tankId}, current state: ${tank.isRunning}`);
+
+  if (tank.isRunning) {
+    clearInterval(tank.timer);
+    clearInterval(tank.minTimer);
+    tank.isRunning = false;
     button.textContent = "Activar";
     button.style.background = "";
-    button.style.color = "";
-
-    alert(
-      `Tiempo total del tanque ${tankId === "tank1" ? "1" : "2"}: ${tank.elapsedTime}s.`
-    );
+    console.log(`Timer stopped for ${tankId}`);
   } else {
-    // Start the timer
     tank.isRunning = true;
+    tank.elapsedTime = 0;
+    tank.minTime = Infinity;
     tank.timer = setInterval(() => {
       tank.elapsedTime++;
-      timeInput.value = tank.elapsedTime; // Update the input field
+      timeInput.value = tank.elapsedTime; 
     }, 1000);
 
-    // Update button text and style
+    tank.minTimer = setInterval(() => {
+      tank.minTime++;
+    }, 1000);
+
     button.textContent = "Desactivar";
     button.style.background = "linear-gradient(to bottom, red, darkred)";
-    button.style.color = "white";
+    console.log(`Timer started for ${tankId}`);
+  }
 
-    alert(`Empezó el temporizador del tanque ${tankId === "tank1" ? "1" : "2"}.`);
+  updateEnviarMailState(tankId);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Page Loaded: Ensuring Enviar Mail buttons are disabled.");
+
+  const enviarMailButtons = document.querySelectorAll('[id*="enviar-mail"]');
+  enviarMailButtons.forEach(button => {
+    button.disabled = true;
+    button.style.opacity = "0.5";
+  });
+
+  updateEnviarMailState("tank1");
+  updateEnviarMailState("tank2");
+});
+
+
+function updateEnviarMailState(tankId) {
+  const enviarMailButton = document.querySelector(`[id*="enviar-mail-${tankId}"]`);
+
+  console.log(`Looking for "Enviar Mail" button with ID: enviar-mail-${tankId}`);
+  console.log("Found button:", enviarMailButton);
+
+  if (!enviarMailButton) {
+    console.error(`Error: "Enviar Mail" button not found for ${tankId}`);
+    return;
+  }
+
+  const tank = window.tankState[tankId];
+
+  console.log(`Updating mail state for ${tankId}: loggedIn=${loggedIn}, isRunning=${tank.isRunning}`);
+
+  if (loggedIn && tank.isRunning) {
+    enviarMailButton.disabled = false;
+    enviarMailButton.style.opacity = "1";
+  } else {
+    enviarMailButton.disabled = true;
+    enviarMailButton.style.opacity = "0.5";
   }
 }
+
+function enviarMail(tankId) {
+  const tank = window.tankState[tankId];
+  const minInput = document.getElementById(`min-${tankId}`);
+  const enviarMailButton = document.querySelector(`[id*="enviar-mail-${tankId}"]`);
+
+  console.log(`Attempting to send mail for ${tankId}`);
+
+  if (!enviarMailButton) {
+    console.error(`Error: "Enviar Mail" button not found for ${tankId}`);
+    return;
+  }
+
+  if (!loggedIn || !tank.isRunning) {
+    alert("You must be logged in and activate the timer to send mail.");
+    return;
+  }
+
+  // Get the current timer value
+  const currentTime = tank.elapsedTime;
+  const currentMin = parseInt(minInput.value) || Infinity; // Default to Infinity if empty
+
+  console.log(`Current elapsed time: ${currentTime}, Previous min: ${currentMin}`);
+
+  if (currentTime < currentMin) {
+    tank.minTime = currentTime; 
+    minInput.value = tank.minTime; 
+    console.log(`New minimum time recorded: ${tank.minTime}`);
+  } else {
+    console.log(`Min time NOT updated. Kept previous value: ${currentMin}`);
+  }
+
+  alert(`Mail sent for Tank ${tankId === "tank1" ? "1" : "2"}`);
+}
+
