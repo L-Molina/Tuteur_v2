@@ -103,7 +103,7 @@
     ></script>
     <link rel="stylesheet" href="css/video.css" id="css/video.css" />
     <link rel="stylesheet" href="css/webcam.css" id="css/webcam.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css" id="css/main.css" />
   </head>
   <body onload="loadPage()">
     <div id="main">
@@ -128,13 +128,32 @@
             <div class="login-section">
               <div
                 comp_type="PushButton"
-                class="login-icon"
-                id="4e70841b6577b360d5ef"
-                tag_id="533fbfb2-2975-461f-afd6-cae83fa058c1"
-                role="button"
-                onclick="renderJs.FuncMouseDown(this)"
+                show_function="_callback_loadPushButton"
+                class="server_binding textCenter login-icon"
+                range="131"
+                address="5"
+                type="1"
+                length="1"
+                on_text=""
+                off_text=""
+                frequency="1000"
+                mouse_mode="Click"
+                ontouchstart="renderJs.FuncTouchDown(this)"
+                onmousedown="renderJs.FuncMouseDown(this)"
                 onmouseout="renderJs.FuncMouseUp(this)"
                 onmouseup="renderJs.FuncMouseUp(this)"
+                ontouchend="renderJs.FuncTouchUp(this)"
+                onclick="renderJs.onPushButtonClicked(this)"
+                id="4e70841b6577b360d5ef"
+                show_param="4e70841b6577b360d5ef"
+                degree="0"
+                tag_id="533fbfb2-2975-461f-afd6-cae83fa058c1"
+                device_name=""
+                on_image="img/7457F639.png"
+                off_image="img/028F28FA.png"
+                bg_image="img/028F28FA.png"
+                mode="true"
+                text_align=""
               ></div>
               <div
                 class="server_binding analog_input login-input"
@@ -181,18 +200,15 @@
                 </div>
               </div>
               <button
-                class="login-button"
                 comp_type="PushButton"
                 id="405fa89dbc34fef3173f login-button"
-                tag_id="7284b247-24b4-418a-acbd-7079ad7ed0e9"
-                show_function="_callback_loadPushButton"
+                class="server_binding textCenter login-button"
                 range="131"
                 address="8"
                 type="1"
                 length="1"
-                onclick="validatePassword()"
-                on_text="Log in"
-                off_text="Log in"
+                on_text="Log Off"
+                off_text="Log In"
                 frequency="1000"
                 mouse_mode="Click"
                 ontouchstart="renderJs.FuncTouchDown(this)"
@@ -201,12 +217,18 @@
                 onmouseup="renderJs.FuncMouseUp(this)"
                 ontouchend="renderJs.FuncTouchUp(this)"
                 onclick="renderJs.onPushButtonClicked(this)"
+                id="405fa89dbc34fef3173f"
                 show_param="405fa89dbc34fef3173f"
                 degree="0"
+                tag_id="7284b247-24b4-418a-acbd-7079ad7ed0e9"
                 device_name=""
+                on_image=""
+                off_image=""
+                bg_image=""
                 mode="true"
+                text_align="center"
               >
-                Log In
+                Log Off
               </button>
             </div>
           </div>
@@ -527,10 +549,13 @@
                                 value=""
                                 min="0"
                                 max="100"
-                                readonly
                               />
                               <span class="unit">%</span>
                             </div>
+                            <script
+                              type="text/javascript"
+                              id="script_40beb7875d5ab73c9e1a"
+                            ></script>
                           </div>
                         </div>
                         <div class="control-group" id="readonly">
@@ -573,7 +598,6 @@
                                 class="form__field inputVal invalid4300b365ba6d3849d6dc"
                                 size="5"
                                 value=""
-                                readonly
                               />
                               <span class="unit">seg</span>
                             </div>
@@ -620,7 +644,6 @@
                                 class="form__field inputVal invalid44a9a53235537e094472"
                                 size="5"
                                 value=""
-                                readonly
                               />
                               <span class="unit">min</span>
                             </div>
@@ -675,9 +698,14 @@
                           value=""
                           min="0"
                           max="100"
+                          onkeypress="validatePercentage(event)"
                         />
                         <span class="unit">%</span>
                       </div>
+                      <script
+                        type="text/javascript"
+                        id="script_453ea683ca94510b8cac"
+                      ></script>
                     </div>
                     <button
                       comp_type="CustomizedComponent"
@@ -699,39 +727,41 @@
                       bg_image=""
                       mode="true"
                       text_align=""
-                      onclick="updateBarHeight('tank1')"
                       onclick="renderJs.setDigitalData(this)"
                     >
+                      <!-- onclick="updateBarHeight('tank1')" -->
                       Simular valor
                     </button>
                     <button
-                      comp_type="CustomizedComponent"
-                      show_function="_callback_loadCustomizedComponent"
+                      comp_type="PushButton"
+                      show_function="_callback_loadPushButton"
                       class="server_binding textCenter"
                       range="131"
                       address="13"
                       type="1"
                       length="1"
-                      on_text="Desactivar"
+                      on_text="Mantener 5 segundos"
                       off_text="Activar"
                       frequency="1000"
-                      onclick="toggleTimer('tank1')"
+                      mouse_mode="Hold"
                       ontouchstart="renderJs.FuncTouchDown(this)"
                       onmousedown="renderJs.FuncMouseDown(this)"
                       onmouseout="renderJs.FuncMouseUp(this)"
                       onmouseup="renderJs.FuncMouseUp(this)"
                       ontouchend="renderJs.FuncTouchUp(this)"
                       onclick="renderJs.onPushButtonClicked(this)"
-                      id="4483a1e42b7f45f8fd16 activar-envio"
+                      id="4483a1e42b7f45f8fd16"
                       show_param="4483a1e42b7f45f8fd16"
                       degree="0"
                       tag_id="45a5cce8-4ca5-4ab6-97c5-d11808183f60"
                       device_name=""
-                      on_image=""
+                      on_image="img/00823023.png"
                       off_image=""
                       bg_image=""
                       mode="true"
+                      text_align=""
                     >
+                      <!--onclick="toggleTimer('tank1')"-->
                       Activar
                     </button>
                     <button
@@ -751,6 +781,8 @@
                       onmouseout="renderJs.FuncMouseUp(this)"
                       onmouseup="renderJs.FuncMouseUp(this)"
                       ontouchend="renderJs.FuncTouchUp(this)"
+                      onclick="renderJs.onPushButtonClicked(this)"
+                      id="4b66a5200bf17d934783 enviar-mail-tank1"
                       show_param="4b66a5200bf17d934783"
                       degree="0"
                       tag_id="1c637a15-10c7-47bb-872e-ad7c51f55895"
@@ -760,10 +792,8 @@
                       bg_image=""
                       mode="true"
                       text_align=""
-                      id="4b66a5200bf17d934783 enviar-mail-tank1 enviar-mail"
-                      onclick="enviarMail('tank1')"
-                      disabled
                     >
+                      <!--onclick="enviarMail('tank1')"-->
                       Enviar mail
                     </button>
                   </div>
@@ -1066,7 +1096,6 @@
                                 min="0"
                                 max="100"
                                 onkeypress="return validatePercentage(event)"
-                                readonly
                               />
                               <span class="unit">%</span>
                             </div>
@@ -1112,7 +1141,6 @@
                                 id="time-tank2"
                                 class="form__field inputVal invalid401a827fae5feb9c5424"
                                 value=""
-                                readonly
                               />
                               <span class="unit">seg</span>
                             </div>
@@ -1158,7 +1186,6 @@
                                 id="min-tank2"
                                 class="form__field inputVal invalid4323bbca07c959447992"
                                 value=""
-                                readonly
                               />
                               <span class="unit">min</span>
                             </div>
@@ -1236,18 +1263,16 @@
                       off_image=""
                       bg_image=""
                       mode="true"
-                      text_align="center"
-                      onclick="updateBarHeight('tank2')"
+                      text_align=""
                       onclick="renderJs.setDigitalData(this)"
                     >
+                      <!--onclick="updateBarHeight('tank2')"-->
                       Simular valor
                     </button>
                     <button
-                      comp_type="CustomizedComponent"
-                      show_function="_callback_loadCustomizedComponent"
+                      comp_type="PushButton"
+                      show_function="_callback_loadPushButton"
                       class="server_binding textCenter"
-                      id="4166b297458862215fe4 activar-envio"
-                      tag_id="49f67a1e-e37e-4d79-89f3-aaf37d3ff5b4"
                       range="131"
                       address="14"
                       type="1"
@@ -1255,47 +1280,58 @@
                       on_text="Desactivar"
                       off_text="Activar"
                       frequency="1000"
-                      onclick="toggleTimer('tank2')"
+                      mouse_mode="Hold"
                       ontouchstart="renderJs.FuncTouchDown(this)"
                       onmousedown="renderJs.FuncMouseDown(this)"
                       onmouseout="renderJs.FuncMouseUp(this)"
                       onmouseup="renderJs.FuncMouseUp(this)"
                       ontouchend="renderJs.FuncTouchUp(this)"
-                      onclick="renderJs.setDigitalData(this)"
+                      onclick="renderJs.onPushButtonClicked(this)"
+                      id="4166b297458862215fe4 activar-envio"
                       show_param="4166b297458862215fe4"
                       degree="0"
+                      tag_id="49f67a1e-e37e-4d79-89f3-aaf37d3ff5b4"
                       device_name=""
+                      on_image=""
+                      off_image=""
+                      bg_image=""
                       mode="true"
+                      text_align=""
                     >
+                      <!--onclick="toggleTimer('tank2')"-->
                       Activar
                     </button>
                     <button
                       comp_type="PushButton"
                       show_function="_callback_loadPushButton"
                       class="server_binding textCenter"
-                      id="enviar-mail-tank2 45769d2dde598663426a enviar-mail"
-                      tag_id="46b2859d-4049-42c6-91b7-631996daee86"
                       range="131"
                       address="4"
                       type="1"
                       length="1"
-                      on_text="Mantener 10sec"
+                      on_text="Mantener 10 segundos"
                       off_text="Enviar mail"
                       frequency="1000"
                       mouse_mode="Hold"
-                      onclick="enviarMail('tank2')"
                       ontouchstart="renderJs.FuncTouchDown(this)"
                       onmousedown="renderJs.FuncMouseDown(this)"
                       onmouseout="renderJs.FuncMouseUp(this)"
                       onmouseup="renderJs.FuncMouseUp(this)"
                       ontouchend="renderJs.FuncTouchUp(this)"
+                      onclick="renderJs.onPushButtonClicked(this)"
+                      id="45769d2dde598663426a"
                       show_param="45769d2dde598663426a"
                       degree="0"
+                      tag_id="46b2859d-4049-42c6-91b7-631996daee86"
                       device_name=""
+                      on_image="img/00823023.png"
+                      off_image="img/620118B2.png"
+                      bg_image=""
                       mode="true"
-                      disabled
+                      text_align="center"
                     >
-                      Enviar mail
+                      <!--onclick="enviarMail('tank2')"-->
+                      Enviar Mail
                     </button>
                   </div>
                 </div>

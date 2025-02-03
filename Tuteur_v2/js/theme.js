@@ -17,8 +17,10 @@ function updateThemeIcon(theme) {
   button.innerHTML = theme === "dark" ? "🌙" : "☀️";
 }
 
+/*
 let loginTimer = 0;
 let loggedIn = false;
+
 
 function validatePassword() {
   const loginButton = document.getElementById("login-button");
@@ -75,7 +77,7 @@ function logOut() {
   passwordInput.disabled = false;
   passwordInput.value = "";
 }
-
+*/
 function validatePercentage(event) {
   // Allow only numbers and basic control keys
   if (
@@ -134,10 +136,10 @@ function updateBarHeight(tankId) {
 
   barBg.style.height = `${percentage}%`;
   currentValue.value = `${percentage}`;
-
-  alert(`Valor del Tanque ${tankId === "tank1" ? "1" : "2"}: ${percentage}%.`);
 }
 
+
+/*
 window.tankState = {
   tank1: { timer: null, elapsedTime: 0, isRunning: false, minTime: Infinity },
   tank2: { timer: null, elapsedTime: 0, isRunning: false, minTime: Infinity },
@@ -256,4 +258,4 @@ function enviarMail(tankId) {
 
   alert(`Mail sent for Tank ${tankId === "tank1" ? "1" : "2"}`);
 }
-
+*/
