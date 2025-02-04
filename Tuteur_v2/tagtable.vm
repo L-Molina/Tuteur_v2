@@ -206,5 +206,23 @@
         <blockNum realvalue="10">M11</blockNum>
         <type realvalue="1">Bit</type>
         <length realvalue="1">1</length>
+        <variables>
+        <id>3a26f2f4-9996-4e6e-8ece-7bc7007160dc</id>
+        <name>Tk1_Ia_Escalado</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="20">AM</blockType>
+        <blockNum realvalue="176">AM12</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>226a36e7-ef47-44b7-b4ea-d52011337797</id>
+        <name>Tk2_Ia_Escalado</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="20">AM</blockType>
+        <blockNum realvalue="192">AM13</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
     </variables>
 </tVariableTable>
