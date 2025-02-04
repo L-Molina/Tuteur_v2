@@ -2,8 +2,8 @@
 <TagRef>
     <PageRefs>
         <PageVm page="main">
-            <TagComp compId="42eda9d4f6ca594df210" tagId="ede4bd44-4cda-4777-9cfd-d35711018f2b"/>
-            <TagComp compId="4bb998020113d8cadf22" tagId="6bf93ebc-7739-419f-8911-88be486a6d6e"/>
+            <TagComp compId="42eda9d4f6ca594df210" tagId="3a26f2f4-9996-4e6e-8ece-7bc7007160dc"/>
+            <TagComp compId="4bb998020113d8cadf22" tagId="226a36e7-ef47-44b7-b4ea-d52011337797"/>
             <TagComp compId="4e70841b6577b360d5ef" tagId="533fbfb2-2975-461f-afd6-cae83fa058c1"/>
             <TagComp compId="44a9a53235537e094472" tagId="09a28bb3-c3d0-45c8-a63c-59dd7c80e88e"/>
             <TagComp compId="4e6f9e4322e4c8b5d171" tagId="67827609-d76a-4be8-a9f9-35a518523950"/>
