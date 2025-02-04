@@ -217,7 +217,7 @@ h3 {
 
 .tank-group {
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
 
 .tank-info {
@@ -236,14 +236,12 @@ h3 {
   width: 100%;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 23px;
 }
 
 .tank-controls {
   display: flex;
   flex-direction: row;
-  gap: 50px;
-  min-width: 300px;
+  gap: 5px;
   height: 100%;
 }
 
@@ -253,15 +251,23 @@ h3 {
   gap: 8px;
   width: 100%;
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .server_binding {
   width: 100%;
 }
 
-.server_binding.analog_input.percentage-input {
-  height: 275px;
+.control-group .server_binding.analog_input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 300px;
+}
+
+.control-group .server_binding.analog_input .TextComponent {
+  width: 95px;
+  text-align: start;
 }
 
 .control-group#readonly {
@@ -309,10 +315,25 @@ h3 {
   left: 1;
   width: 28px;
   background-color: rgb(70, 130, 180) !important;
-  height: 0%;
+  height: 50%;
   float: left;
   z-index: 101;
   transition: height 0.3s ease;
+}
+
+#proper-values .control-group .valueText.form__group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+#current-values .control-group .valueText.form__group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 120px;
+  height: auto;
 }
 
 .server_binding.bar ul {
@@ -356,6 +377,21 @@ button.server_binding:hover {
   background-color: var(--button-hover-1);
 }
 
+.completed-icon {
+  width: 44px;
+  height: 44px;
+  background-size: 44px 45px;
+  transform: rotate(0deg);
+  background-image: url("file:///C:/Users/Tecnico/Desktop/Tuteur_v2/Tuteur_v2/Tuteur_v2/img/5A35E79C.png");
+  cursor: not-allowed;
+  font-style: normal;
+  font-family: Arial;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  z-index: 43;
+  background-repeat: no-repeat no-repeat;
+}
+
 .Tanque {
   border-radius: 10px;
   background-image: url("../img/1CC49F7C.png");
@@ -371,7 +407,12 @@ button.server_binding:hover {
 .TextComponent {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 12px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .TextComponentTanque1,
@@ -399,10 +440,9 @@ button.server_binding:hover {
 
 .form__field {
   font-family: inherit;
-  width: 100%;
+  width: 180px;
   height: 100%;
   border: 0;
-  border-bottom: 2px solid gray;
   outline: 0;
   font-size: 1.5rem;
   color: var(--text-primary);
@@ -431,6 +471,11 @@ button.server_binding:hover {
   color: gray;
 }
 
+.form__field,
+.unit {
+  border-bottom: 2px solid gray;
+}
+
 .form__field:focus {
   ~ .form__label {
     position: absolute;
@@ -440,6 +485,11 @@ button.server_binding:hover {
     font-size: 1rem;
     color: var(--text-primary);
     font-weight: 700;
+  }
+
+  .form__field,
+  .unit {
+    border-bottom: 2px solid var(--text-primary);
   }
   padding-bottom: 6px;
   font-weight: 700;
@@ -458,22 +508,21 @@ button.server_binding:hover {
   .tank-controls {
     width: 100%;
     max-width: 600px;
+    flex-direction: column;
   }
 
   .control-group#readonly {
     margin-bottom: 23px;
   }
 
+  .action-buttons {
+    flex-direction: row;
+  }
+
   :root {
     --logo-width: 70px;
     --logo-height: 60px;
   }
-}
-
-button.server_binding {
-  flex: 1;
-  min-width: 120px;
-  white-space: nowrap;
 }
 
 .tank-info {
@@ -520,6 +569,7 @@ input {
 }
 
 .login-input .form__field {
+  width: 100%;
   color: black;
   font-size: 14px;
 }
@@ -599,7 +649,7 @@ input {
   border-bottom: none;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 25px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -633,7 +683,6 @@ input {
 
 .percentage-controls .control-group {
   flex: 1;
-  max-width: 150px; /* Reduced width for better appearance */
 }
 
 .other-controls .control-group {
@@ -815,7 +864,8 @@ input {
   }
 
   .form__field {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    width: 100px;
   }
 
   .TextComponent.header-title h1 {
@@ -867,9 +917,8 @@ input {
   }
 
   .action-buttons {
-    width: 100%;
-    max-width: var(--tank-width);
-    margin: auto;
+    flex-direction: column;
+    width: 75%;
   }
 
   .dateTime {
@@ -922,8 +971,7 @@ input {
 
   .percentage-controls .control-group,
   .other-controls .control-group {
-    max-width: 220px;
-    width: 100%;
+    width: 75%;
   }
 
   .other-controls {
@@ -962,7 +1010,7 @@ input {
   }
 
   .control-group {
-    align-items: center;
+    align-items: start;
   }
 
   .MainContainer {
@@ -990,12 +1038,9 @@ input {
 
   .tank-controls {
     width: 100%;
-    min-width: 100%; /* Force full width */
     padding: 0;
     flex-direction: column;
-    gap: 30px;
-    min-height: 610px;
-    padding: 20px 0;
+    min-height: 80px;
   }
 
   .control-group#readonly {
@@ -1010,27 +1055,21 @@ input {
 
   .percentage-controls {
     flex-direction: row;
+    width: 100%;
     height: auto; /* Remove fixed height */
     min-height: 120px; /* Set minimum height */
     gap: 20px;
-    width: auto;
     align-items: center;
   }
 
   .other-controls {
     flex-direction: column;
     height: auto; /* Remove fixed height */
-    min-height: 350px; /* Set minimum height */
+    min-height: 100px; /* Set minimum height */
     max-height: none; /* Remove max height constraint */
     gap: 20px;
     width: 100%;
     align-items: center;
-  }
-
-  .control-group {
-    width: 100%;
-    max-width: 280px;
-    margin-bottom: 10px; /* Add margin between groups */
   }
 
   .tank-group {
@@ -1045,7 +1084,6 @@ input {
   /* Adjust container spacing */
   .tank-controls-container {
     margin-top: 30px;
-    margin-bottom: 30px;
   }
 }
 
@@ -1074,7 +1112,7 @@ input {
 
   .percentage-controls .control-group,
   .other-controls .control-group {
-    max-width: 180px;
+    width: 90%;
   }
 
   .MainContainer {
@@ -1083,6 +1121,11 @@ input {
 
   .tank-group {
     padding: 0 5px;
+  }
+
+  .form__field {
+    width: 80px;
+    font-size: 0.8rem;
   }
 
   .control-group {
@@ -1101,9 +1144,18 @@ input {
     width: 70px;
   }
 
-  .login-button {
+  button.server_binding {
     min-width: 70px;
     font-size: 12px;
+  }
+
+  .control-group .server_binding.analog_input {
+    min-width: 150px;
+  }
+
+  .control-group .server_binding.analog_input .TextComponent {
+    max-width: 30px;
+    font-size: 10px;
   }
 
   .dateTime {

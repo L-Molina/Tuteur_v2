@@ -201,6 +201,7 @@
               </div>
               <button
                 comp_type="PushButton"
+                show_function="_callback_loadPushButton"
                 id="405fa89dbc34fef3173f login-button"
                 class="server_binding textCenter login-button"
                 range="131"
@@ -338,7 +339,10 @@
                     >
                       PV
                     </div>
-                    <div class="server_binding analog_input percentage-input">
+                    <div
+                      class="server_binding analog_input percentage-input"
+                      id="proper-values"
+                    >
                       <div class="valueText form__group">
                         <div class="control-group">
                           <div
@@ -373,7 +377,9 @@
                                 color: var(--text-primary);
                               }
                             </style>
+
                             <div class="valueText form__group">
+                              <div class="TextComponent">Nivel de alerta</div>
                               <input
                                 type="text"
                                 size="5"
@@ -382,13 +388,13 @@
                                 min="0"
                                 max="100"
                               />
+                              <span class="unit">%</span>
                             </div>
                             <script
                               type="text/javascript"
                               id="script_4263910a8a5c25a3df7f"
                             ></script>
                           </div>
-                          <div class="TextComponent unit">Nivel de alerta</div>
                         </div>
                         <div class="control-group">
                           <div
@@ -423,7 +429,16 @@
                                 color: var(--text-primary);
                               }
                             </style>
+
                             <div class="valueText form__group">
+                              <div
+                                class="TextComponent"
+                                comp_type="TextComponent"
+                                id="4340bd6a04854f93dbc7"
+                                degree="0"
+                              >
+                                Filtro
+                              </div>
                               <input
                                 type="text"
                                 class="form__field inputVal invalid4c1fbb25f40490034993"
@@ -431,15 +446,8 @@
                                 size="5"
                                 value=""
                               />
+                              <span class="unit">seg</span>
                             </div>
-                          </div>
-                          <div
-                            class="TextComponent"
-                            comp_type="TextComponent"
-                            id="4340bd6a04854f93dbc7"
-                            degree="0"
-                          >
-                            Filtro
                           </div>
                         </div>
                         <div class="control-group">
@@ -475,22 +483,24 @@
                                 color: var(--text-primary);
                               }
                             </style>
+
                             <div class="valueText form__group">
+                              <div
+                                class="TextComponent"
+                                comp_type="TextComponent"
+                                id="4c00a7948ca85a4401d9"
+                                degree="0"
+                              >
+                                Tiempo entre alertas
+                              </div>
                               <input
                                 type="text"
                                 class="form__field inputVal invalid424abc15f53f1637712e"
                                 size="5"
                                 value=""
                               />
+                              <span class="unit">min</span>
                             </div>
-                          </div>
-                          <div
-                            class="TextComponent"
-                            comp_type="TextComponent"
-                            id="4c00a7948ca85a4401d9"
-                            degree="0"
-                          >
-                            Tiempo entre alertas
                           </div>
                         </div>
                       </div>
@@ -505,7 +515,10 @@
                     >
                       CV
                     </div>
-                    <div class="server_binding analog_input percentage-input">
+                    <div
+                      class="server_binding analog_input percentage-input"
+                      id="current-values"
+                    >
                       <div class="valueText form__group">
                         <div class="control-group" id="readonly">
                           <div
@@ -655,7 +668,8 @@
                 </div>
                 <div class="other-controls" id="other-controls">
                   <div class="action-buttons">
-                    <h3>Simular Valores</h3>
+                    <h3>Controles</h3>
+                    <!--
                     <div
                       class="server_binding analog_input"
                       comp_type="AnalogValueComponent"
@@ -729,73 +743,138 @@
                       text_align=""
                       onclick="renderJs.setDigitalData(this)"
                     >
-                      <!-- onclick="updateBarHeight('tank1')" -->
+                       onclick="updateBarHeight('tank1')" 
                       Simular valor
                     </button>
-                    <button
-                      comp_type="PushButton"
-                      show_function="_callback_loadPushButton"
-                      class="server_binding textCenter"
-                      range="131"
-                      address="13"
-                      type="1"
-                      length="1"
-                      on_text="Mantener 5 segundos"
-                      off_text="Activar"
-                      frequency="1000"
-                      mouse_mode="Hold"
-                      ontouchstart="renderJs.FuncTouchDown(this)"
-                      onmousedown="renderJs.FuncMouseDown(this)"
-                      onmouseout="renderJs.FuncMouseUp(this)"
-                      onmouseup="renderJs.FuncMouseUp(this)"
-                      ontouchend="renderJs.FuncTouchUp(this)"
-                      onclick="renderJs.onPushButtonClicked(this)"
-                      id="4483a1e42b7f45f8fd16"
-                      show_param="4483a1e42b7f45f8fd16"
-                      degree="0"
-                      tag_id="45a5cce8-4ca5-4ab6-97c5-d11808183f60"
-                      device_name=""
-                      on_image="img/00823023.png"
-                      off_image=""
-                      bg_image=""
-                      mode="true"
-                      text_align=""
-                    >
-                      <!--onclick="toggleTimer('tank1')"-->
-                      Activar
-                    </button>
-                    <button
-                      comp_type="PushButton"
-                      show_function="_callback_loadPushButton"
-                      class="server_binding textCenter"
-                      range="131"
-                      address="1"
-                      type="1"
-                      length="1"
-                      on_text="Mantener 10sec"
-                      off_text="Enviar mail"
-                      frequency="1000"
-                      mouse_mode="Hold"
-                      ontouchstart="renderJs.FuncTouchDown(this)"
-                      onmousedown="renderJs.FuncMouseDown(this)"
-                      onmouseout="renderJs.FuncMouseUp(this)"
-                      onmouseup="renderJs.FuncMouseUp(this)"
-                      ontouchend="renderJs.FuncTouchUp(this)"
-                      onclick="renderJs.onPushButtonClicked(this)"
-                      id="4b66a5200bf17d934783 enviar-mail-tank1"
-                      show_param="4b66a5200bf17d934783"
-                      degree="0"
-                      tag_id="1c637a15-10c7-47bb-872e-ad7c51f55895"
-                      device_name=""
-                      on_image=""
-                      off_image=""
-                      bg_image=""
-                      mode="true"
-                      text_align=""
-                    >
-                      <!--onclick="enviarMail('tank1')"-->
-                      Enviar mail
-                    </button>
+                    -->
+                    <div class="button-container">
+                      <button
+                        comp_type="PushButton"
+                        show_function="_callback_loadPushButton"
+                        class="server_binding textCenter"
+                        range="131"
+                        address="13"
+                        type="1"
+                        length="1"
+                        on_text="Activando..."
+                        off_text="Activar"
+                        frequency="1000"
+                        mouse_mode="Hold"
+                        ontouchstart="renderJs.FuncTouchDown(this)"
+                        onmousedown="renderJs.FuncMouseDown(this)"
+                        onmouseout="renderJs.FuncMouseUp(this)"
+                        onmouseup="renderJs.FuncMouseUp(this)"
+                        ontouchend="renderJs.FuncTouchUp(this)"
+                        onclick="renderJs.onPushButtonClicked(this)"
+                        id="4483a1e42b7f45f8fd16"
+                        show_param="4483a1e42b7f45f8fd16"
+                        degree="0"
+                        tag_id="45a5cce8-4ca5-4ab6-97c5-d11808183f60"
+                        device_name=""
+                        on_image="img/00823023.png"
+                        off_image=""
+                        bg_image=""
+                        mode="true"
+                        text_align=""
+                      >
+                        <!--onclick="toggleTimer('tank1')"-->
+                        Activar
+                      </button>
+                      <div
+                        comp_type="CustomizedComponent"
+                        show_function="_callback_loadCustomizedComponent"
+                        class="server_binding textCenter completed-icon"
+                        range="131"
+                        address="15"
+                        type="1"
+                        length="1"
+                        on_text=""
+                        off_text=""
+                        id="4968815c2bc85a632895"
+                        show_param="4968815c2bc85a632895"
+                        degree="0"
+                        tag_id="bf57c422-4111-47b6-866b-b37b158c22b4"
+                        device_name=""
+                        on_image="img/7457F639.png"
+                        off_image="img/87958A49.png"
+                        bg_image="img/87958A49.png"
+                        mode="false"
+                        text_align="center"
+                      >
+                        <p
+                          style="
+                            width: 44px;
+                            height: 44px;
+                            vertical-align: middle;
+                            text-align: center;
+                          "
+                        ></p>
+                      </div>
+                    </div>
+                    <div class="button-container">
+                      <button
+                        comp_type="PushButton"
+                        show_function="_callback_loadPushButton"
+                        class="server_binding textCenter"
+                        range="131"
+                        address="1"
+                        type="1"
+                        length="1"
+                        on_text="Enviando..."
+                        off_text="Enviar mail"
+                        frequency="1000"
+                        mouse_mode="Hold"
+                        ontouchstart="renderJs.FuncTouchDown(this)"
+                        onmousedown="renderJs.FuncMouseDown(this)"
+                        onmouseout="renderJs.FuncMouseUp(this)"
+                        onmouseup="renderJs.FuncMouseUp(this)"
+                        ontouchend="renderJs.FuncTouchUp(this)"
+                        onclick="renderJs.onPushButtonClicked(this)"
+                        id="4b66a5200bf17d934783"
+                        show_param="4b66a5200bf17d934783"
+                        degree="0"
+                        tag_id="1c637a15-10c7-47bb-872e-ad7c51f55895"
+                        device_name=""
+                        on_image="img/00823023.png"
+                        off_image=""
+                        bg_image=""
+                        mode="true"
+                        text_align="center"
+                      >
+                        <!--onclick="enviarMail('tank1')"-->
+                        Enviar mail
+                      </button>
+                      <div
+                        comp_type="CustomizedComponent"
+                        show_function="_callback_loadCustomizedComponent"
+                        class="server_binding textCenter completed-icon"
+                        range="131"
+                        address="0"
+                        type="1"
+                        length="1"
+                        on_text=""
+                        off_text=""
+                        id="4b8fa97ed1a9c7df0091"
+                        show_param="4b8fa97ed1a9c7df0091"
+                        degree="0"
+                        tag_id="5cffcebd-5991-4544-96cc-39f1bf1d0883"
+                        device_name=""
+                        on_image="img/7457F639.png"
+                        off_image="img/5A35E79C.png"
+                        bg_image="img/5A35E79C.png"
+                        mode="false"
+                        text_align="center"
+                      >
+                        <p
+                          style="
+                            width: 44px;
+                            height: 44px;
+                            vertical-align: middle;
+                            text-align: center;
+                          "
+                        ></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -875,7 +954,10 @@
                     >
                       PV
                     </div>
-                    <div class="server_binding analog_input percentage-input">
+                    <div
+                      class="server_binding analog_input percentage-input"
+                      id="proper-values"
+                    >
                       <div class="valueText form__group">
                         <div class="control-group">
                           <div
@@ -910,7 +992,16 @@
                                 color: var(--text-primary);
                               }
                             </style>
+
                             <div class="valueText form__group">
+                              <div
+                                class="TextComponent"
+                                comp_type="TextComponent"
+                                id="4d528c7375fe5b1add40"
+                                degree="0"
+                              >
+                                Nivel de alerta
+                              </div>
                               <input
                                 class="form__field inputVal invalid48b38ea927b5a1ce9a17"
                                 type="text"
@@ -918,20 +1009,12 @@
                                 min="0"
                                 max="100"
                               />
-                              <span class="unit"></span>
+                              <span class="unit">%</span>
                             </div>
                             <script
                               type="text/javascript"
                               id="script_48b38ea927b5a1ce9a17"
                             ></script>
-                          </div>
-                          <div
-                            class="TextComponent"
-                            comp_type="TextComponent"
-                            id="4d528c7375fe5b1add40"
-                            degree="0"
-                          >
-                            Nivel de alerta
                           </div>
                         </div>
                         <div class="control-group">
@@ -968,20 +1051,21 @@
                               }
                             </style>
                             <div class="valueText form__group">
+                              <div class="TextComponent">Filtro</div>
+
                               <input
                                 type="text"
                                 class="form__field inputVal invalid4e6f9e4322e4c8b5d171"
                                 value=""
                                 size="5"
                               />
-                              <span class="unit"></span>
+                              <span class="unit">seg</span>
                             </div>
                             <script
                               type="text/javascript"
                               id="script_4e6f9e4322e4c8b5d171"
                             ></script>
                           </div>
-                          <div class="TextComponent">Filtro</div>
                         </div>
                         <div class="control-group">
                           <div
@@ -1017,26 +1101,26 @@
                               }
                             </style>
                             <div class="valueText form__group">
+                              <div
+                                class="TextComponent"
+                                comp_type="TextComponent"
+                                id="4c00a7948ca85a4401d9"
+                                degree="0"
+                              >
+                                Tiempo entre alertas
+                              </div>
                               <input
                                 type="text"
                                 size="5"
                                 class="form__field inputVal invalid445d9aa30f8ccc59026e"
                                 value=""
                               />
+                              <span class="unit">min</span>
                             </div>
-                            <span class="unit"></span>
                             <script
                               type="text/javascript"
                               id="script_445d9aa30f8ccc59026e"
                             ></script>
-                          </div>
-                          <div
-                            class="TextComponent"
-                            comp_type="TextComponent"
-                            id="4c00a7948ca85a4401d9"
-                            degree="0"
-                          >
-                            Tiempo entre alertas
                           </div>
                         </div>
                       </div>
@@ -1051,7 +1135,10 @@
                     >
                       CV
                     </div>
-                    <div class="server_binding analog_input percentage-input">
+                    <div
+                      class="server_binding analog_input percentage-input"
+                      id="current-values"
+                    >
                       <div class="valueText form__group">
                         <div class="control-group" id="readonly">
                           <div
@@ -1095,13 +1182,12 @@
                                 value=""
                                 min="0"
                                 max="100"
-                                onkeypress="return validatePercentage(event)"
                               />
                               <span class="unit">%</span>
                             </div>
                           </div>
                         </div>
-                        <div class="control-group" id="readonly">
+                        <div class="control-group">
                           <div
                             class="server_binding analog_input"
                             comp_type="AnalogValueComponent"
@@ -1146,7 +1232,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="control-group" id="readonly">
+                        <div class="control-group">
                           <div
                             class="server_binding analog_input"
                             comp_type="AnalogValueComponent"
@@ -1197,7 +1283,8 @@
                 </div>
                 <div class="other-controls" id="other-controls">
                   <div class="action-buttons">
-                    <h3>Simular Valores</h3>
+                    <h3>Controles</h3>
+                    <!--
                     <div
                       class="server_binding analog_input"
                       comp_type="AnalogValueComponent"
@@ -1266,73 +1353,137 @@
                       text_align=""
                       onclick="renderJs.setDigitalData(this)"
                     >
-                      <!--onclick="updateBarHeight('tank2')"-->
+                      onclick="updateBarHeight('tank2')"
                       Simular valor
-                    </button>
-                    <button
-                      comp_type="PushButton"
-                      show_function="_callback_loadPushButton"
-                      class="server_binding textCenter"
-                      range="131"
-                      address="14"
-                      type="1"
-                      length="1"
-                      on_text="Desactivar"
-                      off_text="Activar"
-                      frequency="1000"
-                      mouse_mode="Hold"
-                      ontouchstart="renderJs.FuncTouchDown(this)"
-                      onmousedown="renderJs.FuncMouseDown(this)"
-                      onmouseout="renderJs.FuncMouseUp(this)"
-                      onmouseup="renderJs.FuncMouseUp(this)"
-                      ontouchend="renderJs.FuncTouchUp(this)"
-                      onclick="renderJs.onPushButtonClicked(this)"
-                      id="4166b297458862215fe4 activar-envio"
-                      show_param="4166b297458862215fe4"
-                      degree="0"
-                      tag_id="49f67a1e-e37e-4d79-89f3-aaf37d3ff5b4"
-                      device_name=""
-                      on_image=""
-                      off_image=""
-                      bg_image=""
-                      mode="true"
-                      text_align=""
-                    >
-                      <!--onclick="toggleTimer('tank2')"-->
-                      Activar
-                    </button>
-                    <button
-                      comp_type="PushButton"
-                      show_function="_callback_loadPushButton"
-                      class="server_binding textCenter"
-                      range="131"
-                      address="4"
-                      type="1"
-                      length="1"
-                      on_text="Mantener 10 segundos"
-                      off_text="Enviar mail"
-                      frequency="1000"
-                      mouse_mode="Hold"
-                      ontouchstart="renderJs.FuncTouchDown(this)"
-                      onmousedown="renderJs.FuncMouseDown(this)"
-                      onmouseout="renderJs.FuncMouseUp(this)"
-                      onmouseup="renderJs.FuncMouseUp(this)"
-                      ontouchend="renderJs.FuncTouchUp(this)"
-                      onclick="renderJs.onPushButtonClicked(this)"
-                      id="45769d2dde598663426a"
-                      show_param="45769d2dde598663426a"
-                      degree="0"
-                      tag_id="46b2859d-4049-42c6-91b7-631996daee86"
-                      device_name=""
-                      on_image="img/00823023.png"
-                      off_image="img/620118B2.png"
-                      bg_image=""
-                      mode="true"
-                      text_align="center"
-                    >
-                      <!--onclick="enviarMail('tank2')"-->
-                      Enviar Mail
-                    </button>
+                    </button>-->
+                    <div class="button-container">
+                      <button
+                        comp_type="PushButton"
+                        show_function="_callback_loadPushButton"
+                        class="server_binding textCenter"
+                        range="131"
+                        address="14"
+                        type="1"
+                        length="1"
+                        on_text="Activando..."
+                        off_text="Activar"
+                        frequency="1000"
+                        mouse_mode="Hold"
+                        ontouchstart="renderJs.FuncTouchDown(this)"
+                        onmousedown="renderJs.FuncMouseDown(this)"
+                        onmouseout="renderJs.FuncMouseUp(this)"
+                        onmouseup="renderJs.FuncMouseUp(this)"
+                        ontouchend="renderJs.FuncTouchUp(this)"
+                        onclick="renderJs.onPushButtonClicked(this)"
+                        id="4166b297458862215fe4"
+                        show_param="4166b297458862215fe4"
+                        degree="0"
+                        tag_id="49f67a1e-e37e-4d79-89f3-aaf37d3ff5b4"
+                        device_name=""
+                        on_image="img/00823023.png"
+                        off_image=""
+                        bg_image=""
+                        mode="true"
+                        text_align=""
+                      >
+                        <!--onclick="toggleTimer('tank2')"-->
+                        Activar
+                      </button>
+                      <div
+                        comp_type="CustomizedComponent"
+                        show_function="_callback_loadCustomizedComponent"
+                        class="server_binding textCenter completed-icon"
+                        range="131"
+                        address="16"
+                        type="1"
+                        length="1"
+                        on_text=""
+                        off_text=""
+                        id="4da5bebc139a6c7d1088"
+                        show_param="4da5bebc139a6c7d1088"
+                        degree="0"
+                        tag_id="597c2cdc-6fa9-4249-9ece-08c44b1b1866"
+                        device_name=""
+                        on_image="img/7457F639.png"
+                        off_image="img/87958A49.png"
+                        bg_image="img/87958A49.png"
+                        mode="false"
+                        text_align="center"
+                      >
+                        <p
+                          style="
+                            width: 44px;
+                            height: 44px;
+                            vertical-align: middle;
+                            text-align: center;
+                          "
+                        ></p>
+                      </div>
+                    </div>
+                    <div class="button-container">
+                      <button
+                        comp_type="PushButton"
+                        show_function="_callback_loadPushButton"
+                        class="server_binding textCenter"
+                        range="131"
+                        address="4"
+                        type="1"
+                        length="1"
+                        on_text="Enviando..."
+                        off_text="Enviar mail"
+                        frequency="1000"
+                        mouse_mode="Hold"
+                        ontouchstart="renderJs.FuncTouchDown(this)"
+                        onmousedown="renderJs.FuncMouseDown(this)"
+                        onmouseout="renderJs.FuncMouseUp(this)"
+                        onmouseup="renderJs.FuncMouseUp(this)"
+                        ontouchend="renderJs.FuncTouchUp(this)"
+                        onclick="renderJs.onPushButtonClicked(this)"
+                        id="45769d2dde598663426a"
+                        show_param="45769d2dde598663426a"
+                        degree="0"
+                        tag_id="46b2859d-4049-42c6-91b7-631996daee86"
+                        device_name=""
+                        on_image="img/00823023.png"
+                        off_image=""
+                        bg_image=""
+                        mode="true"
+                        text_align="center"
+                      >
+                        <!--onclick="enviarMail('tank2')"-->
+                        Enviar Mail
+                      </button>
+                      <div
+                        comp_type="CustomizedComponent"
+                        show_function="_callback_loadCustomizedComponent"
+                        class="server_binding textCenter completed-icon"
+                        range="131"
+                        address="3"
+                        type="1"
+                        length="1"
+                        on_text=""
+                        off_text=""
+                        id="4b398bfd01c5b036373c"
+                        show_param="4b398bfd01c5b036373c"
+                        degree="0"
+                        tag_id="ddba25a1-91f1-4ff8-8428-7643374be07f"
+                        device_name=""
+                        on_image="img/7457F639.png"
+                        off_image="img/5A35E79C.png"
+                        bg_image="img/5A35E79C.png"
+                        mode="false"
+                        text_align="center"
+                      >
+                        <p
+                          style="
+                            width: 44px;
+                            height: 44px;
+                            vertical-align: middle;
+                            text-align: center;
+                          "
+                        ></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

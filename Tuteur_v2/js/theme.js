@@ -120,24 +120,37 @@ function limitPercentage(input) {
   }
 }
 
+/*
 function updateBarHeight(tankId) {
-  const input = document.getElementById(`percentage-${tankId}`);
+  const input = document.getElementById(`cv-${tankId}`);
   const barBg = document.getElementById(`barBg-${tankId}`);
-  const currentValue = document.getElementById(`cv-${tankId}`);
   const percentage = parseInt(input.value, 10);
 
-  // Validate input
-  if (isNaN(percentage) || percentage < 0 || percentage > 100) {
-    alert("Error: Valor ingresado fuera del rango requerido (entre 0 y 100)");
-    return;
-  }
+  console.log(percentage)
+
+  barBg.style.height = `${percentage}%`;
+}
+*/
+
+function updateBarHeight(tankId) {
+  const input = document.getElementById(`cv-tank1`);
+  const barBg = document.getElementById(`barBg-tank1`);
+  const percentage = parseInt(input.value, 10);
 
   console.log(percentage);
 
   barBg.style.height = `${percentage}%`;
-  currentValue.value = `${percentage}`;
 }
 
+function updateBarHeight(tankId) {
+  const input = document.getElementById(`cv-tank2`);
+  const barBg = document.getElementById(`barBg-tank2`);
+  const percentage = parseInt(input.value, 10);
+
+  console.log(percentage);
+
+  barBg.style.height = `${percentage}%`;
+}
 
 /*
 window.tankState = {
