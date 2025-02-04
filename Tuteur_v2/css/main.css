@@ -279,9 +279,11 @@ h3 {
 }
 
 .bar {
-  border: 0px solid red;
+  border: 0px solid green;
   height: 232px;
   width: 28px;
+  transform: rotate(0deg);
+  z-index: 33;
 }
 
 .server_binding.bar {
@@ -498,6 +500,16 @@ button.server_binding:hover {
   border-image-slice: 1;
 }
 
+.percentage-controls {
+  padding-bottom: 0;
+  border-bottom: none;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Media queries for different screen sizes */
 @media screen and (max-width: 1200px) {
   .tank-group {
@@ -517,6 +529,10 @@ button.server_binding:hover {
 
   .action-buttons {
     flex-direction: row;
+  }
+
+  .percentage-controls {
+    gap: 65px;
   }
 
   :root {
@@ -644,16 +660,6 @@ input {
   font-weight: 500;
 }
 
-.percentage-controls {
-  padding-bottom: 0;
-  border-bottom: none;
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .other-controls {
   flex: 1;
   display: flex;
@@ -762,7 +768,7 @@ input {
   /* Adjust tank controls for tablets */
   .tank-controls {
     min-height: 350px;
-    padding: 15px 0;
+    padding-top: 15px;
   }
 
   .percentage-controls {
@@ -865,7 +871,7 @@ input {
 
   .form__field {
     font-size: 1rem;
-    width: 100px;
+    width: 55%;
   }
 
   .TextComponent.header-title h1 {
@@ -966,12 +972,6 @@ input {
     flex-direction: column;
     gap: 15px;
     width: 100%;
-    align-items: center; /* Center PV and CV inputs */
-  }
-
-  .percentage-controls .control-group,
-  .other-controls .control-group {
-    width: 75%;
   }
 
   .other-controls {
@@ -1041,10 +1041,6 @@ input {
     padding: 0;
     flex-direction: column;
     min-height: 80px;
-  }
-
-  .control-group#readonly {
-    margin-bottom: 18px;
   }
 
   .other-controls {
@@ -1124,7 +1120,7 @@ input {
   }
 
   .form__field {
-    width: 80px;
+    width: 65%;
     font-size: 0.8rem;
   }
 
