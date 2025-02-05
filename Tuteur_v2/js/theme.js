@@ -23,6 +23,7 @@ function validatePassword() {
     const loginButton = document.getElementById("login-button");
     const passwordInput = document.getElementById("password-input");
     const controls = document.querySelectorAll(".action-buttons");
+    const loginIcon = document.getElementById("login-icon");
     const correctPassword = "1480";
 
     if (!loggedIn) {
@@ -43,6 +44,7 @@ function logOut() {
     const loginButton = document.querySelector("#login-button");
     const passwordInput = document.getElementById("password-input");
     const controls = document.querySelectorAll(".action-buttons");
+    const loginIcon = document.getElementById("login-icon");
     
     loggedIn = false;
     controls.forEach(control => control.style.display = "none"); // Oculta los elementos con la clase "action-buttons"
@@ -50,6 +52,21 @@ function logOut() {
     loginButton.textContent = "Log In";
 }
 
+// Observa cambios en la imagen del login-icon
+document.addEventListener("DOMContentLoaded", () => {
+    const loginIcon = document.getElementById("login-icon");
+    
+    if (loginIcon) {
+        const observer = new MutationObserver(() => {
+            const onImage = "img/7457F639.png"; // Reemplazar con la ruta correcta
+            if (loginIcon.src.includes(onImage)) {
+                validatePassword();
+            }
+        });
+        
+        observer.observe(loginIcon, { attributes: true, attributeFilter: ["src"] });
+    }
+});
 
 function validatePercentage(event) {
   // Allow only numbers and basic control keys
