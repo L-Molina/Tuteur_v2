@@ -34,8 +34,6 @@ function validatePassword() {
         } else {
             alert("Contraseña Incorrecta");
         }
-    } else {
-        logOut();
     }
 }
 
