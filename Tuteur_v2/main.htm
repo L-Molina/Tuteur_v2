@@ -195,6 +195,7 @@
                     id="password-input"
                     size="5"
                     value=""
+                    onsubmit="validatePassword()"
                   />
                   <span class="unit"></span>
                 </div>
@@ -211,7 +212,6 @@
                 off_text="Log In"
                 frequency="1000"
                 mouse_mode="Click"
-                onclick="validatePassword()"
                 ontouchstart="renderJs.FuncTouchDown(this)"
                 onmousedown="renderJs.FuncMouseDown(this)"
                 onmouseout="renderJs.FuncMouseUp(this)"
