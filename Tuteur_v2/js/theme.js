@@ -50,20 +50,6 @@ function logOut() {
     loginButton.textContent = "Log In";
 }
 
-// Observa cambios en la variable de LOGO
-document.addEventListener("DOMContentLoaded", () => {
-    setInterval(() => {
-        fetch("/get-logo-variable") // Reemplaza con la URL real para obtener la variable de LOGO
-            .then(response => response.json())
-            .then(data => {
-                if (data.loginActive) { // Suponiendo que 'loginActive' es la variable de LOGO
-                    validatePassword();
-                }
-            })
-            .catch(error => console.error("Error obteniendo la variable de LOGO:", error));
-    }, 1000); // Verifica la variable cada segundo
-});
-
 
 function validatePercentage(event) {
   // Allow only numbers and basic control keys
