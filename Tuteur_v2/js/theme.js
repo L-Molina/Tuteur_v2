@@ -23,7 +23,6 @@ function validatePassword() {
     const loginButton = document.getElementById("login-button");
     const passwordInput = document.getElementById("password-input");
     const controls = document.querySelectorAll(".action-buttons");
-    const loginIcon = document.getElementById("login-icon");
     const correctPassword = "1480";
 
     if (!loggedIn) {
@@ -44,7 +43,6 @@ function logOut() {
     const loginButton = document.querySelector("#login-button");
     const passwordInput = document.getElementById("password-input");
     const controls = document.querySelectorAll(".action-buttons");
-    const loginIcon = document.getElementById("login-icon");
     
     loggedIn = false;
     controls.forEach(control => control.style.display = "none"); // Oculta los elementos con la clase "action-buttons"
@@ -52,21 +50,20 @@ function logOut() {
     loginButton.textContent = "Log In";
 }
 
-// Observa cambios en la imagen del login-icon
+// Observa cambios en la variable de LOGO
 document.addEventListener("DOMContentLoaded", () => {
-    const loginIcon = document.getElementById("login-icon");
-    
-    if (loginIcon) {
-        const observer = new MutationObserver(() => {
-            const onImage = "img/7457F639.png"; // Reemplazar con la ruta correcta
-            if (loginIcon.src.includes(onImage)) {
-                validatePassword();
-            }
-        });
-        
-        observer.observe(loginIcon, { attributes: true, attributeFilter: ["src"] });
-    }
+    setInterval(() => {
+        fetch("/get-logo-variable") // Reemplaza con la URL real para obtener la variable de LOGO
+            .then(response => response.json())
+            .then(data => {
+                if (data.loginActive) { // Suponiendo que 'loginActive' es la variable de LOGO
+                    validatePassword();
+                }
+            })
+            .catch(error => console.error("Error obteniendo la variable de LOGO:", error));
+    }, 1000); // Verifica la variable cada segundo
 });
+
 
 function validatePercentage(event) {
   // Allow only numbers and basic control keys
