@@ -26,7 +26,6 @@ function validatePassword() {
 
     if (!loggedIn) {
         if (passwordInput.value === correctPassword) {
-            alert("Sesión Iniciada");
             loggedIn = true;
             passwordInput.style.display = "none"; // Oculta el campo de contraseña
             loginButton.textContent = "Log Off";
@@ -39,8 +38,7 @@ function validatePassword() {
 }
 
 function logOut() {
-    alert("Sesión Terminada");
-    const loginButton = document.getElementById("login-button");
+    const loginButton = document.querySelector("#login-button");
     const passwordInput = document.getElementById("password-input");
     
     loggedIn = false;
