@@ -17,67 +17,38 @@ function updateThemeIcon(theme) {
   button.innerHTML = theme === "dark" ? "🌙" : "☀️";
 }
 
-/*
-let loginTimer = 0;
 let loggedIn = false;
 
-
 function validatePassword() {
-  const loginButton = document.getElementById("login-button");
-  const passwordInput = document.getElementById("password-input");
-  const otherControls = document.querySelectorAll("#other-controls");
-  const enviarMailTank1 = document.querySelector('[id*="enviar-mail-tank1"]');
-  const enviarMailTank2 = document.querySelector('[id*="enviar-mail-tank2"]');
-  const correctPassword = "1480";
+    const loginButton = document.getElementById("login-button");
+    const passwordInput = document.getElementById("password-input");
+    const correctPassword = "1480";
 
-  clearTimeout(loginTimer); // Prevent multiple timers
-
-  if (!loggedIn) {
-    if (passwordInput.value === correctPassword) {
-      alert("Sesión Iniciada. Mails Activados");
-      loggedIn = true;
-      otherControls.forEach(section => section.classList.add("visible"));
-      enviarMailTank1.disabled = false;
-      enviarMailTank2.disabled = false;
+    if (!loggedIn) {
+        if (passwordInput.value === correctPassword) {
+            alert("Sesión Iniciada");
+            loggedIn = true;
+            passwordInput.style.display = "none"; // Oculta el campo de contraseña
+            loginButton.textContent = "Log Off";
+        } else {
+            alert("Contraseña Incorrecta");
+        }
     } else {
-      alert("Sesión Iniciada. Mails Desactivados");
-      loggedIn = true;
-      otherControls.forEach(section => section.classList.add("visible"));
-      enviarMailTank1.disabled = true;
-      enviarMailTank2.disabled = true;
+        logOut();
     }
-
-    loginButton.textContent = "Log Off";
-    loginButton.classList.add("logged-in");
-    passwordInput.disabled = true;
-
-    loginTimer = setTimeout(() => logOut(), 3 * 60 * 1000);
-  } else {
-    logOut();
-  }
 }
 
 function logOut() {
-  alert("Sesión Terminada");
-  const loginButton = document.getElementById("login-button");
-  const passwordInput = document.getElementById("password-input");
-  const otherControls = document.querySelectorAll("#other-controls");
-  const enviarMailTank1 = document.querySelector('[id*="enviar-mail-tank1"]');
-  const enviarMailTank2 = document.querySelector('[id*="enviar-mail-tank2"]');
-
-  clearTimeout(loginTimer);
-
-  loggedIn = false;
-  otherControls.forEach(section => section.classList.remove("visible"));
-  enviarMailTank1.disabled = true;
-  enviarMailTank2.disabled = true;
-
-  loginButton.textContent = "Log In";
-  loginButton.classList.remove("logged-in");
-  passwordInput.disabled = false;
-  passwordInput.value = "";
+    alert("Sesión Terminada");
+    const loginButton = document.getElementById("login-button");
+    const passwordInput = document.getElementById("password-input");
+    
+    loggedIn = false;
+    passwordInput.style.display = "inline-block"; // Muestra el campo de contraseña
+    passwordInput.value = "";
+    loginButton.textContent = "Log In";
 }
-*/
+
 function validatePercentage(event) {
   // Allow only numbers and basic control keys
   if (
