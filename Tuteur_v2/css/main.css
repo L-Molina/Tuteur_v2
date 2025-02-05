@@ -231,7 +231,7 @@ h3 {
 }
 
 .action-buttons {
-  display: flex;
+  display: none;
   gap: 25px;
   width: 100%;
   flex-wrap: wrap;

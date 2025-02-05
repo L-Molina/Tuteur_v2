@@ -22,12 +22,14 @@ let loggedIn = false;
 function validatePassword() {
     const loginButton = document.getElementById("login-button");
     const passwordInput = document.getElementById("password-input");
+    const controls = document.querySelectorAll(".action-buttons");
     const correctPassword = "1480";
 
     if (!loggedIn) {
         if (passwordInput.value === correctPassword) {
             loggedIn = true;
-            passwordInput.style.display = "none"; // Oculta el campo de contraseña
+            
+            controls.forEach(control => control.style.display = "flex"); // Muestra los elementos con la clase "action-buttons"
             loginButton.textContent = "Log Off";
         } else {
             alert("Contraseña Incorrecta");
@@ -40,12 +42,14 @@ function validatePassword() {
 function logOut() {
     const loginButton = document.querySelector("#login-button");
     const passwordInput = document.getElementById("password-input");
+    const controls = document.querySelectorAll(".action-buttons");
     
     loggedIn = false;
-    passwordInput.style.display = "inline-block"; // Muestra el campo de contraseña
+    controls.forEach(control => control.style.display = "none"); // Oculta los elementos con la clase "action-buttons"
     passwordInput.value = "";
     loginButton.textContent = "Log In";
 }
+
 
 function validatePercentage(event) {
   // Allow only numbers and basic control keys
