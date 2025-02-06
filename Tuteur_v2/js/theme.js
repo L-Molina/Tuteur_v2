@@ -1,4 +1,8 @@
-// Check for saved theme preference
+// existing code...
+// or if renderJs is the default export:
+// import renderJs from './render.js';
+// existing code...
+
 const theme = localStorage.getItem("theme") || "dark";
 document.documentElement.setAttribute("data-theme", theme);
 updateThemeIcon(theme);
@@ -20,34 +24,32 @@ function updateThemeIcon(theme) {
 let loggedIn = false;
 
 function validatePassword() {
-    const loginButton = document.getElementById("login-button");
-    const passwordInput = document.getElementById("password-input");
-    const controls = document.querySelectorAll(".action-buttons");
-    const correctPassword = "1480";
+  const loginButton = document.getElementById("login-button");
+  const passwordInput = document.getElementById("password-input");
+  const controls = document.querySelectorAll(".action-buttons");
+  const correctPassword = "1480";
 
-    if (!loggedIn) {
-        if (passwordInput.value === correctPassword) {
-            loggedIn = true;
-            
-            controls.forEach(control => control.style.display = "flex"); // Muestra los elementos con la clase "action-buttons"
-            loginButton.textContent = "Log Off";
-        } else {
-            alert("Contraseña Incorrecta");
-        }
+  if (!loggedIn) {
+    if (passwordInput.value === correctPassword) {
+      loggedIn = true;
+
+      controls.forEach((control) => (control.style.display = "flex")); // Muestra los elementos con la clase "action-buttons"
+      loginButton.textContent = "Log Off";
+    } else {
+      alert("Contraseña Incorrecta");
     }
+  }
 }
 
 function logOut() {
-    const loginButton = document.querySelector("#login-button");
-    const passwordInput = document.getElementById("password-input");
-    const controls = document.querySelectorAll(".action-buttons");
-    
-    loggedIn = false;
-    controls.forEach(control => control.style.display = "none"); // Oculta los elementos con la clase "action-buttons"
-    passwordInput.value = "";
-    loginButton.textContent = "Log In";
-}
+  const loginButton = document.querySelector("#login-button");
+  const passwordInput = document.getElementById("password-input");
+  const controls = document.querySelectorAll(".action-buttons");
 
+  loggedIn = false;
+  controls.forEach((control) => (control.style.display = "none")); // Oculta los elementos con la clase "action-buttons"
+  passwordInput.value = "";
+}
 
 function validatePercentage(event) {
   // Allow only numbers and basic control keys
@@ -76,6 +78,11 @@ function validatePercentage(event) {
   }
 
   return true;
+}
+
+function logOffClick(button) {
+  logOut();
+  renderJs.onPushButtonClicked(button);
 }
 
 function limitPercentage(input) {
