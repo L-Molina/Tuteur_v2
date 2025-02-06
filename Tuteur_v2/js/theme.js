@@ -48,7 +48,6 @@ function logOut() {
 
   loggedIn = false;
   controls.forEach((control) => (control.style.display = "none")); // Oculta los elementos con la clase "action-buttons"
-  passwordInput.value = "";
 }
 
 function validatePercentage(event) {

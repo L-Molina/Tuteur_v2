@@ -2095,6 +2095,14 @@ function _callback_loadPushButton() {
   var onimage = document.getElementById(id).getAttribute("on_image");
   var offimage = document.getElementById(id).getAttribute("off_image");
 
+  // Check if this is the login icon by checking for specific images
+  if (offimage === "img/028F28FA.png") {
+    // If switching from off_image to on_image (value becomes 1)
+    if (value === 0) {
+      logOut(); // Call logOut when icon changes to logged in state
+    }
+  }
+
   var showText = value === 0 ? offtext : ontext;
   var showImage = value === 0 ? offimage : onimage;
   if ($("#" + id + " p").length === 0) {
